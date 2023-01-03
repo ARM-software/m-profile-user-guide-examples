@@ -48,7 +48,7 @@ Example projects are licensed under the MIT2.0 license. Please see the [LICENSE]
 ## Feedback and Support
 
 - For feedback and support on these example projects, use the GitHub [Issue Tracker](https://github.com/ARM-software/m-profile-user-guide-examples/issues) that is associated with this repository.
-- For support on Armv8-M architecture features, refer [developer](https://developer.arm.com/support).
+- For support on Armv8-M architecture features, raise a support case via [Arm Developer](https://developer.arm.com/support).
 - Arm licensees may contact Arm directly through their partner managers.
 
 

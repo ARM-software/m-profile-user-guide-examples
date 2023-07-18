@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration xmlns:xs="http://www.w3.org/2001/XMLSchema-instance">
+  <packages/>
+  <device Dclock="10000000" Dcore="Cortex-M55" DcoreVersion="r0p0" Ddsp="DSP" Dendian="Little-endian" Dfamily="ARM Cortex M55" Dfpu="DP_FPU" Dmpu="MPU" Dmve="FP_MVE" Dname="ARMCM55" Dsecure="" Dtz="TZ" Dvendor="ARM:82" info="ARM , 256 KB RAM, 4 MB ROM" url="https://www.keil.com/dd2/arm/armcm55">
+    <package info="CMSIS (Common Microcontroller Software Interface Standard)" name="CMSIS" url="http://www.keil.com/pack/" vendor="ARM" version="5.9.0"/>
+  </device>
+  <toolchain Tcompiler="ARMCC" Toutput="exe"/>
+  <components>
+    <component Cclass="CMSIS" Cgroup="CORE" Cvendor="ARM" Cversion="5.6.0">
+      <package name="CMSIS" url="http://www.keil.com/pack/" vendor="ARM" version="5.9.0"/>
+      <file category="doc" name="CMSIS/Documentation/Core/html/index.html"/>
+      <file category="include" name="CMSIS/Core/Include/"/>
+      <file category="header" condition="TrustZone" name="CMSIS/Core/Include/tz_context.h"/>
+    </component>
+    <component Cclass="Device" Cgroup="Startup" Cvariant="C Startup" Cvendor="ARM" Cversion="1.1.0" deviceDependent="1">
+      <package name="CMSIS" url="http://www.keil.com/pack/" vendor="ARM" version="5.9.0"/>
+      <file category="include" deviceDependent="1" name="Device/ARM/ARMCM55/Include/"/>
+      <file attr="config" category="sourceC" deviceDependent="1" name="Device/ARM/ARMCM55/Source/startup_ARMCM55.c" version="1.1.0"/>
+      <file attr="config" category="linkerScript" condition="Startup ARMCC6 Unsecure" deviceDependent="1" name="Device/ARM/ARMCM55/Source/ARM/ARMCM55_ac6.sct" version="1.1.0"/>
+      <file attr="config" category="sourceC" deviceDependent="1" name="Device/ARM/ARMCM55/Source/system_ARMCM55.c" version="1.1.0"/>
+    </component>
+  </components>
+  <apis/>
+</configuration>

@@ -2,8 +2,8 @@
  * Auto generated Run-Time-Environment Component Configuration File
  *      *** Do not modify ! ***
  *
- * Project: MPU_and_my_RTOS_armv8m
- * RTE configuration: MPU_and_my_RTOS_armv8m.rteconfig
+ * Project: rtos_context_switch
+ * RTE configuration: rtos_context_switch.rteconfig
 */
 #ifndef RTE_COMPONENTS_H
 #define RTE_COMPONENTS_H

@@ -1,5 +1,5 @@
 <!--
-SPDX-FileCopyrightText: Copyright 2022 Arm Limited <open-source-office@arm.com>
+SPDX-FileCopyrightText: Copyright 2022-2023 Arm Limited <open-source-office@arm.com>
 SPDX-License-Identifier: MIT
 -->
 
@@ -30,7 +30,8 @@ The example software projects are organised as per their architecture extension 
 
 | Architecture category | User Guide | Chapter | Folder name |
 | --------------------- | -----------| --------| ------------| 
-| Memory Model  | [Armv8-M Memory model and MPU user guide](https://developer.arm.com/documentation/107565/) | [Use case examples](https://developer.arm.com/documentation/107565/0100/Use-case-examples) | [Memory_model/](https://github.com/ARM-software/m-profile-user-guide-examples/tree/main/Memory_model)
+| Memory Model  | [Armv8-M Memory model and MPU user guide](https://developer.arm.com/documentation/107565/) | [Use case examples](https://developer.arm.com/documentation/107565/0100/Use-case-examples) | [Memory_model/](https://github.com/ARM-software/m-profile-user-guide-examples/tree/main/Memory_model) |
+| Exception Model | [Armv8-M Exception model user guide] (https://developer.arm.com/documentation/102412/latest/) | [Use case examples] (https://developer.arm.com/documentation/102412/latest/0100/Use-case-examples) | [Exception_model/] (https://github.com/ARM-software/m-profile-user-guide-examples/tree/main/Exception_model)
 
 To understand the basics and general information about the example projects, refer to [Generic Information](https://developer.arm.com/documentation/107565/0100/Use-case-examples/Generic-Information). For details on each example project, refer to the Readme available within it.
 
@@ -54,5 +55,5 @@ Example projects are licensed under the MIT2.0 license. Please see the [LICENSE]
 
 ----
 
-*Copyright 2022, Arm Limited*
+*Copyright 2022-2023, Arm Limited*
 

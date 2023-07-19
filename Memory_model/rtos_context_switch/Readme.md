@@ -1,10 +1,4 @@
-<!--
-SPDX-FileCopyrightText: Copyright 2022 Arm Limited <open-source-office@arm.com>
-SPDX-License-Identifier: MIT
--->
-
-
-# Example Project - rtos_context_switch
+# rtos_context_switch
 
 This example demonstrates the functionality of the Memory Protection Unit (MPU). It should not be used as a test to validate all aspects of the MPU.
 
@@ -29,7 +23,7 @@ In this example:
 - The SysTick handler is responsible for context switching and MPU reprogramming. Note that the Systick handler is always executed in privileged mode and uses the main stack pointer (MSP). MPU reprogramming is needed for process isolation between threads.
 - A scatter file is used to place code and data in specific memory areas of the device. The symbols used  in the scatter-file to describe the different load and execution regions are used when programming and reprogramming the MPU regions.
 
-More elaborate details about this example can be found in [Armv8-M Memory Model and MPU User Guide - Use case examples](https://developer.arm.com/documentation/107565/0100/Use-case-examples/rtos-context-switch).
+More details about this example can be found in Armv8-M Memory Model and MPU User Guide - Section:5 - Use case examples
 
 
 ## Building the example
@@ -48,10 +42,10 @@ This example is intended to be built with Arm Compiler for Embedded 6. If you wi
 
 ## Running the example
 
-The executable is intended for running on an Armv8-M FVP model supplied with Arm Development Studio. A ready-made launch configuration *m33connection.launch* is provided.
+The executable is intended for running on an Armv8-M FVP model supplied with Arm Development Studio. A ready-made launch configuration *rtos_context_switch.launch* is provided.
 
 1. Select Run → Debug Configurations....
-2. Select *m33connection* from the list of Generic Arm C/C++ Application configurations.
+2. Select *rtos_context_switch* from the list of Generic Arm C/C++ Application configurations.
 3. Click on Debug to start debugging. The executable image will be downloaded to the target and the program counter set to `main`.
 4. Run the executable (press F8). Text output appears in the Target Console view.
 

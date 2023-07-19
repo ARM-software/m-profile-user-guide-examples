@@ -2,8 +2,8 @@
  * Auto generated Run-Time-Environment Component Configuration File
  *      *** Do not modify ! ***
  *
- * Project: MPU_Mem_Access_Trap
- * RTE configuration: MPU_Mem_Access_Trap.rteconfig
+ * Project: trap_access
+ * RTE configuration: trap_access.rteconfig
 */
 #ifndef RTE_COMPONENTS_H
 #define RTE_COMPONENTS_H

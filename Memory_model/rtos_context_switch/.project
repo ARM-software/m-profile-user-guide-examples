@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>MPU_and_my_RTOS_armv8m</name>
+	<name>rtos_context_switch</name>
 	<comment></comment>
 	<projects>
 	</projects>

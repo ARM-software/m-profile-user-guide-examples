@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>MPU_Mem_Access_Trap</name>
+	<name>trap_access</name>
 	<comment></comment>
 	<projects>
 	</projects>

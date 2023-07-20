@@ -30,8 +30,10 @@ The example software projects are organised as per their architecture extension 
 
 | Architecture category | User Guide | Chapter | Folder name |
 | --------------------- | -----------| --------| ------------| 
-| Memory Model  | [Armv8-M Memory model and MPU user guide](https://developer.arm.com/documentation/107565/) | [Use case examples](https://developer.arm.com/documentation/107565/0100/Use-case-examples) | [Memory_model/](https://github.com/ARM-software/m-profile-user-guide-examples/tree/main/Memory_model) |
-| Exception Model | [Armv8-M Exception model user guide](https://developer.arm.com/documentation/102412/latest/) | [Use case examples](https://developer.arm.com/documentation/102412/latest/0100/Use-case-examples) | [Exception_model/](https://github.com/ARM-software/m-profile-user-guide-examples/tree/main/Exception_model)
+| Programmers' Model | [Armv8-M Programmers Model User Guide] (https://developer.arm.com/documentation/107656/latest/) | - | - |
+| Exception Model | [Armv8-M Exception model user guide](https://developer.arm.com/documentation/102412/latest/) | [Use case examples](https://developer.arm.com/documentation/107706/0100/Use-case-examples) | [Exception_model/](https://github.com/ARM-software/m-profile-user-guide-examples/tree/main/Exception_model) |
+| Memory Model  | [Armv8-M Memory model and MPU user guide](https://developer.arm.com/documentation/107565/latest/) | [Use case examples](https://developer.arm.com/documentation/107565/0101/Use-case-examples) | [Memory_model/](https://github.com/ARM-software/m-profile-user-guide-examples/tree/main/Memory_model) |
+
 
 To understand the basics and general information about the example projects, refer to [Generic Information](https://developer.arm.com/documentation/107565/0100/Use-case-examples/Generic-Information). For details on each example project, refer to the Readme available within it.
 

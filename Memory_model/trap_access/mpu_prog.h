@@ -26,7 +26,7 @@
  */
 
 
-// The following symbols are Arm Compiler toolchain specific:
+/* Symbols extracted from scatter file for Arm Compiler 6 toolchain */
 extern unsigned int Image$$ER_ROM$$Base;
 extern unsigned int Image$$ER_ROM$$Limit;
 extern unsigned int Image$$RW_RAM$$Base;

@@ -11,12 +11,10 @@ To guarantee that the example works, the same versions of the tools must be used
 
 ## Purpose and scope
 
-This example aims to show:
+This example demonstrates how to use BASEPRI register setting and its effect on exceptions.
 
-- Generating several IRQ interrupts with different preemption priority.
-- Defining the minimum priority for exception processing by setting BASEPRI and observing the exception status (especially masked exceptions).
 
-More details about this example can be found in Armv8-M Exception Handling User Guide - chapter:5 - Use case examples
+More details about this example can be found in Chapter:Use-Case-Examples of [Armv8-M Exception Model User Guide](https://developer.arm.com/documentation/107706/latest/)
 
 ## Building the example
 
@@ -41,16 +39,15 @@ The executable is intended for running on an Armv8-M FVP model supplied with Arm
 3. Click on Debug to start debugging. The executable image will be downloaded to the target and the program counter set to `main`.
 4. Run the executable (press F8). Text output appears in the Target Console view.
 
+> [NOTE]In Breakpoints view at Arm DS, you can use the "Manage Signals" feature to trap exceptions in Debugger. Code execution will stop when a selected exception occurs, so you can clearly see exactly when an exception occurs. 
+
 Additional Material:
 
-Arm Development Studio Getting Started Guide
-https://developer.arm.com/documentation/101469
+[Arm Development Studio Getting Started Guide](https://developer.arm.com/documentation/101469)
 
-Arm Development Studio User Guide
-https://developer.arm.com/documentation/101470
+[Arm Development Studio User Guide](https://developer.arm.com/documentation/101470)
 
-Arm Development Studio Debugger Command Reference
-https://developer.arm.com/documentation/101471
+[Arm Development Studio Debugger Command Reference](https://developer.arm.com/documentation/101471)
 
 ## Output in Target Console:
 
@@ -58,27 +55,27 @@ At this example, three IRQ interrupts are enable with priority setting - IRQ2 = 
 
 
 ```
-Example Project: priority-boost-types Start
+Example Project: priority-boost-types Start 
 BASEPRI is set with triggering IRQ0 and IRQ1! 
 We are in IRQ 1 Handler!
 Setting IRQ 2 to pend 
 We are in IRQ 2 Handler!
-The excep num of the highest priority pending excep is 16 
+The number of the highest priority pending exception is 16 
 There is more than one active exception. 
-The excep num of the highest priority active excep is 18 
-The excep num of the highest priority pending excep is 16 
+The number of the highest priority active exception is 18 
+The number of the highest priority pending exception is 16 
 There is only one active exception. 
-The excep num of the highest priority active excep is 17 
-The excep num of the highest priority pending excep is 16 
+The number of the highest priority active exception is 17 
+The number of the highest priority pending exception is 16 
 BASEPRI is clear! 
 We are in IRQ 0 Handler!
 There is only one active exception. 
-The excep num of the highest priority active excep is 16 
-printf("Example Project: priority-boost-types End
+The number of the highest priority active exception is 16 
+Example Project: priority-boost-types End 
 ```
 
 The priority of IRQ1 is higher than BASEPRI and the priority of IRQ0 is lower than BASEPRI, so IRQ0 will be masked and pended. As we trigger IRQ2 at IRQ1_Handler because the priority of IRQ2 is higher than BASEPRI and IRQ1's, so it will preempt the IRQ1 handling.
 
 As the result shows, when the execution is in IRQ2 handler, there is more than one active exception and the highest priority active exception is IRQ2, with only one pending exception IRQ0. After handling IRQ2, the program is going to handle IRQ1, then it will print the active and pending status of exception at IRQ1 handler.
 
-As we clear the BASEPRI, the rest pending exception will be handled following the value of preemption priority. The final output lines mean that IRQ0 is active and is going to be handled.
+As we clear the BASEPRI, the rest pending exception will be handled following the value of preemptive priority. The final output lines mean that IRQ0 is active and is going to be handled.

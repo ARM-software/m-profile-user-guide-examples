@@ -3,56 +3,56 @@
     <stringAttribute key="*" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;page&gt;&#10;&#9;&lt;memoryView displayWidthTag=&quot;BYTE_4&quot; numberOfColumns=&quot;16&quot; formatTag=&quot;Hexadecimal&quot;/&gt;&#10;&lt;/page&gt;&#10;"/>
     <booleanAttribute key="ADAPTIVE_CLOCK" value="false"/>
     <mapAttribute key="AverageDurationTracker">
-        <mapEntry key="*Fetching Data Model" value="621001"/>
-        <mapEntry key="*list global low level symbols" value="1033752"/>
+        <mapEntry key="*Fetching Data Model" value="196662"/>
+        <mapEntry key="*list global low level symbols" value="652402"/>
         <mapEntry key="*loading memory from target" value="1430242"/>
         <mapEntry key="*loading values from target" value="2745217"/>
         <mapEntry key="*trace" value="80798576"/>
         <mapEntry key="*updating registers" value="10610290"/>
         <mapEntry key="*updating variables" value="416500"/>
-        <mapEntry key="AddEventObserver" value="2894210"/>
-        <mapEntry key="Evaluate" value="1486503"/>
+        <mapEntry key="AddEventObserver" value="1721863"/>
+        <mapEntry key="Evaluate" value="956356"/>
         <mapEntry key="ListRegimeWarningsCommand" value="231364"/>
         <mapEntry key="Retrieving globals list" value="14034495"/>
         <mapEntry key="areCachesAvailable" value="439658"/>
-        <mapEntry key="break" value="3002028"/>
+        <mapEntry key="break" value="2432005"/>
         <mapEntry key="checking tracepoints" value="444773"/>
-        <mapEntry key="compute execution mode" value="1425918"/>
+        <mapEntry key="compute execution mode" value="880277"/>
         <mapEntry key="console" value="874714"/>
-        <mapEntry key="continue" value="14723920"/>
+        <mapEntry key="continue" value="4242540"/>
         <mapEntry key="disable" value="655050"/>
-        <mapEntry key="disassemble" value="80002227"/>
+        <mapEntry key="disassemble" value="59004681"/>
         <mapEntry key="enable" value="1186400"/>
-        <mapEntry key="evaluate address" value="1375750"/>
+        <mapEntry key="evaluate address" value="1172256"/>
         <mapEntry key="finish" value="8592925"/>
         <mapEntry key="get byte order" value="323132"/>
-        <mapEntry key="get capabilities" value="163072"/>
+        <mapEntry key="get capabilities" value="141771"/>
         <mapEntry key="get cwd" value="384843"/>
-        <mapEntry key="get execution addresss" value="319147"/>
-        <mapEntry key="get source lines" value="375068"/>
+        <mapEntry key="get execution addresss" value="365135"/>
+        <mapEntry key="get source lines" value="342820"/>
         <mapEntry key="getValidEncodings" value="519166"/>
-        <mapEntry key="initialize command help" value="58668303"/>
-        <mapEntry key="interrupt" value="2144118691"/>
-        <mapEntry key="list breakpoint options" value="222047"/>
-        <mapEntry key="list breakpoints" value="690513"/>
-        <mapEntry key="list instruction sets" value="519456"/>
-        <mapEntry key="list signals" value="12883784"/>
+        <mapEntry key="initialize command help" value="47170225"/>
+        <mapEntry key="interrupt" value="2493907472"/>
+        <mapEntry key="list breakpoint options" value="168886"/>
+        <mapEntry key="list breakpoints" value="559651"/>
+        <mapEntry key="list instruction sets" value="170644"/>
+        <mapEntry key="list signals" value="5292710"/>
         <mapEntry key="list translations" value="502742"/>
-        <mapEntry key="list watchpoint options" value="1157486"/>
-        <mapEntry key="list watchpoints" value="650211"/>
-        <mapEntry key="loadfile" value="67232369"/>
+        <mapEntry key="list watchpoint options" value="271635"/>
+        <mapEntry key="list watchpoints" value="459838"/>
+        <mapEntry key="loadfile" value="26833233"/>
         <mapEntry key="read memory map" value="35784050"/>
         <mapEntry key="remove" value="1666343"/>
-        <mapEntry key="set CWD" value="2190009"/>
-        <mapEntry key="set breakpoint properties" value="3860018"/>
-        <mapEntry key="set debug-from" value="1328145"/>
-        <mapEntry key="start" value="58992537"/>
+        <mapEntry key="set CWD" value="1075688"/>
+        <mapEntry key="set breakpoint properties" value="3377055"/>
+        <mapEntry key="set debug-from" value="893918"/>
+        <mapEntry key="start" value="22634929"/>
         <mapEntry key="step" value="43562489"/>
         <mapEntry key="stepi" value="51748731"/>
         <mapEntry key="synchronizing trace ranges" value="90097"/>
         <mapEntry key="toggleBreakpoint" value="3750729"/>
         <mapEntry key="updating MMU tables" value="1764898"/>
-        <mapEntry key="waitForTargetToStop" value="28682729"/>
+        <mapEntry key="waitForTargetToStop" value="22390366"/>
         <mapEntry key="write expression" value="1543555"/>
     </mapAttribute>
     <stringAttribute key="CLOCK_SPEED" value="Auto"/>
@@ -146,8 +146,6 @@
     <listAttribute key="com.arm.debug.views.common.AddressTracker.debugger.view.DisassemblyView.addresses">
         <listEntry value="&lt;Next Instruction&gt;"/>
         <listEntry value=""/>
-        <listEntry value="0x21000014"/>
-        <listEntry value="0x000007c2"/>
         <listEntry value="main"/>
         <listEntry value="main"/>
         <listEntry value="__main"/>
@@ -157,8 +155,6 @@
     <listAttribute key="com.arm.debug.views.common.AddressTracker.debugger.view.DisassemblyView.ranges">
         <listEntry value="100"/>
         <listEntry value=""/>
-        <listEntry value="100"/>
-        <listEntry value="100"/>
         <listEntry value="500"/>
         <listEntry value="100"/>
         <listEntry value="100"/>

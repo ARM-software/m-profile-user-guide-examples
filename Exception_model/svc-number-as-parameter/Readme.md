@@ -1,6 +1,6 @@
 # Example Project - svc-number-as-parameter
 
-The Cortex-M cores support the SuperVisor Call (SVC) instruction, with that the user can trigger an exception. This can become handy if i.e. the core is in unprivileged mode and the program needs to access special registers, that only can be accessed in privileged mode. SVC instruction also has a parameter (for Thumb code 0-255) to select different SVC functions like enabling privileged mode. 
+Cortex-M cores support the SuperVisor Call (SVC) instruction, which triggers an SVC exception. This is useful if the core is in unprivileged mode, but the program needs to access features of the core (e.g special registers) that only can be accessed in privileged mode. SVC instruction also has a parameter (for Thumb code 0-255) to select different SVC functions like enabling privileged mode. 
 This example demonstrates how to select different functions built-in within a program by using SVC number as a parameter.
 
 To guarantee that the example works, the same versions of the tools must be used. The example may work using other versions of the tools but it is not guaranteed. This example project was created, built and run using:
@@ -17,7 +17,7 @@ This example aims to show:
 - Executing different SVC instructions and designating SVC #number for different functions.
 - Getting the stacked return state and address. 
 
-More details about this example can be found in Armv8-M Exception Handling User Guide - chapter:5 - Use case examples
+More details about this example can be found in Chapter:Use-Case-Examples of [Armv8-M Exception Model User Guide](https://developer.arm.com/documentation/107706/latest/)
 
 ## Building the example
 
@@ -42,16 +42,15 @@ The executable is intended for running on an Armv8-M FVP model supplied with Arm
 3. Click on Debug to start debugging. The executable image will be downloaded to the target and the program counter set to `main`.
 4. Run the executable (press F8). Text output appears in the Target Console view.
 
+> [NOTE]In Breakpoints view at Arm DS, you can use the "Manage Signals" feature to trap exceptions in Debugger. Code execution will stop when a selected exception occurs, so you can clearly see exactly when an exception occurs. 
+
 Additional Material:
 
-Arm Development Studio Getting Started Guide
-https://developer.arm.com/documentation/101469
+[Arm Development Studio Getting Started Guide](https://developer.arm.com/documentation/101469)
 
-Arm Development Studio User Guide
-https://developer.arm.com/documentation/101470
+[Arm Development Studio User Guide](https://developer.arm.com/documentation/101470)
 
-Arm Development Studio Debugger Command Reference
-https://developer.arm.com/documentation/101471
+[Arm Development Studio Debugger Command Reference](https://developer.arm.com/documentation/101471)
 
 ## Output in Target Console:
 
@@ -59,23 +58,23 @@ At this example, three different SVC exception are triggered in turn. Each numbe
 
 
 ```
-Example Project: svc-number-as-parameter Start
-The return address is 0x00001e94 
+Example Project: svc-number-as-parameter Start 
+The return address is 0x00001140 
 The stacked return state is 0xfffffff9 
 svc_number is 1 
 The result of R0+R1 is 12!
 The first routine is completed !
-The return address is 0x00001eaa 
+The return address is 0x00001156 
 The stacked return state is 0xfffffff9 
 svc_number is 2 
 The result of R0*R1 is 36!
 The second routine is completed !
-The return address is 0x00001ec0 
+The return address is 0x00001166 
 The stacked return state is 0xfffffff9 
 svc_number is 3 
 The result of R0 mod R1 is 6!
 The third routine is completed !
-Example Project: svc-number-as-parameter End
+Example Project: svc-number-as-parameter End 
 ```
 
 The SVC exception causes the processor to create a stack frame on the currently active stack, to preserve information about the state of the currently executing code stream. Basically, callee registers will be saved into stack automatically, which can be judged by EXC_RETURN value. 

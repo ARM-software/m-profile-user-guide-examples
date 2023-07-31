@@ -1,6 +1,11 @@
 # TCM_implement
 
-This example demonstrates how to configure and use the Tightly Coupled Memory(TCM). TCM provides guaranteed low-latency memory access that the core can use without the unpredictability of access time with cached main memory. At this example, vector table and exception handlers which need deterministic timing and cannot wait for cache misses can be put at TCM.
+Tightly Coupled Memory (TCM) provides low-latency memory access. It can be used to hold time-critical routines, such as interrupt handlers and real-time tasks where the indeterminacy of a cache is undesirable. In addition, TCM can be used to hold critical data structures like interrupt stacks.
+
+This example aims to show:
+
+How to enable the TCM.
+How to place latency-critical code in ITCM and latency-critical data in DTCM.
 
 To guarantee that the example works, the same versions of the tools must be used. The example may work using other versions of the tools but it is not guaranteed. This example project was created, built and run using:
 
@@ -13,16 +18,20 @@ To guarantee that the example works, the same versions of the tools must be used
 
 This example shows how to create software that uses TCMs for latency critical code, while the rest of the code is placed in cacheable memory. Cortex-M55 is the target used for this example, as the Cortex-M55 processor can optionally include Tightly Coupled Memories (TCMs).
 
-- The code tries to represent a very simplified control system for a deposit, which controls filling and emptying the deposit depending on the volume and the speed used when stirring the content of the deposit.
-- The code that controls the stirring is part of `main` and is not latency critical, so it uses cacheable memory 
-- The code that controls filling and emptying the deposit is latency critical code. Therefore, the code is placed in ITCM and the variables used are placed in the DTCM. This code corresponds to the SysTick handler also at TCM. The volume of the deposit is checked and filled at a defined interval, when the SysTick interrupt is triggered.
-- The MPU is programmed so the regions for the ITCM and DTCM in the scatter file are non-cacheable, while the rest of the memory is cacheable.
-
-An execution flow chart for this example project is here shown:
+This example simulates a simple deposit mechanism as shown in the following diagram:
 
 ![Execution Flow Chart](flowchart.png)
 
-This example is intended to be built with Arm Compiler for Embedded 6. If you wish to modify and rebuild the example, you must use Arm Compiler for Embedded 6 to rebuild it.
+In this mechanism, the container is filled using the inlet nozzle, and emptied using an outlet nozzle. If the container is full and about to spill over, then the inlet should be stopped and the outlet opened. Periodically, the volume of the deposit in the container should be checked so that the inlet and outlet nozzle can be controlled properly.
+
+To achieve the objective of simulating this deposit mechanism, the example is divided into two sections:
+
+- Latency-critical code
+- Non-latency critical code
+
+To check the volume of the deposit in the container, a SysTick Timer is configured to trigger a SysTick exception periodically. In the SysTick handler, the volume of the deposit is checked. Because it is important to take immediate action if the container is about to spill over, the SysTick handler checks should be executed as soon as possible. Therefore the SysTick handler is considered latency-critical, and located at ITCM. However, other code sequences are not considered latency-critical, and can be placed in normal RAM and ROM.
+
+This example is intended to be built with Arm Compiler for Embedded 6.
 
 The executable is intended for running on an Arm Cortex-M55 FVP model supplied with Arm Development Studio.
 
@@ -76,17 +85,15 @@ To build the supplied projects within the IDE:
 3. Click on Debug to start debugging. The executable image will be downloaded to the target and the program counter set to the entry point of the application.
 4. Run the executable (press F8). Text output appears in the Target Console view.
 
+> [NOTE]In Breakpoints view at Arm DS, you can use the "Manage Signals" feature to trap exceptions in Debugger. Code execution will stop when a selected exception occurs, so you can clearly see exactly when an exception occurs. 
 
 Additional Material:
 
-Arm Development Studio Getting Started Guide
-https://developer.arm.com/documentation/101469
+[Arm Development Studio Getting Started Guide](https://developer.arm.com/documentation/101469)
 
-Arm Development Studio User Guide
-https://developer.arm.com/documentation/101470
+[Arm Development Studio User Guide](https://developer.arm.com/documentation/101470)
 
-Arm Development Studio Debugger Command Reference
-https://developer.arm.com/documentation/101471
+[Arm Development Studio Debugger Command Reference](https://developer.arm.com/documentation/101471)
 
 
 ## Output in Target Console:
@@ -142,9 +149,9 @@ From the output, the monitoring of the deposit system will be observed. For each
 
 For executing the project at AN555 image (Cortex-M85), the memory regions need to be changed, which will follow the memory map in AN555 image. 
 
-Once we relocate the VTOR at real board, the booting address for next execution will be changed too. If we don't connect the debugger (Arm Dstream), the booting address will be read from the board configuration, so we need to change the config file; while, the booting address is loaded by debugger, which we don't revise manually.
+Once we relocate the VTOR at real board, the booting address for next execution will be changed too. If Arm DSTREM debugger is not connected, then the booting address will be read from board configuration file. Hence it is important that booting address is changed manually in board configuration file.
 
-With the above changes, open the semihosting debug in the project, and connect with debugger, the following output will be shown in the app console:
+With the above changes, open the semihosting debug in the ArmDS project, connect with debugger and the following output will be shown in the app console:
 
 ```
 Arm MPS3 FPGA Prototyping Board Test Suite

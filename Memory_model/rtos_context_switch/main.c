@@ -57,12 +57,13 @@ int main (void) {
 
     initMPUConfigs();
 
+    /* Create new threads */
     newThread(thrA, threadA_stk, &threadAContext, mpuCfgA, ID_THREAD_A);
     newThread(thrB, threadB_stk, &threadBContext, mpuCfgB, ID_THREAD_B);
 
-    // First thread to execute is Thread A. We set the current context to Thread B,
-    // so it is as if Thread B was the last thread executed.
-    // Then, the context switching routine knows it is now turn for thread A be executed.
+    /* First thread to execute is Thread A. Hence, set the current context to Thread B,
+     * so that it looks like as if Thread B was the last thread executed.
+     * Now,the context switching routine handles thread A be executed up next. */
 
     currentContext = &threadBContext;
     __set_PSP((uint32_t)(currentContext -> sp));

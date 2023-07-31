@@ -36,11 +36,11 @@ uint32_t pent;
 uint32_t idx_p;
 
 
+/* This is Thread B, which calculates and prints the numbers in the Pentagonal sequence */
 void thrB (void) {
     pent = 1;
     idx_p = 1;
 
-    // This is Thread B, which calculates and prints the numbers in the Pentagonal sequence
     while(1){
 
         pent = (3*idx_p*idx_p - idx_p)/2;

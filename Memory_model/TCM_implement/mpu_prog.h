@@ -25,6 +25,7 @@
  *
  */
 
+/* Declaration of memory regions in linker scripts*/
 extern unsigned int Image$$ITCM$$Base;
 extern unsigned int Image$$ITCM$$Limit;
 

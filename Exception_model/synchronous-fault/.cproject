@@ -22,7 +22,7 @@
 							<targetPlatform id="com.arm.eclipse.build.config.v6.exe.debug.base.var.arm_compiler_6-6.1670906279..1924967011" name=""/>
 							<builder buildPath="${workspace_loc:/synchronous-fault}/Debug" id="com.arm.toolchain.v6.builder.1758092286" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" superClass="com.arm.toolchain.v6.builder"/>
 							<tool id="com.arm.tool.c.compiler.v6.base.var.arm_compiler_6-6.1911883144" name="Arm C Compiler for Embedded 6" superClass="com.arm.tool.c.compiler.v6.base.var.arm_compiler_6-6">
-								<option defaultValue="com.arm.tool.c.compiler.v6.base.option.optlevel.min" id="com.arm.tool.c.compiler.v6.base.option.optlevel.1924368890" name="Optimization level" superClass="com.arm.tool.c.compiler.v6.base.option.optlevel" useByScannerDiscovery="true" valueType="enumerated"/>
+								<option defaultValue="com.arm.tool.c.compiler.v6.base.option.optlevel.min" id="com.arm.tool.c.compiler.v6.base.option.optlevel.1924368890" name="Optimization level" superClass="com.arm.tool.c.compiler.v6.base.option.optlevel" useByScannerDiscovery="true" value="com.arm.tool.c.compiler.v6.base.option.optlevel.restrict" valueType="enumerated"/>
 								<option defaultValue="com.arm.tool.c.compiler.v6.base.options.debug.level.std" id="com.arm.tool.c.compiler.v6.base.options.debug.level.1215511359" name="Debug Level" superClass="com.arm.tool.c.compiler.v6.base.options.debug.level" useByScannerDiscovery="true" valueType="enumerated"/>
 								<option id="com.arm.tool.c.compiler.v6.base.option.arch.1080610046" name="Architecture (-march)" superClass="com.arm.tool.c.compiler.v6.base.option.arch" useByScannerDiscovery="true" value="armv8-m.main" valueType="string"/>
 								<option id="com.arm.tool.c.compiler.v6.base.option.target.2010473064" name="Target (--target)" superClass="com.arm.tool.c.compiler.v6.base.option.target" useByScannerDiscovery="true" value="arm-arm-none-eabi" valueType="string"/>
@@ -39,8 +39,9 @@
 								</option>
 								<option id="com.arm.tool.c.compiler.v6.base.option.lang.1145692929" name="Source language mode" superClass="com.arm.tool.c.compiler.v6.base.option.lang" useByScannerDiscovery="true" value="com.arm.tool.c.compiler.v6.base.option.lang.c99" valueType="enumerated"/>
 								<option id="com.arm.tool.c.compiler.v6.base.option.inst.1680940145" name="Instruction set" superClass="com.arm.tool.c.compiler.v6.base.option.inst" useByScannerDiscovery="true" value="com.arm.tool.c.compiler.v6.base.option.inst.thumb" valueType="enumerated"/>
-								<option id="com.arm.tool.c.compiler.v6.base.options.target.enableToolSpecificSettings.1250855819" name="Enable tool specific settings" superClass="com.arm.tool.c.compiler.v6.base.options.target.enableToolSpecificSettings" useByScannerDiscovery="false" value="false" valueType="boolean"/>
+								<option id="com.arm.tool.c.compiler.v6.base.options.target.enableToolSpecificSettings.1250855819" name="Enable tool specific settings" superClass="com.arm.tool.c.compiler.v6.base.options.target.enableToolSpecificSettings" useByScannerDiscovery="false" value="true" valueType="boolean"/>
 								<option id="com.arm.tool.c.compiler.v6.base.option.fpu.1062439005" name="FPU (-mfpu)" superClass="com.arm.tool.c.compiler.v6.base.option.fpu" useByScannerDiscovery="true" value="" valueType="string"/>
+								<option id="com.arm.tool.c.compiler.v6.base.options.opt.enableToolSpecificSettings.1617467220" name="Enable tool specific settings" superClass="com.arm.tool.c.compiler.v6.base.options.opt.enableToolSpecificSettings" useByScannerDiscovery="false" value="true" valueType="boolean"/>
 								<inputType id="com.arm.tool.c.compiler.v6.base.input.1176937113" superClass="com.arm.tool.c.compiler.v6.base.input"/>
 							</tool>
 							<tool id="com.arm.tool.cpp.compiler.v6.base.var.arm_compiler_6-6.1750401804" name="Arm C++ Compiler for Embedded 6" superClass="com.arm.tool.cpp.compiler.v6.base.var.arm_compiler_6-6">
@@ -83,6 +84,9 @@
 								<option id="com.arm.tool.c.linker.option.scatter.130533891" name="Scatter file (--scatter)" superClass="com.arm.tool.c.linker.option.scatter" useByScannerDiscovery="false" value="${workspace_loc:/${ProjName}}/RTE/Device/ARMv8MML_DP/ARMv8MML_ac6.sct" valueType="string"/>
 								<option id="com.arm.tool.linker.v6.base.options.target.enableToolSpecificSettings.272535849" name="Enable tool specific settings" superClass="com.arm.tool.linker.v6.base.options.target.enableToolSpecificSettings" useByScannerDiscovery="false" value="false" valueType="boolean"/>
 								<option id="com.arm.tool.c.linker.v6.option.fpu.302229217" name="Target FPU (--fpu)" superClass="com.arm.tool.c.linker.v6.option.fpu" useByScannerDiscovery="true" value="" valueType="string"/>
+								<option id="com.arm.tool.c.linker.option.elim.1666381599" name="List unused sections that are eliminated (--info=unused)" superClass="com.arm.tool.c.linker.option.elim" useByScannerDiscovery="false" value="false" valueType="boolean"/>
+								<option id="com.arm.tool.linker.v6.option.opt.enableToolSpecificSettings.1381846160" name="Enable tool specific settings" superClass="com.arm.tool.linker.v6.option.opt.enableToolSpecificSettings" useByScannerDiscovery="false" value="false" valueType="boolean"/>
+								<option id="com.arm.tool.c.linker.option.eleminate.1351519506" name="Eliminate unused sections (--remove)" superClass="com.arm.tool.c.linker.option.eleminate" useByScannerDiscovery="false" value="true" valueType="boolean"/>
 							</tool>
 							<tool id="com.arm.tool.librarian.v6.base.var.arm_compiler_6-6.1729760353" name="Arm Librarian 6" superClass="com.arm.tool.librarian.v6.base.var.arm_compiler_6-6"/>
 						</toolChain>

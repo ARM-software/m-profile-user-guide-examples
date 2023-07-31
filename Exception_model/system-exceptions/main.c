@@ -46,6 +46,11 @@
 #include <assert.h>
 
 
+/**
+  \brief        Overwrite SysTick handler
+  \details      print the exception status and pend PendSV.
+                PendSV doesn't preempt the SysTick since PendSV has lower exception number.
+ */
 extern void SysTick_Handler(void){
   printf("We are in SysTick_Handler! \n");
   printf("The pending and active status are \n        "
@@ -66,6 +71,10 @@ extern void SysTick_Handler(void){
 }
 
 
+/**
+  \brief        Overwrite PendSV handler
+  \details      print the exception status.
+ */
 extern void PendSV_Handler(void){
   printf("We are in PendSV_Handler! \n");
   printf("The pending and active status are \n        "
@@ -76,9 +85,8 @@ extern void PendSV_Handler(void){
 
 int main(){
   /* ===========================================
-   * NOTE:
-   * This example is to show how to trigger PendSV and SysTick exception
-   * which are commonly used in OS environment.
+   * This example demonstrates how to generate built-in system exceptions 
+   * such as PendSV and SysTick that are commonly used in OS environment.
    * =========================================== */
 
   printf("Example Project: system-exceptions Start \n");

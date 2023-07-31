@@ -27,7 +27,7 @@
 #ifndef SCHEDULER_H_
 #define SCHEDULER_H_
 
-/* Params for Task Context definition */
+/* Parameters for Task Context definition */
 /* Two task threads and one idle thread */
 #define TASK_NUM_MAX                 3
 #define TASK_STACK_SIZE              2048u
@@ -62,6 +62,7 @@ void task2(void);
 #define STK_FRAME_RET_ADDR           (6+NUM_CALLEE_REGS)
 #define STK_FRAME_XPSR               (7+NUM_CALLEE_REGS)
 
+/* Declaration for PSP stack */
 extern uint32_t Image$$PSP_STACK$$ZI$$Base;
 
 void TerminateTask(void);

@@ -39,14 +39,18 @@
 
 int main(){
   /* ===========================================
-   * NOTE:
-   * This example is to show the interrupt deprivileging, which is used to
-   * enable services of peripherals where some of them communicate via interrupts.
-   * Please enable CCR.NONBASETHRDENA bit if testing at Arm v7m device.
+   * This example demonstrates the concept of
+   * interrupt deprivileging. This concept is 
+   * useful for creating sandboxes and is 
+   * used to enable services of peripherals 
+   * where some of them communicate through interrupts.
+   * 
+   * For platforms that use Arm7-M based devices,
+   * enable CCR.NONBASETHRDENA bit
    * =========================================== */
 
   printf("Example Project: interrupt-deprivileging Start \n");
-  /* Step1: in privileged background, set priority for IRQ, Mem fault and SVC */
+  /* Step1: in privileged background, set priority for IRQ, MemManage fault and SVC */
   setMPU();
   NVIC_SetPriority(Interrupt0_IRQn, IRQ0_PRI);
   NVIC_SetPriority(SVCall_IRQn, SVC_PRI);

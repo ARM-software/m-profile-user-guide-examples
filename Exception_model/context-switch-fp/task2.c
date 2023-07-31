@@ -47,8 +47,11 @@
 #include "scheduler.h"
 
 
+/**
+  \brief        Task 2 function
+  \details      Task2 will calculate the area of a circle.
+ */
 void task2 (void) {
-/* This is Task2, which calculates and prints the area of a circle */
   float circle;
   uint32_t r = 1;
 

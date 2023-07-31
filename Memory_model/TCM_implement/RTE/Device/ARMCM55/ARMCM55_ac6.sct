@@ -11,7 +11,7 @@
 
 /*--------------------- Flash Configuration ----------------------------------
 ; <h> Flash Configuration
-;   <o0> Flash Base Address <0x0-0xFFFFFFFF:8>
+;   <o0> Flash Base Address    <0x0-0xFFFFFFFF:8>
 ;   <o1> Flash Size (in Bytes) <0x0-0xFFFFFFFF:8>
 ; </h>
  *----------------------------------------------------------------------------*/
@@ -20,7 +20,7 @@
 
 /*--------------------- ITCM Configuration ----------------------------------
 ; <h> ITCM Configuration - 256KB
-;   <o0> ITCM Base Address <0x0-0xFFFFFFFF:8>
+;   <o0> ITCM Base Address    <0x0-0xFFFFFFFF:8>
 ;   <o1> ITCM Size (in Bytes) <0x0-0xFFFFFFFF:8>
 ; </h>
  *----------------------------------------------------------------------------*/
@@ -38,7 +38,7 @@
 
 /*--------------------- DTCM Configuration ----------------------------------
 ; <h> DTCM Configuration - 256KB
-;   <o0> DTCM Base Address <0x0-0xFFFFFFFF:8>
+;   <o0> DTCM Base Address    <0x0-0xFFFFFFFF:8>
 ;   <o1> DTCM Size (in Bytes) <0x0-0xFFFFFFFF:8>
 ; </h>
  *----------------------------------------------------------------------------*/
@@ -48,7 +48,7 @@
 /*--------------------- Stack / Heap Configuration ---------------------------
 ; <h> Stack / Heap Configuration
 ;   <o0> Stack Size (in Bytes) <0x0-0xFFFFFFFF:8>
-;   <o1> Heap Size (in Bytes) <0x0-0xFFFFFFFF:8>
+;   <o1> Heap Size (in Bytes)  <0x0-0xFFFFFFFF:8>
 ; </h>
  *----------------------------------------------------------------------------*/
 #define __STACK_SIZE    0x00010000
@@ -116,16 +116,16 @@ LR_ROM __RO_BASE __RO_SIZE  {                  ; load region size_region
    .ANY (+XO)
   } 
   
-  ITCM __ITCM_BASE __VectorTable_SIZE{
+  ITCM __ITCM_BASE __VectorTable_SIZE{         ; New vector table put at ITCM
     *Excep_prog.o (NewVT)
   }
   
-  ITCM_Code __ITCMCode_BASE __Code_SIZE{
+  ITCM_Code __ITCMCode_BASE __Code_SIZE{       ; Other code put at ITCM
     *check_is_full.o (+RO +XO)
     *armlib* (+RO +XO)
   }
   
-  DTCM __DTCM_BASE __DTCM_SIZE - __STACK_SIZE - __HEAP_SIZE {
+  DTCM __DTCM_BASE __DTCM_SIZE - __STACK_SIZE - __HEAP_SIZE {  ; Data in latency critical code put at DTCM
     *check_is_full.o (+RW +ZI)
     *armlib* (+RW +ZI)
   }

@@ -35,12 +35,12 @@ uint32_t threadA_stk[THREAD_STACK_SIZE];
 uint32_t term1, term2;
 uint32_t fibo;
 
+/* This is Thread A, which calculates and prints the numbers in the Fibonacci sequence */
 void thrA (void) {
     term1 = 0;
     term2 = 1;
     fibo = 0;
 
-    // This is Thread A, which calculates and prints the numbers in the Fibonacci sequence
     while(1){
 
         fibo = term1 + term2;

@@ -1,7 +1,6 @@
 # Example Project - interrupt-deprivileging
 
-This example demonstrates the simple achievement of interrupt deprivileging. Unprivileged thread program can be placed at independent domains and be limited access to memory and peripherals. To enable services of peripherals where some of the peripherals communicate via interrupts, it is important to provide partitions as a mean to handle interrupts along with isolation levels. In order to keep the isolation levels complete, interrupts are isolated using concept of deprivileging interrupt to create a sandbox. (The specific description can be seen at this web[1]).
-[1] https://developer.arm.com/documentation/ka001384/latest
+This example demonstrates the simple achievement of interrupt deprivileging. Unprivileged thread program can be placed at independent domains and be limited access to memory and peripherals. To enable services of peripherals where some of the peripherals communicate via interrupts, it is important to provide partitions as a mean to handle interrupts along with isolation levels. In order to keep the isolation levels complete, interrupts are isolated using concept of deprivileging interrupt to create a sandbox. To understand more details refer this [article](https://developer.arm.com/documentation/ka001384/latest).
 
 To guarantee that the example works, the same versions of the tools must be used. The example may work using other versions of the tools but it is not guaranteed. This example project was created, built and run using:
 
@@ -12,11 +11,9 @@ To guarantee that the example works, the same versions of the tools must be used
 
 ## Purpose and scope
 
-This example aims to show:
+This example aims to demonstrate how to implement interrupt-deprivileging concept available in Armv8-M architecture.
 
-- Implementing the privileged interrupts deprivileging via a SVC exception. 
-
-More details about this example can be found in Armv8-M Exception Handling User Guide - chapter:5 - Use case examples
+More details about this example can be found in Chapter:Use-Case-Examples of [Armv8-M Exception Model User Guide](https://developer.arm.com/documentation/107706/latest/)
 
 ## Building the example
 
@@ -40,16 +37,15 @@ The executable is intended for running on an Armv8-M FVP model supplied with Arm
 3. Click on Debug to start debugging. The executable image will be downloaded to the target and the program counter set to `main`.
 4. Run the executable (press F8). Text output appears in the Target Console view.
 
+> [NOTE]In Breakpoints view at Arm DS, you can use the "Manage Signals" feature to trap exceptions in Debugger. Code execution will stop when a selected exception occurs, so you can clearly see exactly when an exception occurs. 
+
 Additional Material:
 
-Arm Development Studio Getting Started Guide
-https://developer.arm.com/documentation/101469
+[Arm Development Studio Getting Started Guide](https://developer.arm.com/documentation/101469)
 
-Arm Development Studio User Guide
-https://developer.arm.com/documentation/101470
+[Arm Development Studio User Guide](https://developer.arm.com/documentation/101470)
 
-Arm Development Studio Debugger Command Reference
-https://developer.arm.com/documentation/101471
+[Arm Development Studio Debugger Command Reference](https://developer.arm.com/documentation/101471)
 
 ## Output in Target Console:
 
@@ -91,5 +87,5 @@ Example Project: interrupt-deprivileging End
 *Note: 
  - control register : bit[1] Stack-pointer select, 0 is to use MSP, 1 is to use PSP. 
                       bit[0] not privileged, 0 is for privileged access, 1 is for unprivileged access.
- - Configuration and control register : At Arm v7m, the CCR.NONBASETHRDENA bit is to control whether the processor can enter Thread mode at execution priority level by a fake exception return. If we want to test this example at device based on Arm v7m architecture, we are supposed to enable this bit. Details can be seen from [exception return behavior of Arm v7m](https://developer.arm.com/documentation/ddi0403/d/System-Level-Architecture/System-Level-Programmers--Model/ARMv7-M-exception-model/Exception-return-behavior?lang=en).
+ - Configuration and control register : At Arm-v7M, the CCR.NONBASETHRDENA bit is to control whether the processor can enter Thread mode at execution priority level by a fake exception return. If we want to test this example at device based on Arm-v7M architecture, we are supposed to enable this bit.
     

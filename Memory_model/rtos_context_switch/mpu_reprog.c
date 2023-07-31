@@ -48,6 +48,13 @@
 #include <stdlib.h>
 #include <stdint.h>
 
+
+/**
+  \brief        Reconfigure MPU with new set of memory attributes
+  \details      Reprogram Base and limit address of MPU regions with new configuration
+  \return       0, successfully set
+ */
+
 int reprogMPU(MpuRegionCfg  *mpuConf){
 
     for(unsigned int i = 0; i < MAX_MPU_REGIONS; i++){

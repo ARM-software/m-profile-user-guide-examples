@@ -29,11 +29,11 @@
 #ifndef IRQSET_H_
 #define IRQSET_H_
 
-/* Params for new vector table */
+/* Parameters for new vector table */
 #define VECTORTABLE_SIZE              48
 #define VECTORTABLE_ALIGNMENT         0x100U
 
-/* Params for pending different interrupts at each IRQ handler */
+/* Parameters for pending different interrupts at each IRQ handler */
 #define IRQ_PENDNum                   3 /* Number of IRQs to trigger */
 
 #define InIRQ0Handler                 0 /* Index for pending request array */
@@ -42,6 +42,7 @@
 
 #define IRQ_offset                   16 /* Exception Number offset for external interrupts */
 
+/* Declaration of origin vector table and pend request array */
 extern uint32_t __VECTOR_TABLE[];
 extern uint32_t IRQPendRequests[];
 

@@ -34,7 +34,7 @@
 #define SVC_PRI                 0x02
 
 
-/* Params for context stack */
+/* Parameters for context stack */
 #define PS_STACK_SIZE           0x100
 #define CalleeRegNum            8
 
@@ -48,7 +48,7 @@
 #define STK_FRAME_RET_ADDR      6
 #define STK_FRAME_XPSR          7
 
-
+/* Declaration of variables used in unprivileged mode */
 extern uint32_t deprivThreadStack[];
 extern uint32_t *deprivThreadStackPtr;
 

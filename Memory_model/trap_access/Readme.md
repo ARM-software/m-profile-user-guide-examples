@@ -1,4 +1,4 @@
-# Example Project - MPU_Mem_Access_Trap
+# Example Project - trap_access
 
 This example demonstrates the functionality of the Memory Protection Unit (MPU). It should not be used as a test to validate all aspects of the MPU.
 
@@ -14,10 +14,10 @@ To guarantee that the example works, the same versions of the tools must be used
 This example aims to show:
 
 - Basic programming of MPU regions.
-- Enabling the MPU and MemManage faults.
-- Deliberately triggering different MemManage faults to show how memory is protected by the MPU.
+- How to enable the MPU and MemManage faults?
+- Trigger MemManage faults to show how memory is protected by MPU
 
-More details about this example can be found in Armv8-M Memory Model and MPU User Guide - Section:5 - Use case examples
+More details about this example can be found in Chapter: Use-Case-Examples of [Armv8-M Memory Model and MPU User Guide](https://developer.arm.com/documentation/107565/latest/)
 
 ## Building the example
 
@@ -44,20 +44,17 @@ The executable is intended for running on an Armv8-M FVP model supplied with Arm
 
 Additional Material:
 
-Arm Development Studio Getting Started Guide
-https://developer.arm.com/documentation/101469
+[Arm Development Studio Getting Started Guide](https://developer.arm.com/documentation/101469)
 
-Arm Development Studio User Guide
-https://developer.arm.com/documentation/101470
+[Arm Development Studio User Guide](https://developer.arm.com/documentation/101470)
 
-Arm Development Studio Debugger Command Reference
-https://developer.arm.com/documentation/101471
+[Arm Development Studio Debugger Command Reference](https://developer.arm.com/documentation/101471)
 
 ## Output in Target Console:
 
 Consider the following scenarios:
 
-- Scenario:1 - Trying to write on a location in ROM. A MemManage fault is triggered and the MemManage handler is executed, showing the following output in target console:
+- Scenario:1 - Perform a write to a Read-only memory. This results in MemManage fault showing following output in target console:
 
 ```
 Example Project: trap_access Start
@@ -69,7 +66,7 @@ We are in the MemManage handler.
 Example Project: trap_access End
 ```
 
-- Scenario:2 - Trying to write on a background region, which is privileged. As we are in unprivileged mode, A MemManage fault is triggered and the MemManage handler is executed, showing the following output in target console
+- Scenario:2 - Read privileged memory from unprivileged state. This results in a  MemManage fault showing following output in target console
 
 ```
 Example Project: trap_access Start

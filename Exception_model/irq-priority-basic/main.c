@@ -49,12 +49,18 @@
 
 
 int main(){
-  /* ===========================================
-   * NOTE:
-   * This example includes 3 cases to show the basic priority setting,
-   * vector table relocation, IRQs preemption, tail-chaining behavior
-   * and effect of group priority and sub priority.
-   * =========================================== */
+  /* ========================================================
+   * This example provides a basic demonstration of interrupt
+   * configuration for Cortex-M processors. 
+   *
+   * The example covers the following areas:
+   * Nested exceptions 
+   * Pre-emption and tail-chaining behavior 
+   * Configuring Stack pointers, Stack limit registers 
+   * Purpose of the vector table and how to relocate it
+   * Setting up priority and meaning of group priority 
+   * and sub-priority
+   * ======================================================== */
 
   printf("Example Project: irq-priority-basic Start\n");
 
@@ -68,15 +74,16 @@ int main(){
   __DSB();
   __ISB();
 
+
+  /* Test cases of handling IRQs */
   for(uint32_t cases=IRQs_preemption; cases <= MAX_CASES;cases++){
     printf("\n");
 
     switch (cases){
       case 1:
-        /* ==================
+        /* ===============================
          * Case1: IRQs preemption
-         * Trigger 3 interrupts in turn and observe the preemption behavior
-         * ================== */
+         * ============================== */
 
         /* Step2: Set priorities for IRQs */
         NVIC_SetPriority(Interrupt0_IRQn, 0xFF);
@@ -94,10 +101,9 @@ int main(){
         break;
 
       case 2:
-        /* ==================
+        /* ===============================
          * Case2: IRQs tail-chaining
-         * Trigger 3 interrupts and observe the tail-chaining behavior
-         * ================== */
+         * ============================== */
 
         /* Step2: Set priorities for IRQs */
         NVIC_SetPriority(Interrupt0_IRQn, 0x44);
@@ -119,13 +125,15 @@ int main(){
         break;
 
       case 3:
-        /* ==================
+        /* =================================================
          * Case3: Effect of group priority and sub priority
-         * Programmable priority scheme as a 8-bit value, which is split into two
-         * fields -Group priority and sub priority.
-         * Preemption is based on only group priority. If multiple IRQs with same
-         * group priority, the order of handling IRQ depends sub priority.
-         * ================== */
+         *
+         * Programmable priority scheme as a 8-bit value. This
+         * is split into Group priority and sub priority fields.
+         * Preemption is based on only group priority. 
+         * If multiple exceptions with same group priority, the 
+         * order of handling exceptions depends sub priority.
+         * ================================================= */
 
         /* Step2: Set priorities for IRQs */
         /* IRQ0: group priority 3, sub priority 0 */
@@ -139,6 +147,7 @@ int main(){
 
           switch (sub_cases){
             case 1:
+              /* Trigger IRQ1 firstly, and pend IRQ0 at IRQ1 handler */
               IRQPendRequests[InIRQ1Handler] = 1 << (uint32_t)Interrupt0_IRQn;
               NVIC->ISPR[0] |= 1 << (uint32_t)Interrupt1_IRQn;
               __DSB();
@@ -147,6 +156,7 @@ int main(){
               break;
 
             case 2:
+              /* Trigger IRQ0,1 at once */
               NVIC->ISPR[0] |= 1 << (uint32_t)Interrupt0_IRQn|
                                1 << (uint32_t)Interrupt1_IRQn;
               __DSB();
@@ -155,6 +165,7 @@ int main(){
               break;
 
             case 3:
+              /* Trigger IRQ0,2 at once */
               NVIC->ISPR[0] |= 1 << (uint32_t)Interrupt0_IRQn|
                                1 << (uint32_t)Interrupt2_IRQn;
               __DSB();

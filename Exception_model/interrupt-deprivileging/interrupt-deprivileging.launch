@@ -2,47 +2,48 @@
 <launchConfiguration type="com.arm.debugger.launcher2">
     <booleanAttribute key="ADAPTIVE_CLOCK" value="false"/>
     <mapAttribute key="AverageDurationTracker">
-        <mapEntry key="*Fetching Data Model" value="210956"/>
-        <mapEntry key="*list global low level symbols" value="1246854"/>
+        <mapEntry key="*Fetching Data Model" value="165319"/>
+        <mapEntry key="*list global low level symbols" value="1425777"/>
         <mapEntry key="*loading memory from target" value="1290637"/>
         <mapEntry key="*loading values from target" value="12388792"/>
         <mapEntry key="*updating registers" value="15962676"/>
         <mapEntry key="*updating variables" value="105259"/>
-        <mapEntry key="AddEventObserver" value="1881874"/>
-        <mapEntry key="Evaluate" value="1608559"/>
+        <mapEntry key="AddEventObserver" value="3093971"/>
+        <mapEntry key="Evaluate" value="1410118"/>
         <mapEntry key="Retrieving globals list" value="8868213"/>
         <mapEntry key="areCachesAvailable" value="307477"/>
-        <mapEntry key="break" value="2622243"/>
-        <mapEntry key="compute execution mode" value="1038918"/>
+        <mapEntry key="break" value="3452133"/>
+        <mapEntry key="compute execution mode" value="1446414"/>
         <mapEntry key="console" value="1644600"/>
-        <mapEntry key="continue" value="18696082"/>
-        <mapEntry key="disassemble" value="77431509"/>
+        <mapEntry key="continue" value="5073810"/>
+        <mapEntry key="disassemble" value="108649476"/>
+        <mapEntry key="evaluate address" value="1743718"/>
         <mapEntry key="get byte order" value="453362"/>
-        <mapEntry key="get capabilities" value="172522"/>
+        <mapEntry key="get capabilities" value="1719902"/>
         <mapEntry key="get cwd" value="222700"/>
-        <mapEntry key="get execution addresss" value="512688"/>
-        <mapEntry key="get source lines" value="842827"/>
+        <mapEntry key="get execution addresss" value="435521"/>
+        <mapEntry key="get source lines" value="475000"/>
         <mapEntry key="getValidEncodings" value="229729"/>
-        <mapEntry key="initialize command help" value="44613990"/>
+        <mapEntry key="initialize command help" value="63628298"/>
         <mapEntry key="interrupt" value="30943021"/>
-        <mapEntry key="list breakpoint options" value="151815"/>
-        <mapEntry key="list breakpoints" value="1614896"/>
-        <mapEntry key="list instruction sets" value="169995"/>
-        <mapEntry key="list signals" value="5135236"/>
-        <mapEntry key="list watchpoint options" value="399531"/>
-        <mapEntry key="list watchpoints" value="292014"/>
-        <mapEntry key="loadfile" value="34067317"/>
+        <mapEntry key="list breakpoint options" value="193533"/>
+        <mapEntry key="list breakpoints" value="605249"/>
+        <mapEntry key="list instruction sets" value="219149"/>
+        <mapEntry key="list signals" value="6970879"/>
+        <mapEntry key="list watchpoint options" value="215128"/>
+        <mapEntry key="list watchpoints" value="299301"/>
+        <mapEntry key="loadfile" value="34785689"/>
         <mapEntry key="reload-symbol-file" value="31572900"/>
         <mapEntry key="remove" value="921149"/>
         <mapEntry key="run script" value="23216313"/>
-        <mapEntry key="set CWD" value="1200443"/>
-        <mapEntry key="set breakpoint properties" value="4016978"/>
-        <mapEntry key="set debug-from" value="1003088"/>
-        <mapEntry key="start" value="25479960"/>
+        <mapEntry key="set CWD" value="1652780"/>
+        <mapEntry key="set breakpoint properties" value="5669928"/>
+        <mapEntry key="set debug-from" value="1063773"/>
+        <mapEntry key="start" value="51367407"/>
         <mapEntry key="step" value="59930517"/>
         <mapEntry key="toggleBreakpoint" value="8100731"/>
         <mapEntry key="updateBreakpointLocation" value="1519000"/>
-        <mapEntry key="waitForTargetToStop" value="26410072"/>
+        <mapEntry key="waitForTargetToStop" value="20969734"/>
     </mapAttribute>
     <stringAttribute key="CLOCK_SPEED" value="Auto"/>
     <intAttribute key="DEBUG_TAB..RESOURCES.COUNT" value="0"/>
@@ -483,8 +484,6 @@
     <listAttribute key="com.arm.debug.views.common.AddressTracker.debugger.view.DisassemblyView.addresses">
         <listEntry value="&lt;Next Instruction&gt;"/>
         <listEntry value=""/>
-        <listEntry value="0x21000014"/>
-        <listEntry value="0x000007c2"/>
         <listEntry value="main"/>
         <listEntry value="main"/>
         <listEntry value="__main"/>
@@ -494,8 +493,6 @@
     <listAttribute key="com.arm.debug.views.common.AddressTracker.debugger.view.DisassemblyView.ranges">
         <listEntry value="100"/>
         <listEntry value=""/>
-        <listEntry value="100"/>
-        <listEntry value="100"/>
         <listEntry value="500"/>
         <listEntry value="100"/>
         <listEntry value="100"/>

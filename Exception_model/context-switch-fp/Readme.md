@@ -1,8 +1,18 @@
 # Example Project - context-switch-fp
 
-At an OS, Round-robin scheduling is usually used to arrange task equally by setting time slices. The time slice is defined by a special timer - SysTick which is a free-run timer to produce a periodical interrupt. At SysTick exception, PendSV with lower priority will be triggered to achieve the context switching so that move to a next task. Typically, R4-R11 will be saved at context switching. However, when FPU is enabled with addition of 34 registers, the context of FPU also needs to be stacked when switching tasks. Since FPU registers are not often used in ISRs, there is an optimization - Lazy Floating-point state preservation, that can be enabled which defers the actual saving of the FPU registers on the stack until a floating point instruction is used in the exception. So that, interrupt latency can be reduced by the push and pop these registers, which is important in the RTOS. 
+In a typical operating system, round-robin scheduling can be used to arrange tasks equally using time slices. 
+The time slices are defined using a special timer, SysTick, which produces a periodic interrupt. 
+When a SysTick exception occurs, a PendSV with a lower priority is triggered to switch contexts and move to the 
+next task. When switching contexts, the contents of registers must be saved. Typically, R4-R11 are saved at 
+context switching. However, when an FPU is enabled, an extra 34 registers need to be stacked when switching tasks.
 
-This example demonstrates how to achieve the tasks switching by SysTick exception and how to complete the FPU context saved with Lazy Floating-point state preservation.
+Since FPU registers are infrequently used by ISRs, there is an optimization that can be employed to reduce the
+overhead of context switching. This optimization is called lazy floating-point state preservation. This 
+optimization defers stacking of the FPU registers until a floating-point instruction is used in the exception. 
+If no floating-point instructions are used in the ISR, as is often the case, then the FPU registers never need 
+to be stacked. Removing the need to push and pop these registers reduces interrupt latency, which is especially 
+important for an RTOS.
+
 
 To guarantee that the example works, the same versions of the tools must be used. The example may work using other versions of the tools but it is not guaranteed. This example project was created, built and run using:
 
@@ -13,12 +23,10 @@ To guarantee that the example works, the same versions of the tools must be used
 
 ## Purpose and scope
 
-This example aims to show:
+This example shows how to use the SysTick exception to switch tasks, and demonstrates the lazy floating-point 
+state preservation optimization. It is a simplification of what a real RTOS does, to illustrate how context switching is performed.
 
-- SysTick as a timer of scheduler
-- FPU context switching
-
-More details about this example can be found in Armv8-M Exception Handling User Guide - chapter:5 - Use case examples
+More details about this example can be found in Chapter:Use-Case-Examples of [Armv8-M Exception Model User Guide](https://developer.arm.com/documentation/107706/latest/)
 
 ## Building the example
 
@@ -42,16 +50,15 @@ The executable is intended for running on an Armv8-M FVP model supplied with Arm
 3. Click on Debug to start debugging. The executable image will be downloaded to the target and the program counter set to `main`.
 4. Run the executable (press F8). Text output appears in the Target Console view.
 
+> [NOTE]In Breakpoints view at Arm DS, you can use the "Manage Signals" feature to trap exceptions in Debugger. Code execution will stop when a selected exception occurs, so you can clearly see exactly when an exception occurs. 
+
 Additional Material:
 
-Arm Development Studio Getting Started Guide
-https://developer.arm.com/documentation/101469
+[Arm Development Studio Getting Started Guide](https://developer.arm.com/documentation/101469)
 
-Arm Development Studio User Guide
-https://developer.arm.com/documentation/101470
+[Arm Development Studio User Guide](https://developer.arm.com/documentation/101470)
 
-Arm Development Studio Debugger Command Reference
-https://developer.arm.com/documentation/101471
+[Arm Development Studio Debugger Command Reference](https://developer.arm.com/documentation/101471)
 
 ## Output in Target Console:
 

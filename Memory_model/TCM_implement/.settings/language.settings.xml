@@ -5,7 +5,7 @@
 			<provider copy-of="extension" id="org.eclipse.cdt.ui.UserLanguageSettingsProvider"/>
 			<provider-reference id="org.eclipse.cdt.core.ReferencedProjectsLanguageSettingsProvider" ref="shared-provider"/>
 			<provider-reference id="org.eclipse.cdt.managedbuilder.core.MBSLanguageSettingsProvider" ref="shared-provider"/>
-			<provider class="com.arm.eclipse.builder.armcc.discovery.ArmCompiler6LanguageSettingsProvider" console="false" env-hash="189290678322862995" id="com.arm.eclipse.builder.armcc.v6.langprovider" keep-relative-paths="false" name="Arm Compiler for Embedded 6 Built-in Compiler Settings" parameter="${COMMAND} ${FLAGS} -E -P -v -dD &quot;${INPUTS}&quot;" prefer-non-shared="true">
+			<provider class="com.arm.eclipse.builder.armcc.discovery.ArmCompiler6LanguageSettingsProvider" console="false" env-hash="-510755651534021356" id="com.arm.eclipse.builder.armcc.v6.langprovider" keep-relative-paths="false" name="Arm Compiler for Embedded 6 Built-in Compiler Settings" parameter="${COMMAND} ${FLAGS} -E -P -v -dD &quot;${INPUTS}&quot;" prefer-non-shared="true">
 				<language-scope id="com.arm.eclipse.builder.armcc.lang.c.ac6"/>
 				<language-scope id="com.arm.eclipse.builder.armcc.lang.cpp.ac6"/>
 			</provider>
@@ -16,7 +16,7 @@
 			<provider copy-of="extension" id="org.eclipse.cdt.ui.UserLanguageSettingsProvider"/>
 			<provider-reference id="org.eclipse.cdt.core.ReferencedProjectsLanguageSettingsProvider" ref="shared-provider"/>
 			<provider-reference id="org.eclipse.cdt.managedbuilder.core.MBSLanguageSettingsProvider" ref="shared-provider"/>
-			<provider class="com.arm.eclipse.builder.armcc.discovery.ArmCompiler6LanguageSettingsProvider" console="false" env-hash="174296200314343123" id="com.arm.eclipse.builder.armcc.v6.langprovider" keep-relative-paths="false" name="Arm Compiler for Embedded 6 Built-in Compiler Settings" parameter="${COMMAND} ${FLAGS} -E -P -v -dD &quot;${INPUTS}&quot;" prefer-non-shared="true">
+			<provider class="com.arm.eclipse.builder.armcc.discovery.ArmCompiler6LanguageSettingsProvider" console="false" env-hash="-517379371608356653" id="com.arm.eclipse.builder.armcc.v6.langprovider" keep-relative-paths="false" name="Arm Compiler for Embedded 6 Built-in Compiler Settings" parameter="${COMMAND} ${FLAGS} -E -P -v -dD &quot;${INPUTS}&quot;" prefer-non-shared="true">
 				<language-scope id="com.arm.eclipse.builder.armcc.lang.c.ac6"/>
 				<language-scope id="com.arm.eclipse.builder.armcc.lang.cpp.ac6"/>
 			</provider>

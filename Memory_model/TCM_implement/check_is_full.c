@@ -46,8 +46,13 @@ int volume = 0;
 int checks = 0;
 
 
+/**
+  \brief        Checks if the volume of a deposit is beyond a limit
+  \details      Check if current volume with other to add is beyond limit
+  \return       1, the deposit is full
+                0, the deposit is not full
+ */
 bool check_is_full(){
-  /* Checks if the volume of a deposit is beyond a limit */
   if ((volume + LITRES_TO_ADD)>= DEP_LIMIT)
     return true;
   else
@@ -55,6 +60,11 @@ bool check_is_full(){
 }
 
 
+/**
+  \brief        Overwrite of SysTick handler
+  \details      Get the result of check_is_full() and go on the next step to fill
+                or stop based on it.
+ */
 extern void SysTick_Handler(void){
   printf("Number of checks in SysTick handler: %d \n", checks);
   checks += 1;
@@ -70,4 +80,3 @@ extern void SysTick_Handler(void){
 
   printf("Current volume: %d \n", volume);
 }
-

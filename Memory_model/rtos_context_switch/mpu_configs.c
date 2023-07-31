@@ -57,7 +57,7 @@ void initMPUConfigs(){
     unsigned int unpRAMAddr = (unsigned int) &Image$$UNPRIV_RAM$$Base;
     unsigned int unpRAMLimit = (unsigned int) &Image$$ARM_LIB_HEAP$$ZI$$Limit;
 
-    // MPU Configuration for Thread A
+    /* MPU Configuration for Thread A */
     unsigned int tAROMAddr = (unsigned int) &Image$$THREAD_A_ROM$$Base;
     unsigned int tAROMLimit = (unsigned int) &Image$$THREAD_A_ROM$$Limit;
     unsigned int tARAMAddr = (unsigned int) &Image$$THREAD_A_RAM$$Base;
@@ -65,26 +65,26 @@ void initMPUConfigs(){
 
 
     for(int i = 4; i < MAX_MPU_REGIONS; i++){
-        mpuCfgA[i].rlar = 0; //Enable bit set to 0
+        mpuCfgA[i].rlar = 0; /*Enable bit set to 0 */
     }
-    // Region 0
+    /* Region 0 */
     mpuCfgA[0].rbar = ARM_MPU_RBAR(tAROMAddr, ARM_MPU_SH_OUTER, ARM_MPU_RO, ARM_MPU_NON_PRIV, ARM_MPU_EXEC);
     mpuCfgA[0].rlar = ARM_MPU_RLAR(tAROMLimit, 0UL);
 
-    // Region 1
+    /* Region 1 */
     mpuCfgA[1].rbar = ARM_MPU_RBAR(tARAMAddr, ARM_MPU_SH_OUTER, ARM_MPU_RW, ARM_MPU_NON_PRIV, ARM_MPU_XN);
     mpuCfgA[1].rlar = ARM_MPU_RLAR(tARAMLimit, 0UL);
 
-    // Region 2
+    /* Region 2 */
     mpuCfgA[2].rbar = ARM_MPU_RBAR(unpROMAddr, ARM_MPU_SH_OUTER, ARM_MPU_RO, ARM_MPU_NON_PRIV, ARM_MPU_EXEC);
     mpuCfgA[2].rlar = ARM_MPU_RLAR(unpROMLimit, 0UL);
 
-    // Region 3
+    /* Region 3 */
     mpuCfgA[3].rbar = ARM_MPU_RBAR(unpRAMAddr, ARM_MPU_SH_OUTER, ARM_MPU_RW, ARM_MPU_NON_PRIV, ARM_MPU_XN);
     mpuCfgA[3].rlar = ARM_MPU_RLAR(unpRAMLimit, 0UL);
 
 
-    // MPU Configuration for Thread B
+    /* MPU Configuration for Thread B */
     unsigned int tBROMAddr = (unsigned int) &Image$$THREAD_B_ROM$$Base;
     unsigned int tBROMLimit = (unsigned int) &Image$$THREAD_B_ROM$$Limit;
     unsigned int tBRAMAddr = (unsigned int) &Image$$THREAD_B_RAM$$Base;
@@ -94,19 +94,19 @@ void initMPUConfigs(){
         mpuCfgB[i].rlar = 0;
     }
 
-    // Region 0
+    /* Region 0 */
     mpuCfgB[0].rbar = ARM_MPU_RBAR(tBROMAddr, ARM_MPU_SH_OUTER, ARM_MPU_RO, ARM_MPU_NON_PRIV, ARM_MPU_EXEC);
     mpuCfgB[0].rlar = ARM_MPU_RLAR(tBROMLimit, 0UL);
 
-    // Region 1
+    /* Region 1 */
     mpuCfgB[1].rbar = ARM_MPU_RBAR(tBRAMAddr, ARM_MPU_SH_OUTER, ARM_MPU_RW, ARM_MPU_NON_PRIV, ARM_MPU_XN);
     mpuCfgB[1].rlar = ARM_MPU_RLAR(tBRAMLimit, 0UL);
 
-    // Region 2
+    /* Region 2 */
     mpuCfgB[2].rbar = ARM_MPU_RBAR(unpROMAddr, ARM_MPU_SH_OUTER, ARM_MPU_RO, ARM_MPU_NON_PRIV, ARM_MPU_EXEC);
     mpuCfgB[2].rlar = ARM_MPU_RLAR(unpROMLimit, 0UL);
 
-    // Region 3
+    /* Region 3 */
     mpuCfgB[3].rbar = ARM_MPU_RBAR(unpRAMAddr, ARM_MPU_SH_OUTER, ARM_MPU_RW, ARM_MPU_NON_PRIV, ARM_MPU_XN);
     mpuCfgB[3].rlar = ARM_MPU_RLAR(unpRAMLimit, 0UL);
 

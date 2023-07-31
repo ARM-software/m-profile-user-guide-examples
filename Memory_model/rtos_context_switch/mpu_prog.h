@@ -25,6 +25,7 @@
  *
  */
 
+/* Memory region symbols extacted from scatter file*/
 
 extern unsigned int Image$$ER_ROM$$Base;
 extern unsigned int Image$$ER_ROM$$Limit;

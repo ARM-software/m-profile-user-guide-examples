@@ -47,9 +47,8 @@
 
 int main(){
   /* ===========================================
-   * NOTE:
-   * This example is to show how to make use of immediate in SVC instruction
-   * as a parameter.
+   * The example demonstrates how to select different functions 
+   * by using a SVC <num> as a parameter
    * =========================================== */
 
   printf("Example Project: svc-number-as-parameter Start \n");

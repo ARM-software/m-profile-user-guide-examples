@@ -1,6 +1,6 @@
 # Example Project - system-exceptions
 
-This example demonstrates how to generate built-in system exceptions that are commonly used in OS environment such as PendSV and SysTick.The SysTick interrupt is enabled that includes an instance of the SysTick timer if privileged software sets the ENABLE and TICKINT bits in the SysTick Control and Status Register, SYST_CSR. The PendSV exception is invoked by privileged software setting ICSR.PENDSEVSET. The intention is to achieve task switching in a multi-tasking environment. SysTick exception provides a periodic interrupt triggers the thread scheduler that is used to allocate chunks of execution time to a thread, while PendSV is to performs the actual context switch between threads.
+This example demonstrates how to generate built-in system exceptions that are commonly used in OS environment such as PendSV and SysTick. The SysTick interrupt is enabled that includes an instance of the SysTick timer if privileged software sets the ENABLE and TICKINT bits in the SysTick Control and Status Register, SYST_CSR. The PendSV exception is invoked by privileged software setting ICSR.PENDSEVSET. The intention is to achieve task switching in a multi-tasking environment. SysTick exception provides a periodic interrupt triggers the thread scheduler that is used to allocate chunks of execution time to a thread, while PendSV is to performs the actual context switch between threads.
 
 To guarantee that the example works, the same versions of the tools must be used. The example may work using other versions of the tools but it is not guaranteed. This example project was created, built and run using:
 
@@ -17,7 +17,7 @@ This example aims to show:
 - Generating a PendSV exception by configuring ICSR register.
 - Observing the status of built-in system exceptions.
 
-More details about this example can be found in Armv8-M Exception Handling User Guide - chapter:5 - Use case examples
+More details about this example can be found in Chapter:Use-Case-Examples of [Armv8-M Exception Model User Guide](https://developer.arm.com/documentation/107706/latest/)
 
 ## Building the example
 
@@ -42,16 +42,15 @@ The executable is intended for running on an Armv8-M FVP model supplied with Arm
 3. Click on Debug to start debugging. The executable image will be downloaded to the target and the program counter set to `main`.
 4. Run the executable (press F8). Text output appears in the Target Console view.
 
+> [NOTE]In Breakpoints view at Arm DS, you can use the "Manage Signals" feature to trap exceptions in Debugger. Code execution will stop when a selected exception occurs, so you can clearly see exactly when an exception occurs. 
+
 Additional Material:
 
-Arm Development Studio Getting Started Guide
-https://developer.arm.com/documentation/101469
+[Arm Development Studio Getting Started Guide](https://developer.arm.com/documentation/101469)
 
-Arm Development Studio User Guide
-https://developer.arm.com/documentation/101470
+[Arm Development Studio User Guide](https://developer.arm.com/documentation/101470)
 
-Arm Development Studio Debugger Command Reference
-https://developer.arm.com/documentation/101471
+[Arm Development Studio Debugger Command Reference](https://developer.arm.com/documentation/101471)
 
 ## Output in Target Console:
 

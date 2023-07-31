@@ -45,30 +45,39 @@
 #include <stdio.h>
 
 
+/**
+  \brief        Overwrite UsageFault handler
+  \details      Enable FPU and reexecute the FPU operations again
+ */
 extern void UsageFault_Handler(){
   printf("UsageFault entered!\n");
   printf("The UsageFault status register:      \n"
          "UFSR is 0x%0x \n", (SCB->CFSR) >> SCB_CFSR_USGFAULTSR_Pos);
 
   /* Power the FPU in both privileged and user modes by clearing bits 20 of CPPWR
-   * when the NOCP is usage fault
+   * when the NOCP is UsageFault
    */
   if (((SCB->CFSR) >> SCB_CFSR_USGFAULTSR_Pos) == 8){
         SCnSCB->CPPWR &= ~((0x1 << 10*2) |
                            (0x1 << 11*2));
      __DSB();
   }
+
+  printf("FPU is enable!\n");
 }
 
 
 int main(){
+
   /* ===========================================
-   * NOTE:
-   * This example is to show usage fault triggering and handling
+   * This example triggers a UsageFault by executing 
+   * a floating-point instruction while the FPU is disabled. 
+   * This example also show how UsageFault exception handler 
+   * can be used to fix the fault.
    * =========================================== */
   printf("Example Project: synchronous-fault Start \n");
 
-  /* Step1: Enable usage fault */
+  /* Step1: Enable UsageFault */
   SCB->SHCSR |= SCB_SHCSR_USGFAULTENA_Msk ;
 
   /* Step2: Make sure that power off FPU functionality */
@@ -78,15 +87,15 @@ int main(){
   __DSB();
   __ISB();
 
-  /* Step3: Execute FP instructions
-   * It will trigger the Usage Fault when powering off the FPU.
-   * After returning from UsageFault handler, the program will execute
-   * these FP instructions again.
-   */
-  float res;
-  res = 1.1 + 1.02500;
 
-  printf("FPU is enable!\n");
+  /* Step3: Execute FP instructions
+   * It will trigger the UsageFault when powering off the FPU.
+   * After returning from UsageFault handler, the program will reexecute
+   * these FP instructions again successfully.
+   */
+  volatile float res;
+  res = 1.0 + 1.125000;
+
   printf("The floating add result is %f \n", res);
 
   printf("Example Project: synchronous-fault End \n");

@@ -46,6 +46,13 @@
 #include "SelectSVCNumber.h"
 
 
+/**
+  \brief        Specific exception handling
+  \details      Get the SVC number and call the sub routines to get the result of
+                arithmetic operation.
+  \param [in]   svc_StackFrame    stack saved by hardware automatically.
+  \param [in]   EXC_return_value  state to return after finishing exception handling.
+ */
 void SVC_Handler_Main(uint32_t *svc_StackFrame, uint32_t EXC_return_value)
 {
   /* First argument (r0) is svc_StackFrame
@@ -91,9 +98,13 @@ void SVC_Handler_Main(uint32_t *svc_StackFrame, uint32_t EXC_return_value)
   }
 }
 
+/**
+  \brief        Entry point of SVC handler
+  \details      Get the stacked value of registers and pass it on as 
+                parameters to SVCHandlerMain.
+ */
 
 extern void SVC_Handler(void){
-/* Jump into SVC_MAIN handler, which contains getting SVC number and executing subroutine; */
   __asm(
     ".global SVC_Handler_Main        \n"
     "TST      LR, #0x4               \n"  /* Called from Process stack pointer? */

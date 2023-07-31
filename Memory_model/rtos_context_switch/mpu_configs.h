@@ -28,6 +28,8 @@
 
 extern void initMPUConfigs();
 
+/* Memory region symbols extracted from scatter file*/
+
 extern unsigned int Image$$THREAD_A_ROM$$Base;
 extern unsigned int Image$$THREAD_A_ROM$$Limit;
 extern unsigned int Image$$THREAD_A_RAM$$Base;

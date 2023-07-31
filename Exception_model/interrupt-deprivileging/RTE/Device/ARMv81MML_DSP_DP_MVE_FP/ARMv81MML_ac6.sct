@@ -11,13 +11,19 @@
 
 /*--------------------- Flash Configuration ----------------------------------
 ; <h> Flash Configuration
-;   <o0> Flash Base Address <0x0-0xFFFFFFFF:8>
+;   <o0> Flash Base Address    <0x0-0xFFFFFFFF:8>
 ;   <o1> Flash Size (in Bytes) <0x0-0xFFFFFFFF:8>
 ; </h>
  *----------------------------------------------------------------------------*/
 #define __ROM_BASE      0x00000000
 #define __ROM_SIZE      0x00080000
 
+/*--------------------- Unprivileged ROM Configuration ----------------------------------
+; <h> Unprivileged ROM Configuration - 128KB
+;   <o0> Unprivileged ROM Base Address    <0x0-0xFFFFFFFF:8>
+;   <o1> Unprivileged ROM Size (in Bytes) <0x0-0xFFFFFFFF:8>
+; </h>
+ *----------------------------------------------------------------------------*/
 #define __UNPRIV_ROM_BASE    0x10000000
 #define __UNPRIV_ROM_SIZE    0x00020000
 
@@ -30,6 +36,12 @@
 #define __RAM_BASE      0x20000000
 #define __RAM_SIZE      0x00040000
 
+/*--------------------- Unprivileged RAM Configuration ----------------------------------
+; <h> Unprivileged RAM Configuration - 256KB
+;   <o0> Unprivileged RAM Base Address    <0x0-0xFFFFFFFF:8>
+;   <o1> Unprivileged RAM Size (in Bytes) <0x0-0xFFFFFFFF:8>
+; </h>
+ *----------------------------------------------------------------------------*/
 #define __UNPRIV_RAM_BASE    0x21000000
 #define __UNPRIV_RAM_SIZE    0x00040000
 

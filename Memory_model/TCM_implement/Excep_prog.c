@@ -33,15 +33,20 @@
 #include <stdio.h>
 #include <string.h>
 
-
+/* Definition of new vector table with attribute */
 VECTOR_TABLE_Type new_vectorTable[VECTORTABLE_SIZE] __attribute__((used, section("NewVT")));
 
 
+/**
+  \brief        Relocate vector table
+  \details      Create a new vector table at ITCM and change the
+                VTOR from origin vector table address to new one.
+ */
 void Vector_Table_Relocation(void){
   /* Copy the original handler address into new vector table */
   memcpy(new_vectorTable, __VECTOR_TABLE, sizeof(VECTOR_TABLE_Type)*VECTORTABLE_SIZE);
 
-  /* Change the VTOR */
+  /* Get information about vector table */
   printf("Vector table address is 0x%08x\n", SCB->VTOR);
 
   /* Change the VTOR into new vector table address */

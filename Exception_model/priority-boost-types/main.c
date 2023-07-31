@@ -47,9 +47,8 @@
 
 int main(){
   /* ===========================================
-   * NOTE:
-   * This example is to show the function of BASEPRI
-   * =========================================== */
+   * This example demonstrates BASEPRI functionality
+   * * =========================================== */
 
   printf("Example Project: priority-boost-types Start \n");
   Vector_Table_Relocation();

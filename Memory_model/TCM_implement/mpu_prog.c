@@ -33,9 +33,18 @@
 #include "mpu_prog.h"
 
 
-int setMPU(void){
-  /* Set memory attributes in Memory Attribute Indirection Registers */
 
+/**
+  \brief        Setup MPU regions and its memory attributes to each region
+  \details      The base and limit addresses of MPU regions are set based on symbols 
+                created by the linker based on the scatter file. Using this approach 
+                helps in keeping the MPU configuration in sync with the addresses being
+                used, and removes the need to duplicate the information.
+                Configure memory attributes in Memory Attribute Indirection Registers.
+  \return       0, successfully set
+ */
+
+int setMPU(void){
   /* Set Attr 0 - used for cached memory */
   ARM_MPU_SetMemAttr(0UL, ARM_MPU_ATTR(       /* Normal memory */
     ARM_MPU_ATTR_MEMORY_(1UL, 1UL, 1UL, 1UL), /* Outer Write-Through non-transient */

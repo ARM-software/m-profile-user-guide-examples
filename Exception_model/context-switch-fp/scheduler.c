@@ -47,22 +47,29 @@
 #include <assert.h>
 #include "scheduler.h"
 
+/* Definition of variables used in switching process */
 uint32_t CurrentTaskID = 0;
 uint32_t* PSPBase = (uint32_t*) &Image$$PSP_STACK$$ZI$$Base;
 struct TaskContext Tasks[TASK_NUM_MAX];
 
 
+/**
+  \brief        Task to terminate the program
+ */
 void TerminateTask(void){
-/* Since none of the threads in this example exit,
- * so this function hasn't been implemented. */
   assert(0);
 }
 
 
+/**
+  \brief        Task initialization
+  \details      Initializing a task reserves memory for that task's stack. 
+                The code reserves 2KB for each new task on the PSP stack and 
+                saves the pointer address in the task's data structure.
+  \param [in]   task         task function.
+  \param [in]   TaskID       the identification number of task.
+ */
 void InitTask(void* task, uint32_t TaskID){
-/* When adding a task, we initialize the PSP value of the new task
- * at the start address of new 2 KB RAM. Record the address of context. */
-
   if(TaskID >= TASK_NUM_MAX) {
     printf("Can not register a new task anymore!\n");
     return;
@@ -82,6 +89,15 @@ void InitTask(void* task, uint32_t TaskID){
 }
 
 
+/**
+  \brief        PendSV_Handler main function
+  \details      The actual process of context switching happens in this function. 
+  \param [in]   sp           stack pointer which points the current task.
+  \param [in]   sp_lim       stack pointer limit which points the limit of current task context
+                             saved region.
+  \param [in]   exc_Return   execution state of current task.
+  \return       the context struct of next task
+ */
 uint32_t PendSV_Handler_Main(uint32_t* sp, uint32_t* sp_lim, uint32_t exc_Return){
   /* Save PSP value to the slot at CurrentTaskID index */
   Tasks[CurrentTaskID].sp              = sp;
@@ -100,11 +116,13 @@ uint32_t PendSV_Handler_Main(uint32_t* sp, uint32_t* sp_lim, uint32_t exc_Return
 }
 
 
+/**
+  \brief        Overwrite SysTick_Handler
+  \details      Trigger PendSV in SysTick handler with lowest priority level.
+                Since PendSV's priority set to lowest level, context switching
+                happens in PendSV Handler.
+ */
 void SysTick_Handler(void){
-/* In SysTick handler, with privileged access level,
- * We can directly trigger PendSV by setting pending bit with lowest priority level.
- * Therefore, the context switching will be done in PendSV Handler
- * after there is no interrupt handler in active state. */
   printf("\n we are in SysTick handler ! \n");
 
   SCB->ICSR |= SCB_ICSR_PENDSVSET_Msk;
@@ -112,6 +130,14 @@ void SysTick_Handler(void){
 }
 
 
+/**
+  \brief        Overwrite PendSV_Handler
+  \details      In PendSV handler, save the R4-R11 and FPU context. This function decides whether the
+                program switches from Idle thread to task thread or between task threads.
+                Also, this function checks if the current thread has used the FPU, if so, save
+                FPU context; otherwise, there is no need to save FPU context.
+                Switch to next task's context by calling the PendSV_Handler_Main().
+ */
 __attribute__ ((naked)) void PendSV_Handler(void) {
   __asm(
     /* Push the callee saved registers to the stack
@@ -119,7 +145,7 @@ __attribute__ ((naked)) void PendSV_Handler(void) {
     "TST      LR,     #0x4                \n"  /* Check EXC_RETURN to determine which SP the current thread is using */
     "ITTEE    EQ                          \n"
     "MRSEQ    R0,     MSP                 \n"  /* Get current SP */
-    "MRSEQ    R1,     MSPLIM              \n"  /* Get current SPLim */
+    "MRSEQ    R1,     MSPLIM              \n"  /* Get current SP Limit */
     "MRSNE    R0,     PSP                 \n"
     "MRSNE    R1,     PSPLIM              \n"
     "MOV      R2,     LR                  \n"  /* Get current EXC_RETURN */
@@ -142,13 +168,19 @@ __attribute__ ((naked)) void PendSV_Handler(void) {
 
     "TST      LR,     #0x4                \n"  /* Check EXC_RETURN to determine which SP the next thread is using */
     "ITT      NE                          \n"
-    "MSRNE    PSPLIM, R1                  \n"  /* Update the SPLim and SP since MSP won't be changed*/
+    "MSRNE    PSPLIM, R1                  \n"  /* Update the SP Limit and SP since MSP won't be changed*/
     "MSRNE    PSP,    R0                  \n"
     "BX       LR                          \n"
   );
 }
 
 
+/**
+  \brief        Start context switching
+  \details      Set SysTick down counter. Once the SysTick exception occurs on
+                a counter overflow, context switching between the tasks will 
+                be started.
+ */
 void StartScheduler() {
   printf("Start Scheduler ! \n");
 

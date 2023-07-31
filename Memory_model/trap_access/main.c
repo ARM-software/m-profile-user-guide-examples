@@ -52,33 +52,47 @@
 
 int main (void) {
 
+  /* ===========================================
+   * This example aims to show:
+   *
+   * Basic programming of MPU regions.
+   * How to enable the MPU and MemManage faults?
+   * Trigger MemManage faults to show how memory
+   * is protected by the MPU using two scenarios
+   *
+   * Scenario:1 - Write to a Read-only memory
+   * Scenario:2 - Read privileged memory from
+   *              unprivileged state
+   * =========================================== */
+
     printf("Example Project: trap_access Start \n");
 
-    // Configure and enable the MPU, defined in mpu_prog.c
+    /* Set MPU regions and enable MPU */
     setMPU();
 
-    // Switch to unprivileged mode
+    /* Switch to unprivileged mode */
     __set_CONTROL( __get_CONTROL( ) | CONTROL_nPRIV_Msk ) ;
 
  
-    // ===========================================
-    // NOTE: 
-    // Uncomment the scenario you want to trigger
-    // ===========================================
+    /* ==========================================================
+     * NOTE: 
+     * Uncomment any one scenario that will cause MemManage Fault
+     * By default, Scenario:1 will be executed. If Scenario:2 
+     * needs to be run, then comment Scenario:1 (Lines 89:90) and 
+     * uncomment Scenario:2 (Lines 94:95)
+     * ========================================================== */
 
     int x = 1;
 
-    // Scenario:1
-    // ===========
-    // Try writing to ROM
+    /* Scenario:1 - Write to a Read-only memory */
+
     int* test1 = (int*)&Image$$ER_ROM$$Base;     
     *test1 = x;                          
 
-    // Scenario:2
-    // ==========
-    // Try reading from background region marked as Privileged memory 
-//    int* test2 = (int*)PRIVILEGED_LOCATION;
-//    x= *test2;                              
+    /* Scenario:2 - Read privileged memory from unprivileged state */
+
+    /* int* test2 = (int*)PRIVILEGED_LOCATION;
+       x= *test2;                             */ 
 
     return 0;
 }

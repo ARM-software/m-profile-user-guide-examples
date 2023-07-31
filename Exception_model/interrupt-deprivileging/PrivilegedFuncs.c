@@ -38,17 +38,35 @@
 #include "excep_prog.h"
 
 
+/**
+  \brief        Overwrite Interrupt0 handler
+  \details      Save the context and create an environment to do the deprivileging operations
+                After finishing the deprivileging process, the program is back to this
+                Interrupt0_Handler and context will be restored.
+ */
 __attribute((naked)) void Interrupt0_Handler(void) {
   __asm volatile(
-    "PUSH    {R4-R12, LR}                    \n" /* Push the callee regs and keep stack pointer 8 byte alignment. */
-    "CLRM    {R1-R12}                        \n" /* Clear all the regs */
-    "SVC     #0                              \n" /* Request a depriv of the execution */
-    "POP     {R4-R12, LR}                    \n"
-    "BX      LR                              \n"
+    "PUSH    {R4-R12, LR}            \n" /* Push the callee registers and keep stack pointer 8 byte alignment. */
+    "CLRM    {R1-R12}                \n" /* Clear all the registers */
+    "SVC     #0                      \n" /* Request deprivileging of the execution */
+    "POP     {R4-R12, LR}            \n"
+    "BX      LR                      \n"
   );
 }
 
 
+/**
+  \brief        SVCHandlerMain is used a wrapper function to perform deprivileging operations
+  \details      Get the SVC number and call the sub routines.
+                0: deprivileging request. The program will save the state and prepare an
+                deprivileged environment.
+                1: reprivileging request. The program has finish the deprivileging service
+                and will restore the previous state.
+  \param [in]   svc_StackFrame  stack saved by hardware automatically.
+  \param [in]   msp             main stack pointer.
+  \param [in]   EXCReturn       state to return after finishing exception handling.
+  \return       the EXC_RETURN value used in deprivileging request
+ */
 uint32_t SVCHandlerMain(uint32_t *svc_StackFrame, uint32_t *msp, uint32_t EXCReturn) {
   uint32_t *psp;
   uint32_t *pspLim;
@@ -59,14 +77,14 @@ uint32_t SVCHandlerMain(uint32_t *svc_StackFrame, uint32_t *msp, uint32_t EXCRet
   svc_number = *((uint16_t *)svc_StackFrame[STK_FRAME_RET_ADDR] - 1) & 0xFF;
 
   switch (svc_number) {
-    case 0: /* IRQ depriv request */
-       /* From handler mode to unpriv thread mode.
+    case 0: /* IRQ deprivileging request */
+       /* From handler mode to unprivileged thread mode.
         * Record the PSP to restore the state when SVC happens. */
        psp    = (uint32_t *)__get_PSP();
        pspLim = (uint32_t *)__get_PSPLIM();
 
        /* Re-use the SVC caller register stack
-        * R1 stores current psp, R2 stores psplim
+        * R1 stores current PSP, R2 stores PSP limit
         * Refresh the LR, return address and xPSR */
        svc_StackFrame[STK_FRAME_R1] = (uint32_t) psp;
        svc_StackFrame[STK_FRAME_R2] = (uint32_t) pspLim;
@@ -88,7 +106,7 @@ uint32_t SVCHandlerMain(uint32_t *svc_StackFrame, uint32_t *msp, uint32_t EXCRet
        excReturn = 0xFFFFFFFD;
        break;
 
-    case 1: /* IRQ repriv request */
+    case 1: /* IRQ reprivileging request */
        /* From thread mode to handler mode, return to IRQ
         * Re-use the SVC #0 caller register stack to complete a fake exception return */
        excReturn                 = msp[STK_FRAME_LR];
@@ -110,10 +128,15 @@ uint32_t SVCHandlerMain(uint32_t *svc_StackFrame, uint32_t *msp, uint32_t EXCRet
 }
 
 
+/**
+  \brief        Entry point of SVC handler
+  \details      Get the stacked value of registers and pass it on as 
+                parameters to SVCHandlerMain.
+ */
 __attribute((naked)) void SVC_Handler(void) {
-/* The execution will enter into SVC_Handler twice.
- * The background SP in use when the SVC is entered is
- * MSP for the first case, and PSP for the second case.*/
+  /* The execution will enter into SVC_Handler twice.
+   * The background SP in use when the SVC is entered is
+   * MSP for the first case, and PSP for the second case.*/
   __asm volatile(
     "TST     LR, #0x4                 \n"
     "ITE     EQ                       \n"

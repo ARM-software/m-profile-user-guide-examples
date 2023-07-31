@@ -1,6 +1,6 @@
 # Example Project - irq-priority-basic
 
-This example demonstrates elaborate details on Interrupts configuration available in Cortex-M processors. Thread mode is programmable to run as privileged or unprivileged, and to share the MSP or use the alternate PSP. Except this basic knowledge of exception model, the function and usage of NVIC like programmable priority, nested interrupts, tail-chaining behavior and meaning of vector table will also be described. 
+This example demonstrates the concepts available in Nested Interrupt Vector Controller (NVIC) of Cortex-M processors. 
 
 To guarantee that the example works, the same versions of the tools must be used. The example may work using other versions of the tools but it is not guaranteed. This example project was created, built and run using:
 
@@ -20,7 +20,7 @@ This example aims to show:
 - Meaning of vector table and how to reconfigure it.
 - Effect of group priority and sub priority.
 
-More details about this example can be found in Armv8-M Exception Handling User Guide - chapter:5 - Use case examples
+More details about this example can be found in Chapter:Use-Case-Examples of [Armv8-M Exception Model User Guide](https://developer.arm.com/documentation/107706/latest/)
 
 ## Building the example
 
@@ -44,16 +44,15 @@ The executable is intended for running on an Armv8-M FVP model supplied with Arm
 3. Click on Debug to start debugging. The executable image will be downloaded to the target and the program counter set to `main`.
 4. Run the executable (press F8). Text output appears in the Target Console view.
 
+> [NOTE]In Breakpoints view at Arm DS, you can use the "Manage Signals" feature to trap exceptions in Debugger. Code execution will stop when a selected exception occurs, so you can clearly see exactly when an exception occurs. 
+
 Additional Material:
 
-Arm Development Studio Getting Started Guide
-https://developer.arm.com/documentation/101469
+[Arm Development Studio Getting Started Guide](https://developer.arm.com/documentation/101469)
 
-Arm Development Studio User Guide
-https://developer.arm.com/documentation/101470
+[Arm Development Studio User Guide](https://developer.arm.com/documentation/101470)
 
-Arm Development Studio Debugger Command Reference
-https://developer.arm.com/documentation/101471
+[Arm Development Studio Debugger Command Reference](https://developer.arm.com/documentation/101471)
 
 ## Output in Target Console:
 
@@ -84,12 +83,12 @@ We are in IRQ 1 Handler!
 Setting IRQ 2 to pend 
 We are in IRQ 2 Handler!
 There is more than one active exception. 
-The excep num of the highest priority active excep is 18 
+The number of the highest priority active exception is 18 
 There is more than one active exception. 
-The excep num of the highest priority active excep is 17 
+The number of the highest priority active exception is 17 
 There is only one active exception. 
-The excep num of the highest priority active excep is 16 
-Case:1 is completed!  
+The number of the highest priority active exception is 16 
+Case:1 is completed!   
 ```
 
 Because the IRQ1's priority is higher than IRQ0's and the IRQ2's is higher than IRQ1's, the IRQ2 will preempt IRQ1 and IRQ1 will preempt IRQ0 according the executing turn.
@@ -102,17 +101,17 @@ As we read the SCB->ICSR and get the status of each IRQ, the output shows IRQ2 i
 We are in IRQ 0 Handler!
 Setting IRQ 1 to pend 
 Setting IRQ 2 to pend 
-The excep num of the highest priority pending excep is 17 
+The number of the highest priority pending exception is 17 
 There is only one active exception. 
-The excep num of the highest priority active excep is 16 
+The number of the highest priority active exception is 16 
 We are in IRQ 1 Handler!
-The excep num of the highest priority pending excep is 18 
+The number of the highest priority pending exception is 18 
 There is only one active exception. 
-The excep num of the highest priority active excep is 17 
+The number of the highest priority active exception is 17 
 We are in IRQ 2 Handler!
 There is only one active exception. 
-The excep num of the highest priority active excep is 18 
-Case:2 is completed! 
+The number of the highest priority active exception is 18 
+Case:2 is completed!  
 ```
 As we trigger all IRQs at once firstly, the program will handle interrupts according to their priority level. Because the IRQ0 is the highest, it will be handler firstly. In IRQ0 handler, the active interrupt is 16(IRQ0) and the highest priority pending exception is 17(IRQ1).
 In IRQ1 and IRQ2 handler, the same behavior will be observed.
@@ -127,12 +126,12 @@ Showing the following output in target console
 ```
 We are in IRQ 1 Handler!
 Setting IRQ 0 to pend 
-The excep num of the highest priority pending excep is 16 
+The number of the highest priority pending exception is 16 
 There is only one active exception. 
-The excep num of the highest priority active excep is 17 
+The number of the highest priority active exception is 17 
 We are in IRQ 0 Handler!
 There is only one active exception. 
-The excep num of the highest priority active excep is 16 
+The number of the highest priority active exception is 16 
 Group priority test is completed!
 ```
 Because the preemption only depends on group priority, with same group priority of IRQ0 and IRQ1, although the sub priority of IRQ0's is lower than IRQ1's, the preemption won't happen. So, triggering IRQ0 at IRQ1 handler, the program handles these two IRQs according the tail-chaining behavior.
@@ -141,12 +140,12 @@ Because the preemption only depends on group priority, with same group priority 
   - SubPrio_test:
 ```
 We are in IRQ 0 Handler!
-The excep num of the highest priority pending excep is 17 
+The number of the highest priority pending exception is 17 
 There is only one active exception. 
-The excep num of the highest priority active excep is 16 
+The number of the highest priority active exception is 16 
 We are in IRQ 1 Handler!
 There is only one active exception. 
-The excep num of the highest priority active excep is 17 
+The number of the highest priority active exception is 17 
 Sub priority test is completed!
 ```
 From the result, we can observe that if multiple pending exceptions have the same group priority field value, the pending exception with the lowest subpriority field value takes precedence. Two IRQs are generated at once, and IRQ0 is handled firstly because of lower sub priority.
@@ -155,12 +154,12 @@ From the result, we can observe that if multiple pending exceptions have the sam
   - ExcepNum_test:
 ```
 We are in IRQ 0 Handler!
-The excep num of the highest priority pending excep is 18 
+The number of the highest priority pending exception is 18 
 There is only one active exception. 
-The excep num of the highest priority active excep is 16 
+The number of the highest priority active exception is 16 
 We are in IRQ 2 Handler!
 There is only one active exception. 
-The excep num of the highest priority active excep is 18 
+The number of the highest priority active exception is 18 
 Exception number test is completed! 
 Case:3 is completed! 
 Example Project: irq-priority-basic End

@@ -47,13 +47,16 @@
 #include "scheduler.h"
 
 
+/**
+  \brief        Task 1 function
+  \details      Task1 will calculate the diagonal of a square.
+ */
 void task1 (void) {
-/* This is Task1, which calculates and prints the diagonal of a square */
   uint32_t x = 0, y = 0;
   double distance;
 
   while(1){
-    distance = sqrt(x*x + y*y);
+    distance = sqrt(x * x + y * y);
     x++;
     y++;
     printf("\n The diagonal of a square with side=%d: %f \n", x, distance);

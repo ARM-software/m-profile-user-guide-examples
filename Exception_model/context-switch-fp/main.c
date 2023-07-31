@@ -45,14 +45,17 @@
 
 
 int main(){
-  /* ===========================================
-   * NOTE:
-   * This example is to show how to achieve the context switch of FPU
-   * when scheduling different task
-   * =========================================== */
+  /* =====================================================
+   * The goal of this example is to show a simple and easy
+   * to understand the context switching operations.
+   * This goal is accomplished by having two threads A and B, 
+   * that switches alternatively between them and uses 
+   * Floating-point operations in each thread. 
+   * ====================================================== */
+
   printf("Example Project: context-switch-fp Start \n");
   /* Step 1: As SCB->CPACR has been set at system_ARMv8MML.c
-   * Just set FPCCR.CLRONRET bit */
+   *         only set FPCCR.CLRONRET bit */
   FPU->FPCCR |= FPU_FPCCR_CLRONRET_Msk;
 
   /* PendSV is set to the lowest priority level that a context switching done

@@ -38,6 +38,7 @@
 #include <stdio.h>
 
 
+/* Memory region symbols extracted from scatter file*/
 unsigned int ROMAddr  = (unsigned int) &Image$$ER_ROM$$Base;
 unsigned int ROMLimit = (unsigned int) &Image$$ER_ROM$$Limit;
 unsigned int RAMAddr  = (unsigned int) &Image$$RW_RAM$$Base;
@@ -47,11 +48,17 @@ unsigned int UnprivROMLimit = (unsigned int) &Image$$UNPRIV_ROM$$Limit;
 unsigned int UnprivRAMAddr  = (unsigned int) &Image$$UNPRIV_RAM$$Base;
 unsigned int UnprivRAMLimit = (unsigned int) &Image$$PSP_STACK$$ZI$$Limit;
 
-void setMPU(){
-  /* ============
-   * Initialize MPU regions
-   * ============ */
 
+/**
+  \brief        Setup MPU regions and its memory attributes to each region
+  \details      The base and limit addresses of MPU regions are set based on symbols 
+                created by the linker based on the scatter file. Using this approach 
+                helps in keeping the MPU configuration in sync with the addresses being
+                used, and removes the need to duplicate the information.
+                Configure memory attributes in Memory Attribute Indirection Registers.
+  \return       0, successfully set
+ */
+void setMPU(){
   /* Set memory attributes in Memory Attribute Indirection Registers */
   /* Set Attribute 0 */
   ARM_MPU_SetMemAttr(0UL, ARM_MPU_ATTR(    /* Normal memory */
@@ -94,11 +101,14 @@ void setMPU(){
 }
 
 
+/**
+  \brief        Re-configure memory region with another attribute.
+  \details      With the execution switching between different privileged modes,
+                the MPU need to be re-configured to new attributes.
+  \param [in]   PRI_ATTR privilege level /Privileged or unprivileged
+ */
 void config_MPU(uint32_t PRI_ATTR){
-  /* ============
-   * Re-configure the memory attributes of MPU regions
-   * ============ */
-
+  /* Change the memory attribute of unprivileged ROM */
   ARM_MPU_SetRegion(2UL,
     ARM_MPU_RBAR(UnprivROMAddr, ARM_MPU_SH_OUTER, ARM_MPU_RO, PRI_ATTR, ARM_MPU_EXEC),
     ARM_MPU_RLAR(UnprivROMLimit, 0UL)

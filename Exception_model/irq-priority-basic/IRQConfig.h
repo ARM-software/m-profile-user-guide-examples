@@ -45,11 +45,11 @@
 #ifndef IRQCONFIG_H_
 #define IRQCONFIG_H_
 
-/* Params for new vector table */
+/* Parameters for new vector table */
 #define VECTORTABLE_SIZE              48
 #define VECTORTABLE_ALIGNMENT         0x100U
 
-/* Params for pending different interrupts at each IRQ handler */
+/* Parameters for pending different interrupts at each IRQ handler */
 #define IRQ_PENDNum                   3 /* Number of IRQs to trigger */
 
 #define InIRQ0Handler                 0 /* Index for pending request array */
@@ -67,7 +67,7 @@
 #define MAX_CASES                     3
 #define MAX_SUBCASES                  3
 
-/*Params for group priority setting */
+/* Parameters for group priority setting */
 #define PriorityBits                  8
 #define PriGroup                      3 /* Group priority [7:4], sub priority [3:0] */
 
@@ -75,11 +75,18 @@
 uint32_t EncodePrio_GROUP(uint32_t PrioGroup, uint32_t PreemPrio, uint32_t SubPrio);
 void Set_Pri_IRQn(IRQn_Type IRQn, uint32_t PrioGroup, uint32_t PreemPrio, uint32_t SubPrio);
 
+
+/**
+  \brief       Set Interrupt Priority
+  \details     Sets the priority of an IRQ by using all bits of IPR
+  \param [in]  IRQn      Interrupt number.
+  \param [in]  priority  Priority to set.
+ */
 __STATIC_INLINE void SetPrio(IRQn_Type IRQn, uint32_t priority){
   NVIC->IPR[(uint32_t)(IRQn)] = (uint8_t)((priority << (8U - PriorityBits)) & (uint32_t)0xFFUL);
 }
 
-
+/* Declaration of origin vector table and pend request array */
 extern uint32_t __VECTOR_TABLE[];
 extern uint32_t IRQPendRequests[];
 

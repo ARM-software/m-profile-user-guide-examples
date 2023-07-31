@@ -28,7 +28,7 @@
 #ifndef EXCEP_PROG_H_
 #define EXCEP_PROG_H_
 
-/* Params for new vector table */
+/* Parameters for new vector table */
 #define VECTORTABLE_SIZE              48
 #define VECTORTABLE_ALIGNMENT         0x100U
 

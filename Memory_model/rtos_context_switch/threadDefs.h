@@ -29,7 +29,7 @@
 
 #define THREAD_STACK_SIZE  2048
 #define NUM_CALLEE_REGS 8
-#define MY_EXC_RETURN 0xFFFFFFFD // Return to thread mode using process stack and restore basic stack frame
+#define MY_EXC_RETURN 0xFFFFFFFD  /* Return to thread mode using process stack and restore basic stack frame */
 #define NORM_STACK_FRAME_SIZE           8
 #define NORM_STACK_FRAME_XPSR_OFFSET    7
 #define NORM_STACK_FRAME_PC_OFFSET      6
@@ -42,13 +42,13 @@
 #define DEF_MY_XPSR                     0x01000000
 #define MAX_MPU_REGIONS                 8
 
-// MPU Region Configuration struct definition
+/* MPU Region Configuration struct definition */
 typedef struct{
 	uint32_t rbar;
 	uint32_t rlar;
 } MpuRegionCfg;
 
-// Thread Context Type definition
+/* Thread Context Type definition */
 typedef struct{
 	uint32_t  calleeRegs[NUM_CALLEE_REGS]; //r4-r11
     uint32_t  *sp;
@@ -59,22 +59,22 @@ typedef struct{
     unsigned int  id;
 } ThreadContext;
 
-// Thread functions references
+/* Thread functions references */
 extern void thrA (void);
 extern void thrB (void);
 
-// Thread stacks references
+/* Thread stacks references */
 extern uint32_t threadA_stk[THREAD_STACK_SIZE];
 extern uint32_t threadB_stk[THREAD_STACK_SIZE];
 
-// Thread contexts
+/* Thread contexts */
 extern ThreadContext threadAContext;
 extern ThreadContext threadBContext;
 
-// MPU configurations for each thread
+/* MPU configurations for each thread */
 extern MpuRegionCfg  mpuCfgA [MAX_MPU_REGIONS];
 extern MpuRegionCfg  mpuCfgB [MAX_MPU_REGIONS];
 
-// IDs for each thread
+/* IDs for each thread */
 #define ID_THREAD_A  1
 #define ID_THREAD_B  2

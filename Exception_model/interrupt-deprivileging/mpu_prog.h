@@ -34,7 +34,7 @@
 #define ARM_MPU_EXEC        0UL
 
 
-/* The following symbols are Arm Compiler toolchain specific: */
+/* Memory region symbols extracted from scatter file */
 extern unsigned int Image$$ER_ROM$$Base;
 extern unsigned int Image$$ER_ROM$$Limit;
 extern unsigned int Image$$RW_RAM$$Base;

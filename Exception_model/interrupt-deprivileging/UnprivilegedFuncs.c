@@ -34,20 +34,28 @@
 #include <stdio.h>
 #include "excep_prog.h"
 
+/* Definition of variables used in deprivileged mode */
 uint32_t deprivThreadStack[PS_STACK_SIZE] __attribute__((aligned (8)));
 uint32_t *deprivThreadStackPtr = &deprivThreadStack[PS_STACK_SIZE];
 
+
+/**
+  \brief        Function to trigger deprivileging request
+  \details      Execute SVC #1 to trigger deprivileging request
+  \Note         depriv_return function will be executed in deprivileged mode
+ */
 __attribute__((naked)) void depriv_return(){
-/* Depriv_return function is executed in unprivileged mode */
   __asm volatile(
     "SVC     #1       \n"
   );
 }
 
 
+/**
+  \brief        Deprivileged service
+  \details      Call depriv_return function in deprivileged thread mode.
+ */
 void depriv_service(void){
-/* To do some operations for deprivileging service.
- * we need to pass the address of this function into SVC0's return address*/
   printf("we are in deprivileging thread mode !\n");
 
   depriv_return();

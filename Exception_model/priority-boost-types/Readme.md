@@ -2,12 +2,12 @@
 
 This example demonstrates the function of BASEPRI. BASEPRI acts as a threshold, so that when privileged code sets BASEPRI to a higher priority, a lower value than the current execution priority, additional interrupts are masked if they have priority value greater than or equal to BASEPRI. In some circumstances, BASEPRI is useful to prevent higher priority interrupts from preempting a critical section of code.
 
-To guarantee that the example works, the same versions of the tools must be used. The example may work using other versions of the tools but it is not guaranteed. This example project was created, built and run using:
-
+This example is built using:
 - Arm Development Studio 2022.2
 - Arm Compiler for Embedded 6
 - Fast Models Fixed Virtual Platforms (FVP) 11.18
 - CMSIS 5.9.0 (available in [GitHub repository](https://github.com/ARM-software/CMSIS_5))
+- GCC Toolchain version:10.3
 
 ## Purpose and scope
 
@@ -79,3 +79,16 @@ The priority of IRQ1 is higher than BASEPRI and the priority of IRQ0 is lower th
 As the result shows, when the execution is in IRQ2 handler, there is more than one active exception and the highest priority active exception is IRQ2, with only one pending exception IRQ0. After handling IRQ2, the program is going to handle IRQ1, then it will print the active and pending status of exception at IRQ1 handler.
 
 As we clear the BASEPRI, the rest pending exception will be handled following the value of preemptive priority. The final output lines mean that IRQ0 is active and is going to be handled.
+
+## Extension - build and run example with GCC 
+
+In addition to build with Arm compiler for embedded, the projects can also be built with GCC compiler.
+
+   Import the project firstly, right-click the project, select Properties -> C/C++ Build -> Tool Chain Editor. We can switch to the GCC compiler at Current toolchain option. Then, accroding to the build_gcc.sh at scripts folder, we need to re-configure the build setting. Finally, Select Project → Build Project.
+
+   To run the example at FVP, we can follow the steps of 'Running the example' section. But it is important to import the paddron.ds at scripts folder to Debugger interface, which makes sure the data is loaded right. 
+
+   ```
+   // paddron.ds
+   set elf load-segments-at-p_paddr on
+   ```

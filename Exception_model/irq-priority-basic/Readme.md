@@ -2,12 +2,12 @@
 
 This example demonstrates the concepts available in Nested Interrupt Vector Controller (NVIC) of Cortex-M processors. 
 
-To guarantee that the example works, the same versions of the tools must be used. The example may work using other versions of the tools but it is not guaranteed. This example project was created, built and run using:
-
+This example is built using:
 - Arm Development Studio 2022.2
 - Arm Compiler for Embedded 6
 - Fast Models Fixed Virtual Platforms (FVP) 11.18
 - CMSIS 5.9.0 (available in [GitHub repository](https://github.com/ARM-software/CMSIS_5))
+- GCC Toolchain version:10.3
 
 ## Purpose and scope
 
@@ -165,4 +165,18 @@ Case:3 is completed!
 Example Project: irq-priority-basic End
 ```
 From the result, we can observe that if multiple pending exceptions have the same group priority field value and the same subpriority field value, the pending exception with the lowest exception number takes precedence. Also, two IRQs are generated at once, and IRQ0 is handled firstly because of lower exception number.
+
+## Extension - build and run example with GCC 
+
+In addition to build with Arm compiler for embedded, the projects can also be built with GCC compiler. 
+
+   Import the project firstly, right-click the project, select Properties -> C/C++ Build -> Tool Chain Editor. We can switch to the GCC compiler at Current toolchain option. Then, accroding to the build_gcc.sh at scripts folder, we need to re-configure the build setting. Finally, Select Project → Build Project.
+
+   To run the example at FVP, we can follow the steps of 'Running the example' section. But it is important to import the paddron.ds at scripts folder to Debugger interface, which makes sure the data is loaded right. 
+
+   ```
+   // paddron.ds
+   set elf load-segments-at-p_paddr on
+   ```
+
 

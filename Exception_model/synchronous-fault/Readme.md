@@ -2,12 +2,12 @@
 
 This example triggers a UsageFault by executing a floating-point instruction while the FPU is disabled. This example also show how UsageFault exception handler can be used to fix the fault.
 
-To guarantee that the example works, the same versions of the tools must be used. The example may work using other versions of the tools but it is not guaranteed. This example project was created, built and run using:
-
+This example is built using:
 - Arm Development Studio 2022.2
 - Arm Compiler for Embedded 6
 - Fast Models Fixed Virtual Platforms (FVP) 11.18
 - CMSIS 5.9.0 (available in [GitHub repository](https://github.com/ARM-software/CMSIS_5))
+- GCC Toolchain version:10.3
 
 ## Purpose and scope
 
@@ -58,15 +58,23 @@ At this example, the project is built at ARMv8MML_DP platform. We need to enable
 ```
 Example Project: synchronous-fault Start
 UsageFault entered!
-The UsageFault status register:      
-UFSR is 0x8 
-FPU is enable!
-The floating add result is 2.125000 
+The floating add result is 10.000000 
 Example Project: synchronous-fault End 
 ```
 
-We print the fault exception status by reading Configurable Fault Status Register (CFSR). Bits [31:16] in CFSR is UsageFault Status Register (UFSR). Bit [3] NOCP in UFSR shows whether a coprocessor disabled or not present error has occurred. Here, we set the SU10 and SU11 as 0x1, which illustrates all accesses to the floating-point extension and MVE is permitted to become unknown. In this case, it notices the UsageFault.
+We can get the fault exception status by reading Configurable Fault Status Register (CFSR) when program enters in UsageFault Handler. Bits [31:16] in CFSR is UsageFault Status Register (UFSR). Bit [3] NOCP in UFSR shows whether a coprocessor disabled or not present error has occurred. Here, we set the SU10 and SU11 as 0x1, which illustrates all accesses to the floating-point extension and MVE is permitted to become unknown. In this case, it notices the UsageFault.
 Entering the UsageFault handler, the CP10 and CP11 is re-enabled. The program will return to where the fault happens (the *VMOV* instruction) and re-execute. 
 Then we will get the right results of executing FP instructions.
 
+## Extension - build and run example with GCC 
 
+In addition to build with Arm compiler for embedded, the projects can also be built with GCC compiler. 
+
+   Import the project firstly, right-click the project, select Properties -> C/C++ Build -> Tool Chain Editor. We can switch to the GCC compiler at Current toolchain option. Then, accroding to the build_gcc.sh at scripts folder, we need to re-configure the build setting. Finally, Select Project → Build Project.
+
+   To run the example at FVP, we can follow the steps of 'Running the example' section. But it is important to import the paddron.ds at scripts folder to Debugger interface, which makes sure the data is loaded right. 
+
+   ```
+   // paddron.ds
+   set elf load-segments-at-p_paddr on
+   ```

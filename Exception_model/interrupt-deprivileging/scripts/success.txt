@@ -1,0 +1,5 @@
+Example Project: interrupt-deprivileging Start
+we are in deprivileging thread mode
+we are back from IRQ
+The status is 0xc
+Example Project: interrupt-deprivileging End

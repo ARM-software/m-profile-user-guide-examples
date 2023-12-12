@@ -1,0 +1,19 @@
+Example Project: irq-priority-basic Start
+Vector table address is
+The IRQ0's vector address is
+New vector table address is
+The new IRQ0's vector address is
+We are in IRQ 0 Handler!
+Setting IRQ 1 to pend 
+We are in IRQ 1 Handler!
+Setting IRQ 2 to pend 
+We are in IRQ 2 Handler!
+There is more than one active exception. 
+The number of the highest priority active exception is
+There is only one active exception.
+Case:1 is completed! 
+Case:2 is completed! 
+Group priority test is completed! 
+Sub priority test is completed! 
+Case:3 is completed! 
+Example Project: irq-priority-basic End

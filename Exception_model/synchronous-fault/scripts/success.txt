@@ -1,0 +1,4 @@
+Example Project: synchronous-fault Start
+UsageFault entered
+The floating result is 10.000000
+Example Project: synchronous-fault End

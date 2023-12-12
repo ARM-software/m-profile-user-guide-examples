@@ -1,0 +1,5 @@
+Example Project: context-switch-fp Start
+Start Scheduler
+we are in SysTick handler !
+The diagonal of a square with side=
+The area of a circle with r=

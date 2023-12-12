@@ -86,13 +86,13 @@ int main (void) {
 
     /* Scenario:1 - Write to a Read-only memory */
 
-    int* test1 = (int*)&Image$$ER_ROM$$Base;     
-    *test1 = x;                          
+    int* test1 = (int*)&Image$$ER_ROM$$Base;
+    *test1 = x;
 
     /* Scenario:2 - Read privileged memory from unprivileged state */
 
     /* int* test2 = (int*)PRIVILEGED_LOCATION;
-       x= *test2;                             */ 
+       x= *test2;                   */
 
     return 0;
 }

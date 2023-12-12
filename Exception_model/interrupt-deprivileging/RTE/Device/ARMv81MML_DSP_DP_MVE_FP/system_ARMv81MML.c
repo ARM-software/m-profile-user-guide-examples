@@ -81,6 +81,7 @@ void SystemInit (void)
   SCB->CCR |= SCB_CCR_UNALIGN_TRP_Msk;
 #endif
 
+  __set_CONTROL(__get_CONTROL() | CONTROL_FPCA_Msk | CONTROL_SFPA_Msk);
 // Enable Loop and branch info cache
 SCB->CCR |= SCB_CCR_LOB_Msk;
 __ISB();

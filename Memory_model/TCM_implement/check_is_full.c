@@ -42,8 +42,8 @@
 #include <stdbool.h>
 #include <stdint.h>
 
-int volume = 0;
-int checks = 0;
+int __attribute__((section(".dtcm"))) volume = 0;
+int __attribute__((section(".dtcm"))) checks = 0;
 
 
 /**

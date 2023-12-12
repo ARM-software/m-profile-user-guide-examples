@@ -117,7 +117,7 @@ LR_ROM __RO_BASE __RO_SIZE  {                  ; load region size_region
   } 
   
   ITCM __ITCM_BASE __VectorTable_SIZE{         ; New vector table put at ITCM
-    *Excep_prog.o (NewVT)
+    *Excep_prog.o (.NewVT)
   }
   
   ITCM_Code __ITCMCode_BASE __Code_SIZE{       ; Other code put at ITCM

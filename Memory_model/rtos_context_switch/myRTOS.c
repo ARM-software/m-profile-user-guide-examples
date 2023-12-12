@@ -165,16 +165,16 @@ extern __attribute__((naked)) void SysTick_Handler(){
     __asm(
             /* Push the callee saved registers to the stack, so the C function, SysTick_Handler_body,
              * can get access to them and perform context switches */
-            "PUSH 	{r4-r11}\n"
+            "PUSH    {r4-r11}\n"
             "MOV     r1,sp\n"
             /* Call the C handler, SysTick_Handler_body, allowing it to
              * modify the return value used by the exception handler */
-            "MOV 	r0,lr\n"
-            "BL 	SysTick_Handler_body\n"
+            "MOV     r0,lr\n"
+            "BL      SysTick_Handler_body\n"
             /* Restore the new set of callee registers and the new LR value */
-            "POP	{r4-r11}\n"
+            "POP     {r4-r11}\n"
             /* Return from the exception */
-            "BX 	r0"
+            "BX      r0"
     );
 
 }

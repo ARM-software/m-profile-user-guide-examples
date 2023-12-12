@@ -2,30 +2,34 @@
 <launchConfiguration type="com.arm.debugger.launcher2">
     <booleanAttribute key="ADAPTIVE_CLOCK" value="false"/>
     <mapAttribute key="AverageDurationTracker">
-        <mapEntry key="*Fetching Data Model" value="533812"/>
-        <mapEntry key="*list global low level symbols" value="3153880"/>
-        <mapEntry key="AddEventObserver" value="2297518"/>
-        <mapEntry key="Evaluate" value="1668601"/>
-        <mapEntry key="areCachesAvailable" value="243862"/>
-        <mapEntry key="compute execution mode" value="906109"/>
-        <mapEntry key="continue" value="4047500"/>
-        <mapEntry key="disassemble" value="79185493"/>
-        <mapEntry key="get capabilities" value="263606"/>
-        <mapEntry key="get execution addresss" value="559635"/>
-        <mapEntry key="get source lines" value="596529"/>
-        <mapEntry key="getValidEncodings" value="252050"/>
-        <mapEntry key="initialize command help" value="75380387"/>
-        <mapEntry key="list breakpoint options" value="232432"/>
-        <mapEntry key="list breakpoints" value="426468"/>
-        <mapEntry key="list instruction sets" value="222159"/>
-        <mapEntry key="list signals" value="9902409"/>
-        <mapEntry key="list watchpoint options" value="239050"/>
-        <mapEntry key="list watchpoints" value="319662"/>
-        <mapEntry key="loadfile" value="37002915"/>
-        <mapEntry key="set CWD" value="1211918"/>
-        <mapEntry key="set debug-from" value="1758950"/>
-        <mapEntry key="start" value="29843996"/>
-        <mapEntry key="waitForTargetToStop" value="23806390"/>
+        <mapEntry key="*Fetching Data Model" value="302103"/>
+        <mapEntry key="*list global low level symbols" value="1279273"/>
+        <mapEntry key="*updating registers" value="13532700"/>
+        <mapEntry key="AddEventObserver" value="1799479"/>
+        <mapEntry key="Evaluate" value="916056"/>
+        <mapEntry key="ListRegimeWarningsCommand" value="259050"/>
+        <mapEntry key="areCachesAvailable" value="247340"/>
+        <mapEntry key="compute execution mode" value="853552"/>
+        <mapEntry key="continue" value="3718625"/>
+        <mapEntry key="disassemble" value="46855698"/>
+        <mapEntry key="get capabilities" value="163127"/>
+        <mapEntry key="get execution addresss" value="280045"/>
+        <mapEntry key="get source lines" value="301452"/>
+        <mapEntry key="getValidEncodings" value="253587"/>
+        <mapEntry key="initialize command help" value="52027472"/>
+        <mapEntry key="list breakpoint options" value="145145"/>
+        <mapEntry key="list breakpoints" value="236642"/>
+        <mapEntry key="list instruction sets" value="155890"/>
+        <mapEntry key="list signals" value="3957552"/>
+        <mapEntry key="list translations" value="333550"/>
+        <mapEntry key="list watchpoint options" value="189513"/>
+        <mapEntry key="list watchpoints" value="238165"/>
+        <mapEntry key="loadfile" value="35575654"/>
+        <mapEntry key="set CWD" value="1008304"/>
+        <mapEntry key="set debug-from" value="897812"/>
+        <mapEntry key="start" value="19165149"/>
+        <mapEntry key="updating MMU tables" value="9541"/>
+        <mapEntry key="waitForTargetToStop" value="22752622"/>
     </mapAttribute>
     <stringAttribute key="CLOCK_SPEED" value="Auto"/>
     <intAttribute key="DEBUG_TAB..RESOURCES.COUNT" value="0"/>
@@ -110,28 +114,15 @@
     <stringAttribute key="breakpoints" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;breakpoints order=&quot;ALPHA&quot;&gt;&#10;&lt;/breakpoints&gt;&#10;"/>
     <listAttribute key="com.arm.debug.views.common.AddressTracker.debugger.view.DisassemblyView.addresses">
         <listEntry value="&lt;Next Instruction&gt;"/>
-        <listEntry value=""/>
-        <listEntry value="0x21000014"/>
-        <listEntry value="0x000007c2"/>
-        <listEntry value="main"/>
-        <listEntry value="main"/>
-        <listEntry value="__main"/>
-        <listEntry value="printf"/>
-        <listEntry value="__rt_entry"/>
     </listAttribute>
     <listAttribute key="com.arm.debug.views.common.AddressTracker.debugger.view.DisassemblyView.ranges">
-        <listEntry value="100"/>
-        <listEntry value=""/>
-        <listEntry value="100"/>
-        <listEntry value="100"/>
-        <listEntry value="500"/>
-        <listEntry value="100"/>
-        <listEntry value="100"/>
-        <listEntry value="100"/>
         <listEntry value="100"/>
     </listAttribute>
     <listAttribute key="com.arm.debug.views.common.AddressTracker.debugger.view.MemoryView.addresses">
         <listEntry value=""/>
+        <listEntry value="0x207fffd0"/>
+        <listEntry value="0x207fffff"/>
+        <listEntry value="0x20040000"/>
         <listEntry value="&lt;Next Instruction&gt;"/>
         <listEntry value="0xE001E"/>
         <listEntry value="0x10000000"/>
@@ -141,7 +132,6 @@
         <listEntry value="0x2003F400"/>
         <listEntry value="0x2003F000"/>
         <listEntry value="$SP"/>
-        <listEntry value="0x20040000"/>
         <listEntry value="0x2003FFFF"/>
         <listEntry value="0x2003FF00"/>
         <listEntry value="0x20030000"/>
@@ -149,8 +139,6 @@
         <listEntry value="0x0000000"/>
         <listEntry value="0x80101d10"/>
         <listEntry value="0x80100000"/>
-        <listEntry value="0x80101000"/>
-        <listEntry value="0x80102000"/>
     </listAttribute>
     <listAttribute key="com.arm.debug.views.common.AddressTracker.debugger.view.MemoryView.ranges">
         <listEntry value=""/>
@@ -188,12 +176,13 @@
         <listEntry value="&lt;Next Instruction&gt;"/>
         <listEntry value="100"/>
     </listAttribute>
+    <stringAttribute key="debugger.view.MMUView:DebugOutlineColumnState" value="OutlineConfig1&#9;5&#9;0&#9;true&#9;false&#9;16&#9;-1&#9;true&#9;3&#9;true&#9;true&#9;138&#9;-1&#9;true&#9;5&#9;true&#9;true&#9;155&#9;-1&#9;true&#9;4&#9;true&#9;true&#9;59&#9;-1&#9;true&#9;6&#9;true&#9;true&#9;104&#9;-1&#9;true"/>
     <stringAttribute key="debugger.view.MemoryView" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;page&gt;&#10;&#9;&lt;memoryView/&gt;&#10;&lt;/page&gt;&#10;"/>
     <listAttribute key="debugger.view.MemoryView:current">
         <listEntry value=""/>
         <listEntry value=""/>
     </listAttribute>
-    <stringAttribute key="debugger.view.NewRegisterView:DebugOutlineColumnState" value="OutlineConfig1&#9;8&#9;0&#9;true&#9;true&#9;69&#9;-1&#9;true&#9;1&#9;false&#9;true&#9;138&#9;-1&#9;true&#9;2&#9;true&#9;true&#9;65&#9;-1&#9;true&#9;3&#9;false&#9;true&#9;59&#9;-1&#9;true&#9;4&#9;false&#9;true&#9;68&#9;-1&#9;true&#9;5&#9;true&#9;true&#9;51&#9;-1&#9;true&#9;6&#9;false&#9;true&#9;90&#9;-1&#9;true&#9;7&#9;true&#9;true&#9;74&#9;-1&#9;true"/>
+    <stringAttribute key="debugger.view.NewRegisterView:DebugOutlineColumnState" value="OutlineConfig1&#9;8&#9;0&#9;true&#9;true&#9;111&#9;-1&#9;true&#9;1&#9;false&#9;true&#9;138&#9;-1&#9;true&#9;2&#9;true&#9;true&#9;189&#9;-1&#9;true&#9;3&#9;false&#9;true&#9;59&#9;-1&#9;true&#9;4&#9;false&#9;true&#9;68&#9;-1&#9;true&#9;5&#9;true&#9;true&#9;51&#9;-1&#9;true&#9;6&#9;false&#9;true&#9;90&#9;-1&#9;true&#9;7&#9;true&#9;true&#9;74&#9;-1&#9;true"/>
     <stringAttribute key="debugger.view.NewRegisterView:_selectedRegisterSet" value="All registers"/>
     <mapAttribute key="debugger.view.NewRegisterView_registerSets"/>
     <stringAttribute key="debugger.view.VariableTreeView:DebugOutlineColumnState" value="OutlineConfig1&#9;8&#9;0&#9;true&#9;true&#9;217&#9;-1&#9;true&#9;1&#9;false&#9;true&#9;138&#9;-1&#9;true&#9;2&#9;true&#9;true&#9;147&#9;-1&#9;true&#9;3&#9;true&#9;true&#9;59&#9;-1&#9;true&#9;4&#9;true&#9;true&#9;68&#9;-1&#9;true&#9;5&#9;true&#9;true&#9;51&#9;-1&#9;true&#9;6&#9;true&#9;true&#9;90&#9;-1&#9;true&#9;7&#9;true&#9;true&#9;74&#9;-1&#9;true"/>
@@ -207,7 +196,7 @@
     <booleanAttribute key="linuxOS" value="false"/>
     <stringAttribute key="model_connection_address" value="127.0.0.1:7100"/>
     <stringAttribute key="model_iris" value="1"/>
-    <stringAttribute key="model_params" value="-C fvp_mps2.DISABLE_GATING=1"/>
+    <stringAttribute key="model_params" value="-C fvp_mps2.DISABLE_GATING=1 -C cpu0.semihosting-heap_base=0x0 -C cpu0.semihosting-heap_limit=0x0 -C cpu0.semihosting-stack_base=0x0 -C cpu0.semihosting-stack_limit=0x0 "/>
     <booleanAttribute key="runAfterConnect" value="false"/>
     <listAttribute key="setup">
         <listEntry value="CDB://Scripts/rtsm_launcher.py"/>

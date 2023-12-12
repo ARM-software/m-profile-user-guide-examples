@@ -1,0 +1,8 @@
+Example Project: system-exceptions Start 
+We are in SysTick_Handler! 
+The pending and active status are 
+SCB->ICSR =
+We are in SysTick_Handler end! 
+We are in PendSV_Handler! 
+SCB->ICSR = 0x0000080e
+Example Project: system-exceptions End 

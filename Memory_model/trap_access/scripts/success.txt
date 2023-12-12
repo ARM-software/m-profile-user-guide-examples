@@ -1,0 +1,7 @@
+Example Project: trap_access Start
+We are in the MemManage handler.
+MemManage Fault Address Register: 
+SCB->MMFAR =
+MemManage Fault Status Register: 
+SCB->CFSR->MMFSR =
+Example Project: trap_access End

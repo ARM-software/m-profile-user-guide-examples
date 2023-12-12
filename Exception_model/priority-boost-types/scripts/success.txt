@@ -1,0 +1,10 @@
+Example Project: priority-boost-types Start
+BASEPRI is set with triggering IRQ0 and IRQ1!
+We are in IRQ 1 Handler!
+Setting IRQ 2 to pend 
+The number of the highest priority pending exception is
+There is more than one active exception. 
+The number of the highest priority active exception is
+BASEPRI is clear! 
+There is only one active exception.
+Example Project: priority-boost-types End

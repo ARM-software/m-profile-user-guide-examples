@@ -1,0 +1,10 @@
+Example Project: svc-number-as-parameter Start
+The return address is
+The stacked return state is
+svc_number is
+The result of R0+R1 is
+The first routine is completed
+The result of R0*R1 is
+The second routine is completed
+The result of R0 mod R1 is
+Example Project: svc-number-as-parameter End

@@ -2,12 +2,13 @@
 
 This example demonstrates the simple achievement of interrupt deprivileging. Unprivileged thread program can be placed at independent domains and be limited access to memory and peripherals. To enable services of peripherals where some of the peripherals communicate via interrupts, it is important to provide partitions as a mean to handle interrupts along with isolation levels. In order to keep the isolation levels complete, interrupts are isolated using concept of deprivileging interrupt to create a sandbox. To understand more details refer this [article](https://developer.arm.com/documentation/ka001384/latest).
 
-To guarantee that the example works, the same versions of the tools must be used. The example may work using other versions of the tools but it is not guaranteed. This example project was created, built and run using:
 
+This example is built using:
 - Arm Development Studio 2022.2
 - Arm Compiler for Embedded 6
 - Fast Models Fixed Virtual Platforms (FVP) 11.18
 - CMSIS 5.9.0 (available in [GitHub repository](https://github.com/ARM-software/CMSIS_5))
+- GCC Toolchain version:10.3
 
 ## Purpose and scope
 
@@ -89,3 +90,15 @@ Example Project: interrupt-deprivileging End
                       bit[0] not privileged, 0 is for privileged access, 1 is for unprivileged access.
  - Configuration and control register : At Arm-v7M, the CCR.NONBASETHRDENA bit is to control whether the processor can enter Thread mode at execution priority level by a fake exception return. If we want to test this example at device based on Arm-v7M architecture, we are supposed to enable this bit.
     
+## Extension - build and run example with GCC 
+
+In addition to build with Arm compiler for embedded, the projects can also be built with GCC compiler. 
+
+   Import the project firstly, right-click the project, select Properties -> C/C++ Build -> Tool Chain Editor. We can switch to the GCC compiler at Current toolchain option. Then, accroding to the build_gcc.sh at scripts folder, we need to re-configure the build setting. Finally, Select Project → Build Project.
+
+   To run the example at FVP, we can follow the steps of 'Running the example' section. But it is important to import the paddron.ds at scripts folder to Debugger interface, which makes sure the data is loaded right. 
+
+   ```
+   // paddron.ds
+   set elf load-segments-at-p_paddr on
+   ```

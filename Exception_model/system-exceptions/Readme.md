@@ -2,12 +2,12 @@
 
 This example demonstrates how to generate built-in system exceptions that are commonly used in OS environment such as PendSV and SysTick. The SysTick interrupt is enabled that includes an instance of the SysTick timer if privileged software sets the ENABLE and TICKINT bits in the SysTick Control and Status Register, SYST_CSR. The PendSV exception is invoked by privileged software setting ICSR.PENDSEVSET. The intention is to achieve task switching in a multi-tasking environment. SysTick exception provides a periodic interrupt triggers the thread scheduler that is used to allocate chunks of execution time to a thread, while PendSV is to performs the actual context switch between threads.
 
-To guarantee that the example works, the same versions of the tools must be used. The example may work using other versions of the tools but it is not guaranteed. This example project was created, built and run using:
-
+This example is built using:
 - Arm Development Studio 2022.2
 - Arm Compiler for Embedded 6.18
 - Fast Models Fixed Virtual Platforms (FVP) 11.18
 - CMSIS 5.9.0 (available in [GitHub repository](https://github.com/ARM-software/CMSIS_5))
+- GCC Toolchain version:10.3
 
 ## Purpose and scope
 
@@ -78,3 +78,15 @@ We generate a PendSV exception at SysTick handler by set ICSR.PENDSVSET bit (bit
 
 In PendSV_Handler, the status shows the active exception is number 14 and there is only one exception active. 
 
+## Extension - build and run example with GCC 
+
+In addition to build with Arm compiler for embedded, the projects can also be built with GCC compiler. 
+
+   Import the project firstly, right-click the project, select Properties -> C/C++ Build -> Tool Chain Editor. We can switch to the GCC compiler at Current toolchain option. Then, accroding to the build_gcc.sh at scripts folder, we need to re-configure the build setting. Finally, Select Project → Build Project.
+
+   To run the example at FVP, we can follow the steps of 'Running the example' section. But it is important to import the paddron.ds at scripts folder to Debugger interface, which makes sure the data is loaded right. 
+
+   ```
+   // paddron.ds
+   set elf load-segments-at-p_paddr on
+   ```

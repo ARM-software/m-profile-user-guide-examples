@@ -43,6 +43,7 @@
 #error device not specified!
 #endif
 
+#include <stdio.h>
 #include "myRTOS.h"
 #include "mpu_defs.h"
 #include "mpu_configs.h"

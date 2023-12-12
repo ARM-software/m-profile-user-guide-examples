@@ -34,7 +34,7 @@
 #include <string.h>
 
 /* Definition of new vector table with attribute */
-VECTOR_TABLE_Type new_vectorTable[VECTORTABLE_SIZE] __attribute__((used, section("NewVT")));
+VECTOR_TABLE_Type new_vectorTable[VECTORTABLE_SIZE] __attribute__((used, section(".NewVT")));
 
 
 /**

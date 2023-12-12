@@ -2,48 +2,51 @@
 <launchConfiguration type="com.arm.debugger.launcher2">
     <booleanAttribute key="ADAPTIVE_CLOCK" value="false"/>
     <mapAttribute key="AverageDurationTracker">
-        <mapEntry key="*Fetching Data Model" value="165319"/>
-        <mapEntry key="*list global low level symbols" value="1425777"/>
+        <mapEntry key="*Fetching Data Model" value="159789"/>
+        <mapEntry key="*list global low level symbols" value="613253"/>
         <mapEntry key="*loading memory from target" value="1290637"/>
-        <mapEntry key="*loading values from target" value="12388792"/>
-        <mapEntry key="*updating registers" value="15962676"/>
+        <mapEntry key="*loading values from target" value="12507519"/>
+        <mapEntry key="*updating registers" value="17242472"/>
         <mapEntry key="*updating variables" value="105259"/>
-        <mapEntry key="AddEventObserver" value="3093971"/>
-        <mapEntry key="Evaluate" value="1410118"/>
+        <mapEntry key="AddEventObserver" value="1729547"/>
+        <mapEntry key="Evaluate" value="1715147"/>
+        <mapEntry key="ListRegimeWarningsCommand" value="166622"/>
         <mapEntry key="Retrieving globals list" value="8868213"/>
-        <mapEntry key="areCachesAvailable" value="307477"/>
-        <mapEntry key="break" value="3452133"/>
-        <mapEntry key="compute execution mode" value="1446414"/>
+        <mapEntry key="areCachesAvailable" value="221632"/>
+        <mapEntry key="break" value="2463163"/>
+        <mapEntry key="compute execution mode" value="2803200"/>
         <mapEntry key="console" value="1644600"/>
-        <mapEntry key="continue" value="5073810"/>
-        <mapEntry key="disassemble" value="108649476"/>
+        <mapEntry key="continue" value="67663769"/>
+        <mapEntry key="disassemble" value="45308569"/>
         <mapEntry key="evaluate address" value="1743718"/>
         <mapEntry key="get byte order" value="453362"/>
-        <mapEntry key="get capabilities" value="1719902"/>
+        <mapEntry key="get capabilities" value="138661"/>
         <mapEntry key="get cwd" value="222700"/>
-        <mapEntry key="get execution addresss" value="435521"/>
-        <mapEntry key="get source lines" value="475000"/>
-        <mapEntry key="getValidEncodings" value="229729"/>
-        <mapEntry key="initialize command help" value="63628298"/>
+        <mapEntry key="get execution addresss" value="231208"/>
+        <mapEntry key="get source lines" value="266403"/>
+        <mapEntry key="getValidEncodings" value="229670"/>
+        <mapEntry key="initialize command help" value="42809014"/>
         <mapEntry key="interrupt" value="30943021"/>
-        <mapEntry key="list breakpoint options" value="193533"/>
-        <mapEntry key="list breakpoints" value="605249"/>
-        <mapEntry key="list instruction sets" value="219149"/>
-        <mapEntry key="list signals" value="6970879"/>
-        <mapEntry key="list watchpoint options" value="215128"/>
-        <mapEntry key="list watchpoints" value="299301"/>
-        <mapEntry key="loadfile" value="34785689"/>
+        <mapEntry key="list breakpoint options" value="93231"/>
+        <mapEntry key="list breakpoints" value="1564003"/>
+        <mapEntry key="list instruction sets" value="132942"/>
+        <mapEntry key="list signals" value="4888354"/>
+        <mapEntry key="list translations" value="226335"/>
+        <mapEntry key="list watchpoint options" value="289990"/>
+        <mapEntry key="list watchpoints" value="237568"/>
+        <mapEntry key="loadfile" value="25922668"/>
         <mapEntry key="reload-symbol-file" value="31572900"/>
-        <mapEntry key="remove" value="921149"/>
+        <mapEntry key="remove" value="1339028"/>
         <mapEntry key="run script" value="23216313"/>
-        <mapEntry key="set CWD" value="1652780"/>
-        <mapEntry key="set breakpoint properties" value="5669928"/>
-        <mapEntry key="set debug-from" value="1063773"/>
-        <mapEntry key="start" value="51367407"/>
-        <mapEntry key="step" value="59930517"/>
-        <mapEntry key="toggleBreakpoint" value="8100731"/>
+        <mapEntry key="set CWD" value="927827"/>
+        <mapEntry key="set breakpoint properties" value="3127299"/>
+        <mapEntry key="set debug-from" value="728457"/>
+        <mapEntry key="start" value="14956957"/>
+        <mapEntry key="step" value="70289216"/>
+        <mapEntry key="toggleBreakpoint" value="3602277"/>
         <mapEntry key="updateBreakpointLocation" value="1519000"/>
-        <mapEntry key="waitForTargetToStop" value="20969734"/>
+        <mapEntry key="updating MMU tables" value="7673"/>
+        <mapEntry key="waitForTargetToStop" value="15501181"/>
     </mapAttribute>
     <stringAttribute key="CLOCK_SPEED" value="Auto"/>
     <intAttribute key="DEBUG_TAB..RESOURCES.COUNT" value="0"/>
@@ -54,37 +57,37 @@
     <stringAttribute key="FILES.DEBUG_RESIDENT_ANDROID.RESOURCES.0.VALUE" value=""/>
     <intAttribute key="FILES.DEBUG_RESIDENT_ANDROID.RESOURCES.COUNT" value="1"/>
     <listAttribute key="FILES.DEBUG_RESIDENT_APP"/>
-    <stringAttribute key="FILES.DEBUG_RESIDENT_APP.RESOURCES.0.TYPE" value="TARGET_WORKING_DIR"/>
+    <stringAttribute key="FILES.DEBUG_RESIDENT_APP.RESOURCES.0.TYPE" value="APPLICATION_ON_TARGET"/>
     <stringAttribute key="FILES.DEBUG_RESIDENT_APP.RESOURCES.0.VALUE" value=""/>
-    <stringAttribute key="FILES.DEBUG_RESIDENT_APP.RESOURCES.1.TYPE" value="APPLICATION_ON_TARGET"/>
+    <stringAttribute key="FILES.DEBUG_RESIDENT_APP.RESOURCES.1.TYPE" value="TARGET_WORKING_DIR"/>
     <stringAttribute key="FILES.DEBUG_RESIDENT_APP.RESOURCES.1.VALUE" value=""/>
     <intAttribute key="FILES.DEBUG_RESIDENT_APP.RESOURCES.COUNT" value="2"/>
     <listAttribute key="FILES.DOWNLOAD_AND_DEBUG"/>
     <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.0.OPTION.ALSO_LOAD_SYMBOLS" value="true"/>
     <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.0.OPTION.ON_DEMAND_LOAD" value="true"/>
-    <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.0.TYPE" value="APP_ON_HOST_TO_DOWNLOAD"/>
+    <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.0.TYPE" value="TARGET_DOWNLOAD_DIR"/>
     <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.0.VALUE" value=""/>
     <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.1.OPTION.ALSO_LOAD_SYMBOLS" value="true"/>
     <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.1.OPTION.ON_DEMAND_LOAD" value="true"/>
-    <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.1.TYPE" value="TARGET_WORKING_DIR"/>
+    <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.1.TYPE" value="APP_ON_HOST_TO_DOWNLOAD"/>
     <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.1.VALUE" value=""/>
     <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.2.OPTION.ALSO_LOAD_SYMBOLS" value="true"/>
     <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.2.OPTION.ON_DEMAND_LOAD" value="true"/>
-    <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.2.TYPE" value="TARGET_DOWNLOAD_DIR"/>
+    <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.2.TYPE" value="TARGET_WORKING_DIR"/>
     <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.2.VALUE" value=""/>
     <intAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.COUNT" value="3"/>
     <listAttribute key="FILES.DOWNLOAD_DEBUG"/>
     <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.0.OPTION.ALSO_LOAD_SYMBOLS" value="true"/>
     <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.0.OPTION.ON_DEMAND_LOAD" value="true"/>
-    <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.0.TYPE" value="APP_ON_HOST_TO_DOWNLOAD"/>
+    <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.0.TYPE" value="TARGET_DOWNLOAD_DIR"/>
     <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.0.VALUE" value=""/>
     <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.1.OPTION.ALSO_LOAD_SYMBOLS" value="true"/>
     <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.1.OPTION.ON_DEMAND_LOAD" value="true"/>
-    <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.1.TYPE" value="TARGET_WORKING_DIR"/>
+    <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.1.TYPE" value="APP_ON_HOST_TO_DOWNLOAD"/>
     <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.1.VALUE" value=""/>
     <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.2.OPTION.ALSO_LOAD_SYMBOLS" value="true"/>
     <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.2.OPTION.ON_DEMAND_LOAD" value="true"/>
-    <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.2.TYPE" value="TARGET_DOWNLOAD_DIR"/>
+    <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.2.TYPE" value="TARGET_WORKING_DIR"/>
     <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.2.VALUE" value=""/>
     <intAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.COUNT" value="3"/>
     <intAttribute key="FILES.DOWNLOAD_DEBUG_ANDROID.RESOURCES.COUNT" value="0"/>
@@ -480,28 +483,19 @@
     <booleanAttribute key="VFS_ENABLED" value="true"/>
     <stringAttribute key="VFS_LOCAL_DIR" value="${workspace_loc}"/>
     <stringAttribute key="VFS_REMOTE_MOUNT" value="/writeable"/>
-    <stringAttribute key="breakpoints" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;breakpoints order=&quot;ALPHA&quot;&gt;&#10;&#9;&lt;breakpoint ignorecount=&quot;0&quot; threadenabled=&quot;no&quot; core_list=&quot;&quot; continue=&quot;no&quot; verboseBreakpoints=&quot;yes&quot; kind=&quot;SOURCEPOSITION&quot;&gt;&#10;&#9;&#9;&lt;master_location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; debugFile=&quot;D:/ArmDS_workspace/Test/excep_prog.c&quot; hostFile=&quot;D:\ArmDS_workspace\Test\excep_prog.c&quot; line=&quot;110&quot;/&gt;&#10;&#9;&#9;&lt;location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; debugFile=&quot;D:/ArmDS_workspace/Test/excep_prog.c&quot; hostFile=&quot;D:\ArmDS_workspace\Test\excep_prog.c&quot; line=&quot;110&quot;/&gt;&#10;&#9;&lt;/breakpoint&gt;&#10;&#9;&lt;breakpoint ignorecount=&quot;0&quot; threadenabled=&quot;no&quot; core_list=&quot;&quot; continue=&quot;no&quot; verboseBreakpoints=&quot;yes&quot; kind=&quot;SOURCEPOSITION&quot;&gt;&#10;&#9;&#9;&lt;master_location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; debugFile=&quot;D:/ArmDS_workspace/Test/excep_prog.c&quot; hostFile=&quot;D:\ArmDS_workspace\Test\excep_prog.c&quot; line=&quot;96&quot;/&gt;&#10;&#9;&#9;&lt;location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; debugFile=&quot;D:/ArmDS_workspace/Test/excep_prog.c&quot; hostFile=&quot;D:\ArmDS_workspace\Test\excep_prog.c&quot; line=&quot;96&quot;/&gt;&#10;&#9;&lt;/breakpoint&gt;&#10;&#9;&lt;breakpoint ignorecount=&quot;0&quot; threadenabled=&quot;no&quot; core_list=&quot;&quot; continue=&quot;no&quot; verboseBreakpoints=&quot;yes&quot; kind=&quot;SOURCEPOSITION&quot;&gt;&#10;&#9;&#9;&lt;master_location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; debugFile=&quot;D:/ArmDS_workspace/irq-priority-basic/main.c&quot; hostFile=&quot;D:\ArmDS_workspace\irq-priority-basic\main.c&quot; line=&quot;136&quot;/&gt;&#10;&#9;&#9;&lt;location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; debugFile=&quot;D:/ArmDS_workspace/irq-priority-basic/main.c&quot; hostFile=&quot;D:\ArmDS_workspace\irq-priority-basic\main.c&quot; line=&quot;136&quot;/&gt;&#10;&#9;&lt;/breakpoint&gt;&#10;&#9;&lt;breakpoint ignorecount=&quot;0&quot; threadenabled=&quot;no&quot; core_list=&quot;&quot; continue=&quot;no&quot; verboseBreakpoints=&quot;yes&quot; kind=&quot;SOURCEPOSITION&quot;&gt;&#10;&#9;&#9;&lt;master_location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; debugFile=&quot;D:/ArmDS_workspace/Test2/excep_prog.c&quot; hostFile=&quot;D:\ArmDS_workspace\Test2\excep_prog.c&quot; line=&quot;57&quot;/&gt;&#10;&#9;&#9;&lt;location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; debugFile=&quot;D:/ArmDS_workspace/Test2/excep_prog.c&quot; hostFile=&quot;D:\ArmDS_workspace\Test2\excep_prog.c&quot; line=&quot;57&quot;/&gt;&#10;&#9;&lt;/breakpoint&gt;&#10;&#9;&lt;breakpoint ignorecount=&quot;0&quot; threadenabled=&quot;no&quot; core_list=&quot;&quot; continue=&quot;no&quot; verboseBreakpoints=&quot;yes&quot; kind=&quot;SOURCEPOSITION&quot;&gt;&#10;&#9;&#9;&lt;master_location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; debugFile=&quot;D:/ArmDS_workspace/Test2/excep_prog.c&quot; hostFile=&quot;D:\ArmDS_workspace\Test2\excep_prog.c&quot; line=&quot;67&quot;/&gt;&#10;&#9;&#9;&lt;location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; debugFile=&quot;D:/ArmDS_workspace/Test2/excep_prog.c&quot; hostFile=&quot;D:\ArmDS_workspace\Test2\excep_prog.c&quot; line=&quot;67&quot;/&gt;&#10;&#9;&lt;/breakpoint&gt;&#10;&#9;&lt;breakpoint ignorecount=&quot;0&quot; threadenabled=&quot;no&quot; core_list=&quot;&quot; continue=&quot;no&quot; verboseBreakpoints=&quot;yes&quot; kind=&quot;SOURCEPOSITION&quot;&gt;&#10;&#9;&#9;&lt;master_location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; debugFile=&quot;D:/ArmDS_workspace/interrupt-deprivileging/excep_prog.c&quot; hostFile=&quot;D:\ArmDS_workspace\interrupt-deprivileging\excep_prog.c&quot; line=&quot;67&quot;/&gt;&#10;&#9;&#9;&lt;location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; debugFile=&quot;D:/ArmDS_workspace/interrupt-deprivileging/excep_prog.c&quot; hostFile=&quot;D:\ArmDS_workspace\interrupt-deprivileging\excep_prog.c&quot; line=&quot;67&quot;/&gt;&#10;&#9;&lt;/breakpoint&gt;&#10;&#9;&lt;breakpoint ignorecount=&quot;0&quot; threadenabled=&quot;no&quot; core_list=&quot;&quot; continue=&quot;no&quot; verboseBreakpoints=&quot;yes&quot; kind=&quot;SOURCEPOSITION&quot;&gt;&#10;&#9;&#9;&lt;master_location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; debugFile=&quot;D:/ArmDS_workspace/interrupt-deprivileging/excep_prog.c&quot; hostFile=&quot;D:\ArmDS_workspace\interrupt-deprivileging\excep_prog.c&quot; line=&quot;57&quot;/&gt;&#10;&#9;&#9;&lt;location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; debugFile=&quot;D:/ArmDS_workspace/interrupt-deprivileging/excep_prog.c&quot; hostFile=&quot;D:\ArmDS_workspace\interrupt-deprivileging\excep_prog.c&quot; line=&quot;57&quot;/&gt;&#10;&#9;&lt;/breakpoint&gt;&#10;&#9;&lt;breakpoint ignorecount=&quot;0&quot; threadenabled=&quot;no&quot; core_list=&quot;&quot; continue=&quot;no&quot; verboseBreakpoints=&quot;yes&quot; kind=&quot;SOURCEPOSITION&quot;&gt;&#10;&#9;&#9;&lt;master_location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; debugFile=&quot;D:/ArmDS_workspace/user-guide-example-projects/exception_model/interrupt-deprivileging/excep_prog.c&quot; hostFile=&quot;D:\ArmDS_workspace\user-guide-example-projects\exception_model\interrupt-deprivileging\excep_prog.c&quot; line=&quot;67&quot;/&gt;&#10;&#9;&#9;&lt;location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; debugFile=&quot;D:/ArmDS_workspace/user-guide-example-projects/exception_model/interrupt-deprivileging/excep_prog.c&quot; hostFile=&quot;D:\ArmDS_workspace\user-guide-example-projects\exception_model\interrupt-deprivileging\excep_prog.c&quot; line=&quot;67&quot;/&gt;&#10;&#9;&lt;/breakpoint&gt;&#10;&#9;&lt;breakpoint ignorecount=&quot;0&quot; threadenabled=&quot;no&quot; core_list=&quot;&quot; continue=&quot;no&quot; verboseBreakpoints=&quot;yes&quot; kind=&quot;SOURCEPOSITION&quot;&gt;&#10;&#9;&#9;&lt;master_location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; debugFile=&quot;D:/ArmDS_workspace/user-guide-example-projects/exception_model/interrupt-deprivileging/excep_prog.c&quot; hostFile=&quot;D:\ArmDS_workspace\user-guide-example-projects\exception_model\interrupt-deprivileging\excep_prog.c&quot; line=&quot;53&quot;/&gt;&#10;&#9;&#9;&lt;location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; debugFile=&quot;D:/ArmDS_workspace/user-guide-example-projects/exception_model/interrupt-deprivileging/excep_prog.c&quot; hostFile=&quot;D:\ArmDS_workspace\user-guide-example-projects\exception_model\interrupt-deprivileging\excep_prog.c&quot; line=&quot;53&quot;/&gt;&#10;&#9;&lt;/breakpoint&gt;&#10;&lt;/breakpoints&gt;&#10;"/>
+    <stringAttribute key="breakpoints" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;breakpoints order=&quot;ALPHA&quot;&gt;&#10;&#9;&lt;breakpoint ignorecount=&quot;0&quot; threadenabled=&quot;no&quot; core_list=&quot;&quot; continue=&quot;no&quot; verboseBreakpoints=&quot;yes&quot; kind=&quot;SOURCEPOSITION&quot;&gt;&#10;&#9;&#9;&lt;master_location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; debugFile=&quot;D:/ArmDS_workspace/Test/excep_prog.c&quot; hostFile=&quot;D:\ArmDS_workspace\Test\excep_prog.c&quot; line=&quot;110&quot;/&gt;&#10;&#9;&#9;&lt;location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; debugFile=&quot;D:/ArmDS_workspace/Test/excep_prog.c&quot; hostFile=&quot;D:\ArmDS_workspace\Test\excep_prog.c&quot; line=&quot;110&quot;/&gt;&#10;&#9;&lt;/breakpoint&gt;&#10;&#9;&lt;breakpoint ignorecount=&quot;0&quot; threadenabled=&quot;no&quot; core_list=&quot;&quot; continue=&quot;no&quot; verboseBreakpoints=&quot;yes&quot; kind=&quot;SOURCEPOSITION&quot;&gt;&#10;&#9;&#9;&lt;master_location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; debugFile=&quot;D:/ArmDS_workspace/Test/excep_prog.c&quot; hostFile=&quot;D:\ArmDS_workspace\Test\excep_prog.c&quot; line=&quot;96&quot;/&gt;&#10;&#9;&#9;&lt;location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; debugFile=&quot;D:/ArmDS_workspace/Test/excep_prog.c&quot; hostFile=&quot;D:\ArmDS_workspace\Test\excep_prog.c&quot; line=&quot;96&quot;/&gt;&#10;&#9;&lt;/breakpoint&gt;&#10;&#9;&lt;breakpoint ignorecount=&quot;0&quot; threadenabled=&quot;no&quot; core_list=&quot;&quot; continue=&quot;no&quot; verboseBreakpoints=&quot;yes&quot; kind=&quot;SOURCEPOSITION&quot;&gt;&#10;&#9;&#9;&lt;master_location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; debugFile=&quot;D:/ArmDS_workspace/irq-priority-basic/main.c&quot; hostFile=&quot;D:\ArmDS_workspace\irq-priority-basic\main.c&quot; line=&quot;136&quot;/&gt;&#10;&#9;&#9;&lt;location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; debugFile=&quot;D:/ArmDS_workspace/irq-priority-basic/main.c&quot; hostFile=&quot;D:\ArmDS_workspace\irq-priority-basic\main.c&quot; line=&quot;136&quot;/&gt;&#10;&#9;&lt;/breakpoint&gt;&#10;&#9;&lt;breakpoint ignorecount=&quot;0&quot; threadenabled=&quot;no&quot; core_list=&quot;&quot; continue=&quot;no&quot; verboseBreakpoints=&quot;yes&quot; kind=&quot;SOURCEPOSITION&quot;&gt;&#10;&#9;&#9;&lt;master_location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; debugFile=&quot;D:/ArmDS_workspace/Test2/excep_prog.c&quot; hostFile=&quot;D:\ArmDS_workspace\Test2\excep_prog.c&quot; line=&quot;57&quot;/&gt;&#10;&#9;&#9;&lt;location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; debugFile=&quot;D:/ArmDS_workspace/Test2/excep_prog.c&quot; hostFile=&quot;D:\ArmDS_workspace\Test2\excep_prog.c&quot; line=&quot;57&quot;/&gt;&#10;&#9;&lt;/breakpoint&gt;&#10;&#9;&lt;breakpoint ignorecount=&quot;0&quot; threadenabled=&quot;no&quot; core_list=&quot;&quot; continue=&quot;no&quot; verboseBreakpoints=&quot;yes&quot; kind=&quot;SOURCEPOSITION&quot;&gt;&#10;&#9;&#9;&lt;master_location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; debugFile=&quot;D:/ArmDS_workspace/Test2/excep_prog.c&quot; hostFile=&quot;D:\ArmDS_workspace\Test2\excep_prog.c&quot; line=&quot;67&quot;/&gt;&#10;&#9;&#9;&lt;location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; debugFile=&quot;D:/ArmDS_workspace/Test2/excep_prog.c&quot; hostFile=&quot;D:\ArmDS_workspace\Test2\excep_prog.c&quot; line=&quot;67&quot;/&gt;&#10;&#9;&lt;/breakpoint&gt;&#10;&#9;&lt;breakpoint ignorecount=&quot;0&quot; threadenabled=&quot;no&quot; core_list=&quot;&quot; continue=&quot;no&quot; verboseBreakpoints=&quot;yes&quot; kind=&quot;SOURCEPOSITION&quot;&gt;&#10;&#9;&#9;&lt;master_location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; debugFile=&quot;D:/ArmDS_workspace/interrupt-deprivileging/excep_prog.c&quot; hostFile=&quot;D:\ArmDS_workspace\interrupt-deprivileging\excep_prog.c&quot; line=&quot;67&quot;/&gt;&#10;&#9;&#9;&lt;location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; debugFile=&quot;D:/ArmDS_workspace/interrupt-deprivileging/excep_prog.c&quot; hostFile=&quot;D:\ArmDS_workspace\interrupt-deprivileging\excep_prog.c&quot; line=&quot;67&quot;/&gt;&#10;&#9;&lt;/breakpoint&gt;&#10;&#9;&lt;breakpoint ignorecount=&quot;0&quot; threadenabled=&quot;no&quot; core_list=&quot;&quot; continue=&quot;no&quot; verboseBreakpoints=&quot;yes&quot; kind=&quot;SOURCEPOSITION&quot;&gt;&#10;&#9;&#9;&lt;master_location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; debugFile=&quot;D:/ArmDS_workspace/interrupt-deprivileging/excep_prog.c&quot; hostFile=&quot;D:\ArmDS_workspace\interrupt-deprivileging\excep_prog.c&quot; line=&quot;57&quot;/&gt;&#10;&#9;&#9;&lt;location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; debugFile=&quot;D:/ArmDS_workspace/interrupt-deprivileging/excep_prog.c&quot; hostFile=&quot;D:\ArmDS_workspace\interrupt-deprivileging\excep_prog.c&quot; line=&quot;57&quot;/&gt;&#10;&#9;&lt;/breakpoint&gt;&#10;&#9;&lt;breakpoint ignorecount=&quot;0&quot; threadenabled=&quot;no&quot; core_list=&quot;&quot; continue=&quot;no&quot; verboseBreakpoints=&quot;yes&quot; kind=&quot;SOURCEPOSITION&quot;&gt;&#10;&#9;&#9;&lt;master_location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; debugFile=&quot;D:/ArmDS_workspace/user-guide-example-projects/exception_model/interrupt-deprivileging/excep_prog.c&quot; hostFile=&quot;D:\ArmDS_workspace\user-guide-example-projects\exception_model\interrupt-deprivileging\excep_prog.c&quot; line=&quot;67&quot;/&gt;&#10;&#9;&#9;&lt;location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; debugFile=&quot;D:/ArmDS_workspace/user-guide-example-projects/exception_model/interrupt-deprivileging/excep_prog.c&quot; hostFile=&quot;D:\ArmDS_workspace\user-guide-example-projects\exception_model\interrupt-deprivileging\excep_prog.c&quot; line=&quot;67&quot;/&gt;&#10;&#9;&lt;/breakpoint&gt;&#10;&#9;&lt;breakpoint ignorecount=&quot;0&quot; threadenabled=&quot;no&quot; core_list=&quot;&quot; continue=&quot;no&quot; verboseBreakpoints=&quot;yes&quot; kind=&quot;SOURCEPOSITION&quot;&gt;&#10;&#9;&#9;&lt;master_location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; debugFile=&quot;D:/ArmDS_workspace/user-guide-example-projects/exception_model/interrupt-deprivileging/excep_prog.c&quot; hostFile=&quot;D:\ArmDS_workspace\user-guide-example-projects\exception_model\interrupt-deprivileging\excep_prog.c&quot; line=&quot;53&quot;/&gt;&#10;&#9;&#9;&lt;location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; debugFile=&quot;D:/ArmDS_workspace/user-guide-example-projects/exception_model/interrupt-deprivileging/excep_prog.c&quot; hostFile=&quot;D:\ArmDS_workspace\user-guide-example-projects\exception_model\interrupt-deprivileging\excep_prog.c&quot; line=&quot;53&quot;/&gt;&#10;&#9;&lt;/breakpoint&gt;&#10;&#9;&lt;breakpoint ignorecount=&quot;0&quot; threadenabled=&quot;no&quot; core_list=&quot;&quot; continue=&quot;no&quot; verboseBreakpoints=&quot;yes&quot; kind=&quot;SOURCEPOSITION&quot;&gt;&#10;&#9;&#9;&lt;master_location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; hostFile=&quot;D:\ArmDS_workspace\user-guide-example-projects\projects\m-profile\exception_model\interrupt-deprivileging\main.c&quot; line=&quot;40&quot;/&gt;&#10;&#9;&#9;&lt;location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; address=&quot;0x00000340&quot; debugFile=&quot;D:/ArmDS_workspace/user-guide-example-projects/projects/m-profile/exception_model/interrupt-deprivileging/main.c&quot; hostFile=&quot;D:\ArmDS_workspace\user-guide-example-projects\projects\m-profile\exception_model\interrupt-deprivileging\main.c&quot; line=&quot;40&quot;/&gt;&#10;&#9;&lt;/breakpoint&gt;&#10;&#9;&lt;breakpoint ignorecount=&quot;0&quot; threadenabled=&quot;no&quot; core_list=&quot;&quot; continue=&quot;no&quot; verboseBreakpoints=&quot;yes&quot; kind=&quot;SOURCEPOSITION&quot;&gt;&#10;&#9;&#9;&lt;master_location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; hostFile=&quot;D:\ArmDS_workspace\user-guide-example-projects\projects\m-profile\exception_model\interrupt-deprivileging\UnprivilegedFuncs.c&quot; line=&quot;47&quot;/&gt;&#10;&#9;&#9;&lt;location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; address=&quot;0x10000F68&quot; debugFile=&quot;D:/ArmDS_workspace/user-guide-example-projects/projects/m-profile/exception_model/interrupt-deprivileging/UnprivilegedFuncs.c&quot; hostFile=&quot;D:\ArmDS_workspace\user-guide-example-projects\projects\m-profile\exception_model\interrupt-deprivileging\UnprivilegedFuncs.c&quot; line=&quot;47&quot;/&gt;&#10;&#9;&lt;/breakpoint&gt;&#10;&#9;&lt;breakpoint ignorecount=&quot;0&quot; threadenabled=&quot;no&quot; core_list=&quot;&quot; continue=&quot;no&quot; verboseBreakpoints=&quot;yes&quot; kind=&quot;SOURCEPOSITION&quot;&gt;&#10;&#9;&#9;&lt;master_location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; address=&quot;0x00000372&quot; debugFile=&quot;D:/ArmDS_workspace/user-guide-example-projects/projects/m-profile/exception_model/interrupt-deprivileging/main.c&quot; hostFile=&quot;D:\ArmDS_workspace\user-guide-example-projects\projects\m-profile\exception_model\interrupt-deprivileging\main.c&quot; line=&quot;65&quot; function=&quot;main&quot;/&gt;&#10;&#9;&#9;&lt;location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; address=&quot;0x00000382&quot; debugFile=&quot;D:/ArmDS_workspace/user-guide-example-projects/projects/m-profile/exception_model/interrupt-deprivileging/main.c&quot; hostFile=&quot;D:\ArmDS_workspace\user-guide-example-projects\projects\m-profile\exception_model\interrupt-deprivileging\main.c&quot; line=&quot;65&quot; function=&quot;main&quot;/&gt;&#10;&#9;&lt;/breakpoint&gt;&#10;&lt;/breakpoints&gt;&#10;"/>
     <listAttribute key="com.arm.debug.views.common.AddressTracker.debugger.view.DisassemblyView.addresses">
         <listEntry value="&lt;Next Instruction&gt;"/>
-        <listEntry value=""/>
-        <listEntry value="main"/>
-        <listEntry value="main"/>
-        <listEntry value="__main"/>
-        <listEntry value="printf"/>
-        <listEntry value="__rt_entry"/>
     </listAttribute>
     <listAttribute key="com.arm.debug.views.common.AddressTracker.debugger.view.DisassemblyView.ranges">
         <listEntry value="100"/>
-        <listEntry value=""/>
-        <listEntry value="500"/>
-        <listEntry value="100"/>
-        <listEntry value="100"/>
-        <listEntry value="100"/>
-        <listEntry value="100"/>
     </listAttribute>
     <listAttribute key="com.arm.debug.views.common.AddressTracker.debugger.view.MemoryView.addresses">
-        <listEntry value=""/>
         <listEntry value="&lt;Next Instruction&gt;"/>
+        <listEntry value=""/>
+        <listEntry value="0x207fffd0"/>
+        <listEntry value="0x207fffff"/>
+        <listEntry value="0x20040000"/>
         <listEntry value="0xE001E"/>
         <listEntry value="0x10000000"/>
         <listEntry value="0x1000000"/>
@@ -510,7 +504,6 @@
         <listEntry value="0x2003F400"/>
         <listEntry value="0x2003F000"/>
         <listEntry value="$SP"/>
-        <listEntry value="0x20040000"/>
         <listEntry value="0x2003FFFF"/>
         <listEntry value="0x2003FF00"/>
         <listEntry value="0x20030000"/>
@@ -518,12 +511,10 @@
         <listEntry value="0x0000000"/>
         <listEntry value="0x80101d10"/>
         <listEntry value="0x80100000"/>
-        <listEntry value="0x80101000"/>
-        <listEntry value="0x80102000"/>
     </listAttribute>
     <listAttribute key="com.arm.debug.views.common.AddressTracker.debugger.view.MemoryView.ranges">
-        <listEntry value=""/>
         <listEntry value="1024"/>
+        <listEntry value=""/>
         <listEntry value="1024"/>
         <listEntry value="1024"/>
         <listEntry value="1024"/>
@@ -562,12 +553,13 @@
         <listEntry value="&lt;Next Instruction&gt;"/>
         <listEntry value="100"/>
     </listAttribute>
+    <stringAttribute key="debugger.view.MMUView:DebugOutlineColumnState" value="OutlineConfig1&#9;5&#9;0&#9;true&#9;false&#9;16&#9;-1&#9;true&#9;3&#9;true&#9;true&#9;138&#9;-1&#9;true&#9;5&#9;true&#9;true&#9;155&#9;-1&#9;true&#9;4&#9;true&#9;true&#9;59&#9;-1&#9;true&#9;6&#9;true&#9;true&#9;104&#9;-1&#9;true"/>
     <stringAttribute key="debugger.view.MemoryView" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;page&gt;&#10;&#9;&lt;memoryView/&gt;&#10;&lt;/page&gt;&#10;"/>
     <listAttribute key="debugger.view.MemoryView:current">
-        <listEntry value=""/>
-        <listEntry value=""/>
+        <listEntry value="&lt;Next Instruction&gt;"/>
+        <listEntry value="1024"/>
     </listAttribute>
-    <stringAttribute key="debugger.view.NewRegisterView:DebugOutlineColumnState" value="OutlineConfig1&#9;8&#9;0&#9;true&#9;true&#9;205&#9;-1&#9;true&#9;1&#9;false&#9;true&#9;138&#9;-1&#9;true&#9;2&#9;true&#9;true&#9;189&#9;-1&#9;true&#9;3&#9;false&#9;true&#9;59&#9;-1&#9;true&#9;4&#9;false&#9;true&#9;68&#9;-1&#9;true&#9;5&#9;true&#9;true&#9;51&#9;-1&#9;true&#9;6&#9;false&#9;true&#9;90&#9;-1&#9;true&#9;7&#9;true&#9;true&#9;74&#9;-1&#9;true"/>
+    <stringAttribute key="debugger.view.NewRegisterView:DebugOutlineColumnState" value="OutlineConfig1&#9;8&#9;0&#9;true&#9;true&#9;111&#9;-1&#9;true&#9;1&#9;false&#9;true&#9;138&#9;-1&#9;true&#9;2&#9;true&#9;true&#9;189&#9;-1&#9;true&#9;3&#9;false&#9;true&#9;59&#9;-1&#9;true&#9;4&#9;false&#9;true&#9;68&#9;-1&#9;true&#9;5&#9;true&#9;true&#9;51&#9;-1&#9;true&#9;6&#9;false&#9;true&#9;90&#9;-1&#9;true&#9;7&#9;true&#9;true&#9;74&#9;-1&#9;true"/>
     <stringAttribute key="debugger.view.NewRegisterView:_selectedRegisterSet" value="All registers"/>
     <mapAttribute key="debugger.view.NewRegisterView_registerSets"/>
     <stringAttribute key="debugger.view.VariableTreeView:DebugOutlineColumnState" value="OutlineConfig1&#9;8&#9;0&#9;true&#9;true&#9;217&#9;-1&#9;true&#9;1&#9;false&#9;true&#9;138&#9;-1&#9;true&#9;2&#9;true&#9;true&#9;147&#9;-1&#9;true&#9;3&#9;true&#9;false&#9;163&#9;-1&#9;true&#9;4&#9;true&#9;true&#9;68&#9;-1&#9;true&#9;5&#9;true&#9;true&#9;51&#9;-1&#9;true&#9;6&#9;true&#9;true&#9;90&#9;-1&#9;true&#9;7&#9;true&#9;true&#9;74&#9;-1&#9;true"/>
@@ -583,13 +575,13 @@
     <booleanAttribute key="linuxOS" value="false"/>
     <stringAttribute key="model_connection_address" value="127.0.0.1:7100"/>
     <stringAttribute key="model_iris" value="1"/>
-    <stringAttribute key="model_params" value="-C fvp_mps2.DISABLE_GATING=1 -C cpu0.INITSVTOR=0x0 "/>
+    <stringAttribute key="model_params" value="-C fvp_mps2.DISABLE_GATING=1 -C cpu0.INITSVTOR=0x0  -C cpu0.semihosting-heap_base=0x0 -C cpu0.semihosting-heap_limit=0x0 -C cpu0.semihosting-stack_base=0x0 -C cpu0.semihosting-stack_limit=0x0 "/>
     <booleanAttribute key="org.eclipse.debug.ui.ATTR_LAUNCH_IN_BACKGROUND" value="false"/>
     <booleanAttribute key="runAfterConnect" value="false"/>
     <listAttribute key="setup">
         <listEntry value="CDB://Scripts/rtsm_launcher.py"/>
         <listEntry value="&quot;FVP_MPS2_Cortex-M55&quot;"/>
     </listAttribute>
-    <stringAttribute key="stopAtExpression" value="main"/>
+    <stringAttribute key="stopAtExpression" value="*$ENTRYPOINT"/>
     <stringAttribute key="watchpoints" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;watchpoints&gt;&#10;&lt;/watchpoints&gt;&#10;"/>
 </launchConfiguration>

@@ -3,56 +3,56 @@
     <stringAttribute key="*" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;page&gt;&#10;&#9;&lt;memoryView displayWidthTag=&quot;BYTE_4&quot; numberOfColumns=&quot;16&quot; formatTag=&quot;Hexadecimal&quot;/&gt;&#10;&lt;/page&gt;&#10;"/>
     <booleanAttribute key="ADAPTIVE_CLOCK" value="false"/>
     <mapAttribute key="AverageDurationTracker">
-        <mapEntry key="*Fetching Data Model" value="196662"/>
-        <mapEntry key="*list global low level symbols" value="652402"/>
+        <mapEntry key="*Fetching Data Model" value="202558"/>
+        <mapEntry key="*list global low level symbols" value="706523"/>
         <mapEntry key="*loading memory from target" value="1430242"/>
         <mapEntry key="*loading values from target" value="2745217"/>
         <mapEntry key="*trace" value="80798576"/>
-        <mapEntry key="*updating registers" value="10610290"/>
+        <mapEntry key="*updating registers" value="13450985"/>
         <mapEntry key="*updating variables" value="416500"/>
-        <mapEntry key="AddEventObserver" value="1721863"/>
-        <mapEntry key="Evaluate" value="956356"/>
-        <mapEntry key="ListRegimeWarningsCommand" value="231364"/>
+        <mapEntry key="AddEventObserver" value="1714189"/>
+        <mapEntry key="Evaluate" value="1049193"/>
+        <mapEntry key="ListRegimeWarningsCommand" value="182582"/>
         <mapEntry key="Retrieving globals list" value="14034495"/>
-        <mapEntry key="areCachesAvailable" value="439658"/>
-        <mapEntry key="break" value="2432005"/>
+        <mapEntry key="areCachesAvailable" value="463864"/>
+        <mapEntry key="break" value="1346462"/>
         <mapEntry key="checking tracepoints" value="444773"/>
-        <mapEntry key="compute execution mode" value="880277"/>
+        <mapEntry key="compute execution mode" value="847199"/>
         <mapEntry key="console" value="874714"/>
-        <mapEntry key="continue" value="4242540"/>
+        <mapEntry key="continue" value="12315777"/>
         <mapEntry key="disable" value="655050"/>
-        <mapEntry key="disassemble" value="59004681"/>
+        <mapEntry key="disassemble" value="40451158"/>
         <mapEntry key="enable" value="1186400"/>
         <mapEntry key="evaluate address" value="1172256"/>
         <mapEntry key="finish" value="8592925"/>
         <mapEntry key="get byte order" value="323132"/>
-        <mapEntry key="get capabilities" value="141771"/>
+        <mapEntry key="get capabilities" value="153427"/>
         <mapEntry key="get cwd" value="384843"/>
-        <mapEntry key="get execution addresss" value="365135"/>
-        <mapEntry key="get source lines" value="342820"/>
-        <mapEntry key="getValidEncodings" value="519166"/>
-        <mapEntry key="initialize command help" value="47170225"/>
-        <mapEntry key="interrupt" value="2493907472"/>
-        <mapEntry key="list breakpoint options" value="168886"/>
-        <mapEntry key="list breakpoints" value="559651"/>
-        <mapEntry key="list instruction sets" value="170644"/>
-        <mapEntry key="list signals" value="5292710"/>
-        <mapEntry key="list translations" value="502742"/>
-        <mapEntry key="list watchpoint options" value="271635"/>
-        <mapEntry key="list watchpoints" value="459838"/>
-        <mapEntry key="loadfile" value="26833233"/>
+        <mapEntry key="get execution addresss" value="293574"/>
+        <mapEntry key="get source lines" value="221335"/>
+        <mapEntry key="getValidEncodings" value="501591"/>
+        <mapEntry key="initialize command help" value="52640100"/>
+        <mapEntry key="interrupt" value="1527201804"/>
+        <mapEntry key="list breakpoint options" value="109681"/>
+        <mapEntry key="list breakpoints" value="482423"/>
+        <mapEntry key="list instruction sets" value="157476"/>
+        <mapEntry key="list signals" value="4852606"/>
+        <mapEntry key="list translations" value="336271"/>
+        <mapEntry key="list watchpoint options" value="136607"/>
+        <mapEntry key="list watchpoints" value="229260"/>
+        <mapEntry key="loadfile" value="28169548"/>
         <mapEntry key="read memory map" value="35784050"/>
-        <mapEntry key="remove" value="1666343"/>
-        <mapEntry key="set CWD" value="1075688"/>
-        <mapEntry key="set breakpoint properties" value="3377055"/>
-        <mapEntry key="set debug-from" value="893918"/>
-        <mapEntry key="start" value="22634929"/>
-        <mapEntry key="step" value="43562489"/>
+        <mapEntry key="remove" value="2120721"/>
+        <mapEntry key="set CWD" value="1357775"/>
+        <mapEntry key="set breakpoint properties" value="1769520"/>
+        <mapEntry key="set debug-from" value="988484"/>
+        <mapEntry key="start" value="25124031"/>
+        <mapEntry key="step" value="58982294"/>
         <mapEntry key="stepi" value="51748731"/>
         <mapEntry key="synchronizing trace ranges" value="90097"/>
-        <mapEntry key="toggleBreakpoint" value="3750729"/>
-        <mapEntry key="updating MMU tables" value="1764898"/>
-        <mapEntry key="waitForTargetToStop" value="22390366"/>
+        <mapEntry key="toggleBreakpoint" value="5181514"/>
+        <mapEntry key="updating MMU tables" value="120137"/>
+        <mapEntry key="waitForTargetToStop" value="28192371"/>
         <mapEntry key="write expression" value="1543555"/>
     </mapAttribute>
     <stringAttribute key="CLOCK_SPEED" value="Auto"/>
@@ -72,7 +72,7 @@
     <listAttribute key="FILES.DOWNLOAD_AND_DEBUG"/>
     <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.0.OPTION.ALSO_LOAD_SYMBOLS" value="true"/>
     <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.0.OPTION.ON_DEMAND_LOAD" value="true"/>
-    <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.0.TYPE" value="TARGET_WORKING_DIR"/>
+    <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.0.TYPE" value="TARGET_DOWNLOAD_DIR"/>
     <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.0.VALUE" value=""/>
     <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.1.OPTION.ALSO_LOAD_SYMBOLS" value="true"/>
     <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.1.OPTION.ON_DEMAND_LOAD" value="true"/>
@@ -80,13 +80,13 @@
     <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.1.VALUE" value=""/>
     <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.2.OPTION.ALSO_LOAD_SYMBOLS" value="true"/>
     <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.2.OPTION.ON_DEMAND_LOAD" value="true"/>
-    <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.2.TYPE" value="TARGET_DOWNLOAD_DIR"/>
+    <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.2.TYPE" value="TARGET_WORKING_DIR"/>
     <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.2.VALUE" value=""/>
     <intAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.COUNT" value="3"/>
     <listAttribute key="FILES.DOWNLOAD_DEBUG"/>
     <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.0.OPTION.ALSO_LOAD_SYMBOLS" value="true"/>
     <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.0.OPTION.ON_DEMAND_LOAD" value="true"/>
-    <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.0.TYPE" value="TARGET_WORKING_DIR"/>
+    <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.0.TYPE" value="TARGET_DOWNLOAD_DIR"/>
     <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.0.VALUE" value=""/>
     <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.1.OPTION.ALSO_LOAD_SYMBOLS" value="true"/>
     <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.1.OPTION.ON_DEMAND_LOAD" value="true"/>
@@ -94,7 +94,7 @@
     <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.1.VALUE" value=""/>
     <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.2.OPTION.ALSO_LOAD_SYMBOLS" value="true"/>
     <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.2.OPTION.ON_DEMAND_LOAD" value="true"/>
-    <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.2.TYPE" value="TARGET_DOWNLOAD_DIR"/>
+    <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.2.TYPE" value="TARGET_WORKING_DIR"/>
     <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.2.VALUE" value=""/>
     <intAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.COUNT" value="3"/>
     <intAttribute key="FILES.DOWNLOAD_DEBUG_ANDROID.RESOURCES.COUNT" value="0"/>
@@ -145,24 +145,15 @@
     <stringAttribute key="breakpoints" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;breakpoints order=&quot;ALPHA&quot;&gt;&#10;&#9;&lt;breakpoint ignorecount=&quot;0&quot; threadenabled=&quot;no&quot; core_list=&quot;&quot; continue=&quot;no&quot; verboseBreakpoints=&quot;yes&quot; kind=&quot;SOURCEPOSITION&quot;&gt;&#10;&#9;&#9;&lt;master_location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; debugFile=&quot;D:/ArmDS_workspace/user-guide-example-projects/M55_TCM/TCMConfig.c&quot; hostFile=&quot;D:\ArmDS_workspace\user-guide-example-projects\M55_TCM\TCMConfig.c&quot; line=&quot;40&quot;/&gt;&#10;&#9;&#9;&lt;location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; debugFile=&quot;D:/ArmDS_workspace/user-guide-example-projects/M55_TCM/TCMConfig.c&quot; hostFile=&quot;D:\ArmDS_workspace\user-guide-example-projects\M55_TCM\TCMConfig.c&quot; line=&quot;40&quot;/&gt;&#10;&#9;&lt;/breakpoint&gt;&#10;&#9;&lt;breakpoint ignorecount=&quot;0&quot; threadenabled=&quot;no&quot; core_list=&quot;&quot; continue=&quot;no&quot; verboseBreakpoints=&quot;yes&quot; kind=&quot;SOURCEPOSITION&quot;&gt;&#10;&#9;&#9;&lt;master_location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; debugFile=&quot;D:/ArmDS_workspace/user-guide-example-projects/M55_TCM/TCMConfig.c&quot; hostFile=&quot;D:\ArmDS_workspace\user-guide-example-projects\M55_TCM\TCMConfig.c&quot; line=&quot;47&quot;/&gt;&#10;&#9;&#9;&lt;location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; debugFile=&quot;D:/ArmDS_workspace/user-guide-example-projects/M55_TCM/TCMConfig.c&quot; hostFile=&quot;D:\ArmDS_workspace\user-guide-example-projects\M55_TCM\TCMConfig.c&quot; line=&quot;47&quot;/&gt;&#10;&#9;&lt;/breakpoint&gt;&#10;&#9;&lt;breakpoint ignorecount=&quot;0&quot; threadenabled=&quot;no&quot; core_list=&quot;&quot; continue=&quot;no&quot; verboseBreakpoints=&quot;yes&quot; kind=&quot;RAW_EXEC_ADDRESS&quot;&gt;&#10;&#9;&#9;&lt;master_location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; address=&quot;0x10001D3A&quot; debugFile=&quot;D:/ArmDS_workspace/user-guide-example-projects/M55_TCM/function.c&quot; hostFile=&quot;D:\ArmDS_workspace\user-guide-example-projects\M55_TCM\function.c&quot; line=&quot;69&quot; function=&quot;PrintRow&quot;/&gt;&#10;&#9;&#9;&lt;location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; address=&quot;0x10001D3A&quot; debugFile=&quot;D:/ArmDS_workspace/user-guide-example-projects/M55_TCM/function.c&quot; hostFile=&quot;D:\ArmDS_workspace\user-guide-example-projects\M55_TCM\function.c&quot; line=&quot;72&quot; function=&quot;PrintRow&quot;/&gt;&#10;&#9;&lt;/breakpoint&gt;&#10;&#9;&lt;breakpoint ignorecount=&quot;0&quot; threadenabled=&quot;no&quot; core_list=&quot;&quot; continue=&quot;no&quot; verboseBreakpoints=&quot;yes&quot; kind=&quot;SOURCEPOSITION&quot;&gt;&#10;&#9;&#9;&lt;master_location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; debugFile=&quot;D:/ArmDS_workspace/user-guide-example-projects/M55_TCM/main.c&quot; hostFile=&quot;D:\ArmDS_workspace\user-guide-example-projects\M55_TCM\main.c&quot; line=&quot;69&quot;/&gt;&#10;&#9;&#9;&lt;location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; debugFile=&quot;D:/ArmDS_workspace/user-guide-example-projects/M55_TCM/main.c&quot; hostFile=&quot;D:\ArmDS_workspace\user-guide-example-projects\M55_TCM\main.c&quot; line=&quot;69&quot;/&gt;&#10;&#9;&lt;/breakpoint&gt;&#10;&#9;&lt;breakpoint ignorecount=&quot;0&quot; threadenabled=&quot;no&quot; core_list=&quot;&quot; continue=&quot;no&quot; verboseBreakpoints=&quot;yes&quot; kind=&quot;SOURCEPOSITION&quot;&gt;&#10;&#9;&#9;&lt;master_location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; debugFile=&quot;D:/ArmDS_workspace/user-guide-example-projects/M55_TCM/function.c&quot; hostFile=&quot;D:\ArmDS_workspace\user-guide-example-projects\M55_TCM\function.c&quot; line=&quot;67&quot;/&gt;&#10;&#9;&#9;&lt;location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; debugFile=&quot;D:/ArmDS_workspace/user-guide-example-projects/M55_TCM/function.c&quot; hostFile=&quot;D:\ArmDS_workspace\user-guide-example-projects\M55_TCM\function.c&quot; line=&quot;67&quot;/&gt;&#10;&#9;&lt;/breakpoint&gt;&#10;&#9;&lt;breakpoint ignorecount=&quot;0&quot; threadenabled=&quot;no&quot; core_list=&quot;&quot; continue=&quot;no&quot; verboseBreakpoints=&quot;yes&quot; kind=&quot;SOURCEPOSITION&quot;&gt;&#10;&#9;&#9;&lt;master_location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; debugFile=&quot;D:/ArmDS_workspace/user-guide-example-projects/M55_TCM/function.c&quot; hostFile=&quot;D:\ArmDS_workspace\user-guide-example-projects\M55_TCM\function.c&quot; line=&quot;72&quot;/&gt;&#10;&#9;&#9;&lt;location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; debugFile=&quot;D:/ArmDS_workspace/user-guide-example-projects/M55_TCM/function.c&quot; hostFile=&quot;D:\ArmDS_workspace\user-guide-example-projects\M55_TCM\function.c&quot; line=&quot;72&quot;/&gt;&#10;&#9;&lt;/breakpoint&gt;&#10;&#9;&lt;breakpoint ignorecount=&quot;0&quot; threadenabled=&quot;no&quot; core_list=&quot;&quot; continue=&quot;no&quot; verboseBreakpoints=&quot;yes&quot; kind=&quot;SOURCEPOSITION&quot;&gt;&#10;&#9;&#9;&lt;master_location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; debugFile=&quot;D:/ArmDS_workspace/user-guide-example-projects/M55_TCM/function.c&quot; hostFile=&quot;D:\ArmDS_workspace\user-guide-example-projects\M55_TCM\function.c&quot; line=&quot;53&quot;/&gt;&#10;&#9;&#9;&lt;location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; debugFile=&quot;D:/ArmDS_workspace/user-guide-example-projects/M55_TCM/function.c&quot; hostFile=&quot;D:\ArmDS_workspace\user-guide-example-projects\M55_TCM\function.c&quot; line=&quot;53&quot;/&gt;&#10;&#9;&lt;/breakpoint&gt;&#10;&#9;&lt;breakpoint ignorecount=&quot;0&quot; threadenabled=&quot;no&quot; core_list=&quot;&quot; continue=&quot;no&quot; verboseBreakpoints=&quot;yes&quot; kind=&quot;SOURCEPOSITION&quot;&gt;&#10;&#9;&#9;&lt;master_location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; debugFile=&quot;D:/ArmDS_workspace/TCM_TEST/check_is_full.c&quot; hostFile=&quot;D:\ArmDS_workspace\TCM_TEST\check_is_full.c&quot; line=&quot;53&quot;/&gt;&#10;&#9;&#9;&lt;location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; debugFile=&quot;D:/ArmDS_workspace/TCM_TEST/check_is_full.c&quot; hostFile=&quot;D:\ArmDS_workspace\TCM_TEST\check_is_full.c&quot; line=&quot;53&quot;/&gt;&#10;&#9;&lt;/breakpoint&gt;&#10;&lt;/breakpoints&gt;&#10;"/>
     <listAttribute key="com.arm.debug.views.common.AddressTracker.debugger.view.DisassemblyView.addresses">
         <listEntry value="&lt;Next Instruction&gt;"/>
-        <listEntry value=""/>
-        <listEntry value="main"/>
-        <listEntry value="main"/>
-        <listEntry value="__main"/>
-        <listEntry value="printf"/>
-        <listEntry value="__rt_entry"/>
     </listAttribute>
     <listAttribute key="com.arm.debug.views.common.AddressTracker.debugger.view.DisassemblyView.ranges">
-        <listEntry value="100"/>
-        <listEntry value=""/>
-        <listEntry value="500"/>
-        <listEntry value="100"/>
-        <listEntry value="100"/>
-        <listEntry value="100"/>
         <listEntry value="100"/>
     </listAttribute>
     <listAttribute key="com.arm.debug.views.common.AddressTracker.debugger.view.MemoryView.addresses">
         <listEntry value=""/>
+        <listEntry value="0x207fffd0"/>
+        <listEntry value="0x207fffff"/>
+        <listEntry value="0x20040000"/>
         <listEntry value="&lt;Next Instruction&gt;"/>
         <listEntry value="0xE001E"/>
         <listEntry value="0x10000000"/>
@@ -172,7 +163,6 @@
         <listEntry value="0x2003F400"/>
         <listEntry value="0x2003F000"/>
         <listEntry value="$SP"/>
-        <listEntry value="0x20040000"/>
         <listEntry value="0x2003FFFF"/>
         <listEntry value="0x2003FF00"/>
         <listEntry value="0x20030000"/>
@@ -180,8 +170,6 @@
         <listEntry value="0x0000000"/>
         <listEntry value="0x80101d10"/>
         <listEntry value="0x80100000"/>
-        <listEntry value="0x80101000"/>
-        <listEntry value="0x80102000"/>
     </listAttribute>
     <listAttribute key="com.arm.debug.views.common.AddressTracker.debugger.view.MemoryView.ranges">
         <listEntry value=""/>
@@ -224,7 +212,7 @@
         <listEntry value="&lt;Next Instruction&gt;"/>
         <listEntry value="100"/>
     </listAttribute>
-    <stringAttribute key="debugger.view.MMUView:DebugOutlineColumnState" value="OutlineConfig1&#9;5&#9;0&#9;true&#9;false&#9;16&#9;-1&#9;true&#9;1&#9;true&#9;true&#9;193&#9;-1&#9;true&#9;2&#9;true&#9;true&#9;59&#9;-1&#9;true&#9;4&#9;true&#9;true&#9;59&#9;-1&#9;true&#9;6&#9;true&#9;true&#9;400&#9;-1&#9;true"/>
+    <stringAttribute key="debugger.view.MMUView:DebugOutlineColumnState" value="OutlineConfig1&#9;5&#9;0&#9;true&#9;false&#9;16&#9;-1&#9;true&#9;3&#9;true&#9;true&#9;138&#9;-1&#9;true&#9;5&#9;true&#9;true&#9;155&#9;-1&#9;true&#9;4&#9;true&#9;true&#9;59&#9;-1&#9;true&#9;6&#9;true&#9;true&#9;104&#9;-1&#9;true"/>
     <stringAttribute key="debugger.view.MemoryView" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;page&gt;&#10;&#9;&lt;memoryView/&gt;&#10;&lt;/page&gt;&#10;"/>
     <listAttribute key="debugger.view.MemoryView:current">
         <listEntry value=""/>
@@ -234,7 +222,7 @@
         <listEntry value=""/>
         <listEntry value=""/>
     </listAttribute>
-    <stringAttribute key="debugger.view.NewRegisterView:DebugOutlineColumnState" value="OutlineConfig1&#9;8&#9;0&#9;true&#9;true&#9;69&#9;-1&#9;true&#9;1&#9;false&#9;true&#9;138&#9;-1&#9;true&#9;2&#9;true&#9;true&#9;65&#9;-1&#9;true&#9;3&#9;false&#9;true&#9;59&#9;-1&#9;true&#9;4&#9;false&#9;true&#9;68&#9;-1&#9;true&#9;5&#9;true&#9;true&#9;51&#9;-1&#9;true&#9;6&#9;false&#9;true&#9;90&#9;-1&#9;true&#9;7&#9;true&#9;true&#9;74&#9;-1&#9;true"/>
+    <stringAttribute key="debugger.view.NewRegisterView:DebugOutlineColumnState" value="OutlineConfig1&#9;8&#9;0&#9;true&#9;true&#9;111&#9;-1&#9;true&#9;1&#9;false&#9;true&#9;138&#9;-1&#9;true&#9;2&#9;true&#9;true&#9;189&#9;-1&#9;true&#9;3&#9;false&#9;true&#9;59&#9;-1&#9;true&#9;4&#9;false&#9;true&#9;68&#9;-1&#9;true&#9;5&#9;true&#9;true&#9;51&#9;-1&#9;true&#9;6&#9;false&#9;true&#9;90&#9;-1&#9;true&#9;7&#9;true&#9;true&#9;74&#9;-1&#9;true"/>
     <stringAttribute key="debugger.view.NewRegisterView:_selectedRegisterSet" value="All registers"/>
     <mapAttribute key="debugger.view.NewRegisterView_registerSets"/>
     <listAttribute key="debugger.view.TraceView:TRACE_EXPORT_FILTERS"/>
@@ -251,7 +239,7 @@
     <booleanAttribute key="linuxOS" value="false"/>
     <stringAttribute key="model_connection_address" value="127.0.0.1:7100"/>
     <stringAttribute key="model_iris" value="1"/>
-    <stringAttribute key="model_params" value="-C fvp_mps2.DISABLE_GATING=1 -C cpu0.INITSVTOR=0x10000000"/>
+    <stringAttribute key="model_params" value="-C fvp_mps2.DISABLE_GATING=1 -C cpu0.INITSVTOR=0x10000000  -C cpu0.semihosting-heap_base=0x0 -C cpu0.semihosting-heap_limit=0x0 -C cpu0.semihosting-stack_base=0x0 -C cpu0.semihosting-stack_limit=0x0 "/>
     <booleanAttribute key="runAfterConnect" value="false"/>
     <listAttribute key="setup">
         <listEntry value="CDB://Scripts/rtsm_launcher.py"/>

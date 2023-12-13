@@ -77,6 +77,7 @@
 							<tool id="com.arm.tool.c.linker.v6.base.var.arm_compiler_6-6.1031839289" name="Arm Linker 6" superClass="com.arm.tool.c.linker.v6.base.var.arm_compiler_6-6">
 								<option id="com.arm.tool.c.linker.option.entry.299350400" name="Image entry point (--entry)" superClass="com.arm.tool.c.linker.option.entry" value="Reset_Handler" valueType="string"/>
 								<option id="com.arm.tool.c.linker.option.scatter.1588554227" name="Scatter file (--scatter)" superClass="com.arm.tool.c.linker.option.scatter" value="${workspace_loc:/${ProjName}}/RTE/Device/ARMCM55/ARMCM55_ac6.sct" valueType="string"/>
+								<option id="com.arm.tool.c.linker.option.imagemap.838124551" superClass="com.arm.tool.c.linker.option.imagemap" useByScannerDiscovery="false" value="true" valueType="boolean"/>
 							</tool>
 							<tool id="com.arm.tool.librarian.v6.base.var.arm_compiler_6-6.1711040921" name="Arm Librarian 6" superClass="com.arm.tool.librarian.v6.base.var.arm_compiler_6-6"/>
 						</toolChain>

@@ -2,41 +2,41 @@
 <launchConfiguration type="com.arm.debugger.launcher2">
     <booleanAttribute key="ADAPTIVE_CLOCK" value="false"/>
     <mapAttribute key="AverageDurationTracker">
-        <mapEntry key="*Fetching Data Model" value="170948"/>
-        <mapEntry key="*list global low level symbols" value="752579"/>
+        <mapEntry key="*Fetching Data Model" value="271424"/>
+        <mapEntry key="*list global low level symbols" value="969444"/>
         <mapEntry key="*loading values from target" value="1403272"/>
         <mapEntry key="*updating registers" value="18345730"/>
-        <mapEntry key="AddEventObserver" value="2524473"/>
-        <mapEntry key="Evaluate" value="704825"/>
+        <mapEntry key="AddEventObserver" value="2368936"/>
+        <mapEntry key="Evaluate" value="855431"/>
         <mapEntry key="ListRegimeWarningsCommand" value="191300"/>
         <mapEntry key="areCachesAvailable" value="374275"/>
-        <mapEntry key="break" value="2437765"/>
-        <mapEntry key="compute execution mode" value="731888"/>
-        <mapEntry key="continue" value="3360042"/>
+        <mapEntry key="break" value="2909691"/>
+        <mapEntry key="compute execution mode" value="844244"/>
+        <mapEntry key="continue" value="2840771"/>
         <mapEntry key="disassemble" value="65585095"/>
         <mapEntry key="evaluate address" value="857250"/>
-        <mapEntry key="get capabilities" value="178785"/>
-        <mapEntry key="get execution addresss" value="304374"/>
-        <mapEntry key="get source lines" value="252031"/>
+        <mapEntry key="get capabilities" value="162042"/>
+        <mapEntry key="get execution addresss" value="263387"/>
+        <mapEntry key="get source lines" value="257715"/>
         <mapEntry key="getValidEncodings" value="356175"/>
-        <mapEntry key="initialize command help" value="64480457"/>
+        <mapEntry key="initialize command help" value="69933978"/>
         <mapEntry key="interrupt" value="49055137"/>
-        <mapEntry key="list breakpoint options" value="157926"/>
-        <mapEntry key="list breakpoints" value="289352"/>
-        <mapEntry key="list instruction sets" value="121418"/>
-        <mapEntry key="list signals" value="4418381"/>
+        <mapEntry key="list breakpoint options" value="181981"/>
+        <mapEntry key="list breakpoints" value="333176"/>
+        <mapEntry key="list instruction sets" value="770009"/>
+        <mapEntry key="list signals" value="4535340"/>
         <mapEntry key="list translations" value="293399"/>
-        <mapEntry key="list watchpoint options" value="151140"/>
-        <mapEntry key="list watchpoints" value="270183"/>
-        <mapEntry key="loadfile" value="18863362"/>
-        <mapEntry key="set CWD" value="925048"/>
-        <mapEntry key="set breakpoint properties" value="2411539"/>
-        <mapEntry key="set debug-from" value="800291"/>
-        <mapEntry key="start" value="15839091"/>
+        <mapEntry key="list watchpoint options" value="194120"/>
+        <mapEntry key="list watchpoints" value="280091"/>
+        <mapEntry key="loadfile" value="29685231"/>
+        <mapEntry key="set CWD" value="1455024"/>
+        <mapEntry key="set breakpoint properties" value="3951034"/>
+        <mapEntry key="set debug-from" value="816195"/>
+        <mapEntry key="start" value="26148095"/>
         <mapEntry key="step" value="35472768"/>
         <mapEntry key="toggleBreakpoint" value="2299500"/>
         <mapEntry key="updating MMU tables" value="10537"/>
-        <mapEntry key="waitForTargetToStop" value="20210650"/>
+        <mapEntry key="waitForTargetToStop" value="21153975"/>
     </mapAttribute>
     <stringAttribute key="CLOCK_SPEED" value="Auto"/>
     <intAttribute key="DEBUG_TAB..RESOURCES.COUNT" value="0"/>
@@ -55,11 +55,11 @@
     <listAttribute key="FILES.DOWNLOAD_AND_DEBUG"/>
     <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.0.OPTION.ALSO_LOAD_SYMBOLS" value="true"/>
     <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.0.OPTION.ON_DEMAND_LOAD" value="true"/>
-    <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.0.TYPE" value="TARGET_DOWNLOAD_DIR"/>
+    <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.0.TYPE" value="APP_ON_HOST_TO_DOWNLOAD"/>
     <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.0.VALUE" value=""/>
     <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.1.OPTION.ALSO_LOAD_SYMBOLS" value="true"/>
     <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.1.OPTION.ON_DEMAND_LOAD" value="true"/>
-    <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.1.TYPE" value="APP_ON_HOST_TO_DOWNLOAD"/>
+    <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.1.TYPE" value="TARGET_DOWNLOAD_DIR"/>
     <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.1.VALUE" value=""/>
     <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.2.OPTION.ALSO_LOAD_SYMBOLS" value="true"/>
     <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.2.OPTION.ON_DEMAND_LOAD" value="true"/>
@@ -69,11 +69,11 @@
     <listAttribute key="FILES.DOWNLOAD_DEBUG"/>
     <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.0.OPTION.ALSO_LOAD_SYMBOLS" value="true"/>
     <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.0.OPTION.ON_DEMAND_LOAD" value="true"/>
-    <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.0.TYPE" value="TARGET_DOWNLOAD_DIR"/>
+    <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.0.TYPE" value="APP_ON_HOST_TO_DOWNLOAD"/>
     <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.0.VALUE" value=""/>
     <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.1.OPTION.ALSO_LOAD_SYMBOLS" value="true"/>
     <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.1.OPTION.ON_DEMAND_LOAD" value="true"/>
-    <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.1.TYPE" value="APP_ON_HOST_TO_DOWNLOAD"/>
+    <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.1.TYPE" value="TARGET_DOWNLOAD_DIR"/>
     <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.1.VALUE" value=""/>
     <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.2.OPTION.ALSO_LOAD_SYMBOLS" value="true"/>
     <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.2.OPTION.ON_DEMAND_LOAD" value="true"/>

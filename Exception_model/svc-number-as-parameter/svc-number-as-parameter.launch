@@ -2,45 +2,45 @@
 <launchConfiguration type="com.arm.debugger.launcher2">
     <booleanAttribute key="ADAPTIVE_CLOCK" value="false"/>
     <mapAttribute key="AverageDurationTracker">
-        <mapEntry key="*Fetching Data Model" value="252799"/>
-        <mapEntry key="*list global low level symbols" value="704001"/>
+        <mapEntry key="*Fetching Data Model" value="837299"/>
+        <mapEntry key="*list global low level symbols" value="1027425"/>
         <mapEntry key="*loading values from target" value="5854319"/>
         <mapEntry key="*updating registers" value="26017380"/>
         <mapEntry key="*updating variables" value="1450756"/>
-        <mapEntry key="AddEventObserver" value="2559240"/>
-        <mapEntry key="Evaluate" value="1038702"/>
+        <mapEntry key="AddEventObserver" value="3785470"/>
+        <mapEntry key="Evaluate" value="1565975"/>
         <mapEntry key="ListRegimeWarningsCommand" value="172000"/>
         <mapEntry key="Retrieving globals list" value="10093500"/>
         <mapEntry key="areCachesAvailable" value="331125"/>
-        <mapEntry key="break" value="4613832"/>
-        <mapEntry key="compute execution mode" value="1159341"/>
-        <mapEntry key="continue" value="5161759"/>
-        <mapEntry key="disassemble" value="67203338"/>
+        <mapEntry key="break" value="7113616"/>
+        <mapEntry key="compute execution mode" value="2772470"/>
+        <mapEntry key="continue" value="4098079"/>
+        <mapEntry key="disassemble" value="62384569"/>
         <mapEntry key="evaluate address" value="1077287"/>
-        <mapEntry key="get capabilities" value="424614"/>
+        <mapEntry key="get capabilities" value="321307"/>
         <mapEntry key="get cwd" value="215000"/>
-        <mapEntry key="get execution addresss" value="5303311"/>
-        <mapEntry key="get source lines" value="1202122"/>
+        <mapEntry key="get execution addresss" value="1839602"/>
+        <mapEntry key="get source lines" value="712455"/>
         <mapEntry key="getValidEncodings" value="286725"/>
-        <mapEntry key="initialize command help" value="59502148"/>
+        <mapEntry key="initialize command help" value="91139124"/>
         <mapEntry key="interrupt" value="15475950"/>
-        <mapEntry key="list breakpoint options" value="128513"/>
-        <mapEntry key="list breakpoints" value="414754"/>
-        <mapEntry key="list instruction sets" value="173970"/>
-        <mapEntry key="list signals" value="6386916"/>
+        <mapEntry key="list breakpoint options" value="576803"/>
+        <mapEntry key="list breakpoints" value="516927"/>
+        <mapEntry key="list instruction sets" value="478235"/>
+        <mapEntry key="list signals" value="7142308"/>
         <mapEntry key="list translations" value="228899"/>
-        <mapEntry key="list watchpoint options" value="190940"/>
-        <mapEntry key="list watchpoints" value="289653"/>
-        <mapEntry key="loadfile" value="35919510"/>
+        <mapEntry key="list watchpoint options" value="266120"/>
+        <mapEntry key="list watchpoints" value="967276"/>
+        <mapEntry key="loadfile" value="53159205"/>
         <mapEntry key="remove" value="2040800"/>
-        <mapEntry key="set CWD" value="1117332"/>
-        <mapEntry key="set breakpoint properties" value="4950407"/>
-        <mapEntry key="set debug-from" value="3459778"/>
-        <mapEntry key="start" value="22966201"/>
+        <mapEntry key="set CWD" value="1890766"/>
+        <mapEntry key="set breakpoint properties" value="6004353"/>
+        <mapEntry key="set debug-from" value="2370589"/>
+        <mapEntry key="start" value="32536750"/>
         <mapEntry key="step" value="39772925"/>
         <mapEntry key="toggleBreakpoint" value="16398200"/>
         <mapEntry key="updating MMU tables" value="18801"/>
-        <mapEntry key="waitForTargetToStop" value="31597932"/>
+        <mapEntry key="waitForTargetToStop" value="38738716"/>
     </mapAttribute>
     <stringAttribute key="CLOCK_SPEED" value="Auto"/>
     <intAttribute key="DEBUG_TAB..RESOURCES.COUNT" value="0"/>
@@ -59,11 +59,11 @@
     <listAttribute key="FILES.DOWNLOAD_AND_DEBUG"/>
     <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.0.OPTION.ALSO_LOAD_SYMBOLS" value="true"/>
     <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.0.OPTION.ON_DEMAND_LOAD" value="true"/>
-    <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.0.TYPE" value="TARGET_DOWNLOAD_DIR"/>
+    <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.0.TYPE" value="APP_ON_HOST_TO_DOWNLOAD"/>
     <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.0.VALUE" value=""/>
     <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.1.OPTION.ALSO_LOAD_SYMBOLS" value="true"/>
     <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.1.OPTION.ON_DEMAND_LOAD" value="true"/>
-    <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.1.TYPE" value="APP_ON_HOST_TO_DOWNLOAD"/>
+    <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.1.TYPE" value="TARGET_DOWNLOAD_DIR"/>
     <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.1.VALUE" value=""/>
     <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.2.OPTION.ALSO_LOAD_SYMBOLS" value="true"/>
     <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.2.OPTION.ON_DEMAND_LOAD" value="true"/>
@@ -73,11 +73,11 @@
     <listAttribute key="FILES.DOWNLOAD_DEBUG"/>
     <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.0.OPTION.ALSO_LOAD_SYMBOLS" value="true"/>
     <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.0.OPTION.ON_DEMAND_LOAD" value="true"/>
-    <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.0.TYPE" value="TARGET_DOWNLOAD_DIR"/>
+    <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.0.TYPE" value="APP_ON_HOST_TO_DOWNLOAD"/>
     <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.0.VALUE" value=""/>
     <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.1.OPTION.ALSO_LOAD_SYMBOLS" value="true"/>
     <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.1.OPTION.ON_DEMAND_LOAD" value="true"/>
-    <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.1.TYPE" value="APP_ON_HOST_TO_DOWNLOAD"/>
+    <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.1.TYPE" value="TARGET_DOWNLOAD_DIR"/>
     <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.1.VALUE" value=""/>
     <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.2.OPTION.ALSO_LOAD_SYMBOLS" value="true"/>
     <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.2.OPTION.ON_DEMAND_LOAD" value="true"/>
@@ -144,11 +144,9 @@
     <stringAttribute key="breakpoints" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;breakpoints order=&quot;ALPHA&quot;&gt;&#10;&#9;&lt;breakpoint ignorecount=&quot;0&quot; threadenabled=&quot;no&quot; core_list=&quot;&quot; continue=&quot;no&quot; verboseBreakpoints=&quot;yes&quot; kind=&quot;SOURCEPOSITION&quot;&gt;&#10;&#9;&#9;&lt;master_location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; debugFile=&quot;D:/ArmDS_workspace/user-guide-example-projects/exception_model/synchronous-fault/main.c&quot; hostFile=&quot;D:\ArmDS_workspace\user-guide-example-projects\exception_model\synchronous-fault\main.c&quot; line=&quot;88&quot;/&gt;&#10;&#9;&#9;&lt;location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; debugFile=&quot;D:/ArmDS_workspace/user-guide-example-projects/exception_model/synchronous-fault/main.c&quot; hostFile=&quot;D:\ArmDS_workspace\user-guide-example-projects\exception_model\synchronous-fault\main.c&quot; line=&quot;88&quot;/&gt;&#10;&#9;&lt;/breakpoint&gt;&#10;&lt;/breakpoints&gt;&#10;"/>
     <listAttribute key="com.arm.debug.views.common.AddressTracker.debugger.view.DisassemblyView.addresses">
         <listEntry value="&lt;Next Instruction&gt;"/>
-        <listEntry value=""/>
     </listAttribute>
     <listAttribute key="com.arm.debug.views.common.AddressTracker.debugger.view.DisassemblyView.ranges">
         <listEntry value="100"/>
-        <listEntry value=""/>
     </listAttribute>
     <listAttribute key="com.arm.debug.views.common.AddressTracker.debugger.view.MemoryView.addresses">
         <listEntry value=""/>

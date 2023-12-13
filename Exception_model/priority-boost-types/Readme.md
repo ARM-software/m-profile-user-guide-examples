@@ -2,12 +2,13 @@
 
 This example demonstrates the function of BASEPRI. BASEPRI acts as a threshold, so that when privileged code sets BASEPRI to a higher priority, a lower value than the current execution priority, additional interrupts are masked if they have priority value greater than or equal to BASEPRI. In some circumstances, BASEPRI is useful to prevent higher priority interrupts from preempting a critical section of code.
 
-This example is built using:
+This example project is created, built and run using:
+
 - Arm Development Studio 2022.2
 - Arm Compiler for Embedded 6
 - Fast Models Fixed Virtual Platforms (FVP) 11.18
 - CMSIS 5.9.0 (available in [GitHub repository](https://github.com/ARM-software/CMSIS_5))
-- GCC Toolchain version:10.3
+- GCC Toolchain version: 10.3
 
 ## Purpose and scope
 
@@ -82,12 +83,27 @@ As we clear the BASEPRI, the rest pending exception will be handled following th
 
 ## Extension - build and run example with GCC 
 
-In addition to build with Arm compiler for embedded, the projects can also be built with GCC compiler.
+In addition to build with Arm compiler for embedded, the projects can also be built with GCC compiler through Arm Development Studio. Steps are shown below.
 
-   Import the project firstly, right-click the project, select Properties -> C/C++ Build -> Tool Chain Editor. We can switch to the GCC compiler at Current toolchain option. Then, accroding to the build_gcc.sh at scripts folder, we need to re-configure the build setting. Finally, Select Project → Build Project.
+1. Import the project firstly, right-click the project, select **Properties -> C/C++ Build -> Tool Chain Editor**, switch to the GCC compiler (version 10.3.1) at Current toolchain option. 
 
-   To run the example at FVP, we can follow the steps of 'Running the example' section. But it is important to import the paddron.ds at scripts folder to Debugger interface, which makes sure the data is loaded right. 
+2. At Properties menu, choose the **settings**, and make sure the following settings have been configured.
+   ```
+   // GCC C Compiler 10.3
+   Target:  -march=armv8-m.main
+   Optimization: -O1
 
+   // GCC Assembler 10.3
+   Target:  -march=armv8-m.main
+
+   // GCC C Linker 10.3
+   Image: Linker script=import the scripts/gcc_arm.ld
+   Miscellaneous: other flags -march=armv8-m.main --specs=rdimon.specs 
+   ```
+
+3. Finally, select **Project → Build Project** and get the output folder `Debug`
+
+4. To run the example at FVP, open **priority-boost-types.launch**, at **Debugger Interface**, click **Run target initialization debugger script** and import **scripts/paddron.ds**, which makes sure the data is loaded right. 
    ```
    // paddron.ds
    set elf load-segments-at-p_paddr on

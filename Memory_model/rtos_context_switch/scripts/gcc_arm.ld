@@ -136,13 +136,13 @@ SECTIONS
     Image$$ER_ROM$$Base = .;
     
     KEEP(*(.vectors))
-    logs/main.o      (.text*)
-    logs/mpu_configs.o    (.text*)
-    logs/mpu_prog.o    (.text*)
-    logs/mpu_reprog.o    (.text*)
-    logs/myRTOS.o    (.text*)
-    logs/system.o   (.text*)
-    logs/startup.o   (.text*)
+    ./main.o      (.text*)
+    ./mpu_configs.o    (.text*)
+    ./mpu_prog.o    (.text*)
+    ./mpu_reprog.o    (.text*)
+    ./myRTOS.o    (.text*)
+    ./RTE/Device/ARMv8MML/system_ARMv8MML.o   (.text*)
+    ./RTE/Device/ARMv8MML/startup_ARMv8MML.o   (.text*)
     
     . = ALIGN(4);
   } > ER_ROM
@@ -174,7 +174,7 @@ SECTIONS
     . = ALIGN(4);
     Image$$THREAD_A_ROM$$Base = .;
     
-    logs/threadA.o   (.text*)
+    ./threadA.o   (.text*)
     
     Image$$THREAD_A_ROM$$Limit = .;
     . = ALIGN(4);
@@ -186,7 +186,7 @@ SECTIONS
     . = ALIGN(4);
     Image$$THREAD_B_ROM$$Base = .;
     
-    logs/threadB.o   (.text*)
+    ./threadB.o   (.text*)
     
     Image$$THREAD_B_ROM$$Limit = .;
     . = ALIGN(4);
@@ -199,15 +199,15 @@ SECTIONS
     Image$$UNPRIV_ROM$$Base = .;
     
     *(EXCLUDE_FILE(
-    logs/main.o 
-    logs/mpu_prog.o
-    logs/mpu_configs.o
-    logs/myRTOS.o 
-    logs/mpu_reprog.o
-    logs/threadA.o
-    logs/threadB.o
-    logs/system.o
-    logs/startup.o) .text*)
+    ./main.o 
+    ./mpu_prog.o
+    ./mpu_configs.o
+    ./myRTOS.o 
+    ./mpu_reprog.o
+    ./threadA.o
+    ./threadB.o
+    ./RTE/Device/ARMv8MML/system_ARMv8MML.o
+    ./RTE/Device/ARMv8MML/startup_ARMv8MML.o) .text*)
 
     KEEP(*(.init))
     KEEP(*(.fini))
@@ -261,13 +261,13 @@ SECTIONS
     
     *(vtable)
     
-    logs/main.o      (.data*)
-    logs/mpu_configs.o    (.data*)
-    logs/mpu_prog.o    (.data*)
-    logs/mpu_reprog.o    (.data*)
-    logs/myRTOS.o    (.data*)
-    logs/system.o   (.data*)
-    logs/startup.o   (.data*)
+    ./main.o      (.data*)
+    ./mpu_configs.o    (.data*)
+    ./mpu_prog.o    (.data*)
+    ./mpu_reprog.o    (.data*)
+    ./myRTOS.o    (.data*)
+    ./RTE/Device/ARMv8MML/startup_ARMv8MML.o   (.data*)
+    ./RTE/Device/ARMv8MML/system_ARMv8MML.o   (.data*)
  
     . = ALIGN(4);
     /* preinit data */
@@ -302,13 +302,13 @@ SECTIONS
     . = ALIGN(4);
     __bss_start__ = .;
 
-    logs/main.o      (.bss*)
-    logs/mpu_configs.o    (.bss*)
-    logs/mpu_prog.o    (.bss*)
-    logs/mpu_reprog.o    (.bss*)
-    logs/myRTOS.o    (.bss*)
-    logs/system.o   (.bss*)
-    logs/startup.o   (.bss*)
+    ./main.o      (.bss*)
+    ./mpu_configs.o    (.bss*)
+    ./mpu_prog.o    (.bss*)
+    ./mpu_reprog.o    (.bss*)
+    ./myRTOS.o    (.bss*)
+    ./RTE/Device/ARMv8MML/system_ARMv8MML.o   (.bss*)
+    ./RTE/Device/ARMv8MML/startup_ARMv8MML.o   (.bss*)
     
     . = ALIGN(4);
     __bss_end__ = .;
@@ -332,7 +332,7 @@ SECTIONS
     __thread_A_data_start__ = .;
     Image$$THREAD_A_RAM$$Base = .;  
      
-    logs/threadA.o    (.data*)
+    ./threadA.o    (.data*)
     
     __thread_A_data_end__ = .;
   } > THREAD_A_RAM
@@ -342,7 +342,7 @@ SECTIONS
     . = ALIGN(4);
     __thread_A_bss_start__ = .;
     
-    logs/threadA.o    (.bss*)
+    ./threadA.o    (.bss*)
     
     Image$$THREAD_A_RAM$$ZI$$Limit = .;
     . = ALIGN(4);
@@ -356,7 +356,7 @@ SECTIONS
     __thread_B_data_start__ = .;
     Image$$THREAD_B_RAM$$Base = .;  
      
-    logs/threadB.o    (.data*)
+    ./threadB.o    (.data*)
     
     __thread_B_data_end__ = .;
   } > THREAD_B_RAM
@@ -366,7 +366,7 @@ SECTIONS
     . = ALIGN(4);
     __thread_B_bss_start__ = .;
     
-    logs/threadB.o    (.bss*)
+    ./threadB.o    (.bss*)
     
     Image$$THREAD_B_RAM$$ZI$$Limit = .;
     . = ALIGN(4);
@@ -381,15 +381,15 @@ SECTIONS
     Image$$UNPRIV_RAM$$Base = .;  
      
     *(EXCLUDE_FILE(
-    logs/main.o 
-    logs/mpu_prog.o
-    logs/mpu_configs.o
-    logs/myRTOS.o 
-    logs/mpu_reprog.o
-    logs/threadA.o
-    logs/threadB.o
-    logs/system.o
-    logs/startup.o) .data*)
+    ./main.o 
+    ./mpu_prog.o
+    ./mpu_configs.o
+    ./myRTOS.o 
+    ./mpu_reprog.o
+    ./threadA.o
+    ./threadB.o
+    ./RTE/Device/ARMv8MML/system_ARMv8MML.o
+    ./RTE/Device/ARMv8MML/startup_ARMv8MML.o) .data*)
     
     __unpriv_data_end__ = .;
   } > UNPRIV_RAM
@@ -400,15 +400,15 @@ SECTIONS
     __unpriv_bss_start__ = .;
     
     *(EXCLUDE_FILE(
-    logs/main.o 
-    logs/mpu_prog.o
-    logs/mpu_configs.o
-    logs/myRTOS.o 
-    logs/mpu_reprog.o
-    logs/threadA.o
-    logs/threadB.o
-    logs/system.o
-    logs/startup.o) .bss*)
+    ./main.o 
+    ./mpu_prog.o
+    ./mpu_configs.o
+    ./myRTOS.o 
+    ./mpu_reprog.o
+    ./threadA.o
+    ./threadB.o
+    ./RTE/Device/ARMv8MML/system_ARMv8MML.o
+    ./RTE/Device/ARMv8MML/startup_ARMv8MML.o) .bss*)
     
     . = ALIGN(4);
     

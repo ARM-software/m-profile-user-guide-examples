@@ -24,7 +24,7 @@
 							<tool id="com.arm.tool.c.compiler.v6.base.var.arm_compiler_6-6.1911883144" name="Arm C Compiler for Embedded 6" superClass="com.arm.tool.c.compiler.v6.base.var.arm_compiler_6-6">
 								<option defaultValue="com.arm.tool.c.compiler.v6.base.option.optlevel.min" id="com.arm.tool.c.compiler.v6.base.option.optlevel.1924368890" name="Optimization level" superClass="com.arm.tool.c.compiler.v6.base.option.optlevel" useByScannerDiscovery="true" value="com.arm.tool.c.compiler.v6.base.option.optlevel.restrict" valueType="enumerated"/>
 								<option defaultValue="com.arm.tool.c.compiler.v6.base.options.debug.level.std" id="com.arm.tool.c.compiler.v6.base.options.debug.level.1215511359" name="Debug Level" superClass="com.arm.tool.c.compiler.v6.base.options.debug.level" useByScannerDiscovery="true" valueType="enumerated"/>
-								<option id="com.arm.tool.c.compiler.v6.base.option.arch.1080610046" name="Architecture (-march)" superClass="com.arm.tool.c.compiler.v6.base.option.arch" useByScannerDiscovery="true" value="armv8-m.main" valueType="string"/>
+								<option id="com.arm.tool.c.compiler.v6.base.option.arch.1080610046" name="Architecture (-march)" superClass="com.arm.tool.c.compiler.v6.base.option.arch" useByScannerDiscovery="true" value="armv8-m.main+fp" valueType="string"/>
 								<option id="com.arm.tool.c.compiler.v6.base.option.target.2010473064" name="Target (--target)" superClass="com.arm.tool.c.compiler.v6.base.option.target" useByScannerDiscovery="true" value="arm-arm-none-eabi" valueType="string"/>
 								<option id="com.arm.tool.c.compiler.v6.base.option.floatabi.609260088" name="Float ABI (-mfloat-abi)" superClass="com.arm.tool.c.compiler.v6.base.option.floatabi" useByScannerDiscovery="true" value="com.arm.tool.c.compiler.v6.base.option.floatabi.hard" valueType="enumerated"/>
 								<option id="com.arm.tool.c.compiler.v6.base.option.endian.1449959813" name="Byte order" superClass="com.arm.tool.c.compiler.v6.base.option.endian" useByScannerDiscovery="true" value="com.arm.tool.c.compiler.v6.base.option.endian.little" valueType="enumerated"/>
@@ -59,7 +59,7 @@
 							</tool>
 							<tool id="com.arm.tool.assembler.v6.base.var.arm_compiler_6-6.349069419" name="Arm Assembler 6" superClass="com.arm.tool.assembler.v6.base.var.arm_compiler_6-6">
 								<option defaultValue="com.arm.tool.assembler.v6.base.options.debug.level.std" id="com.arm.tool.assembler.v6.base.options.debug.level.649372662" name="Debug Level" superClass="com.arm.tool.assembler.v6.base.options.debug.level" useByScannerDiscovery="false" valueType="enumerated"/>
-								<option id="com.arm.tool.assembler.v6.base.option.arch.1702408899" name="Architecture (-march)" superClass="com.arm.tool.assembler.v6.base.option.arch" useByScannerDiscovery="true" value="armv8-m.main" valueType="string"/>
+								<option id="com.arm.tool.assembler.v6.base.option.arch.1702408899" name="Architecture (-march)" superClass="com.arm.tool.assembler.v6.base.option.arch" useByScannerDiscovery="true" value="armv8-m.main+fp" valueType="string"/>
 								<option id="com.arm.tool.assembler.v6.base.option.target.882212642" name="Target (--target)" superClass="com.arm.tool.assembler.v6.base.option.target" useByScannerDiscovery="false" value="arm-arm-none-eabi" valueType="string"/>
 								<option id="com.arm.tool.assembler.v6.base.option.floatabi.637890249" name="Float ABI (-mfloat-abi)" superClass="com.arm.tool.assembler.v6.base.option.floatabi" useByScannerDiscovery="true" value="com.arm.tool.c.compiler.v6.base.option.floatabi.hard" valueType="enumerated"/>
 								<option id="com.arm.tool.assembler.v6.base.option.endian.1594389752" name="Byte order" superClass="com.arm.tool.assembler.v6.base.option.endian" useByScannerDiscovery="true" value="com.arm.tool.c.compiler.v6.base.option.endian.little" valueType="enumerated"/>
@@ -75,7 +75,7 @@
 								</option>
 								<option id="com.arm.tool.assembler.v6.base.option.masm.898079423" name="Assembler syntax (-masm)" superClass="com.arm.tool.assembler.v6.base.option.masm" useByScannerDiscovery="false" value="masm.val.auto" valueType="enumerated"/>
 								<option id="com.arm.tool.assembler.v6.base.option.inst.1806646218" name="Instruction set" superClass="com.arm.tool.assembler.v6.base.option.inst" useByScannerDiscovery="true" value="com.arm.tool.c.compiler.v6.base.option.inst.thumb" valueType="enumerated"/>
-								<option id="com.arm.tool.assembler.v6.base.options.target.enableToolSpecificSettings.209542419" name="Enable tool specific settings" superClass="com.arm.tool.assembler.v6.base.options.target.enableToolSpecificSettings" useByScannerDiscovery="false" value="false" valueType="boolean"/>
+								<option id="com.arm.tool.assembler.v6.base.options.target.enableToolSpecificSettings.209542419" name="Enable tool specific settings" superClass="com.arm.tool.assembler.v6.base.options.target.enableToolSpecificSettings" useByScannerDiscovery="false" value="true" valueType="boolean"/>
 								<option id="com.arm.tool.assembler.v6.base.option.fpu.62944542" name="FPU (-mfpu)" superClass="com.arm.tool.assembler.v6.base.option.fpu" useByScannerDiscovery="true" value="" valueType="string"/>
 								<inputType id="com.arm.tool.assembler.v6.base.input.2116570173" superClass="com.arm.tool.assembler.v6.base.input"/>
 							</tool>

@@ -141,11 +141,11 @@ SECTIONS
     Image$$ER_ROM$$Base = .;
     
     KEEP(*(.vectors))
-    logs/main.o (.text*)
-    logs/mpu_prog.o (.text*)
-    logs/system.o (.text*)
-    logs/startup.o (.text*)
-    *(EXCLUDE_FILE(logs/Excep_prog.o) .NewVT*)
+    ./main.o (.text*)
+    ./mpu_prog.o (.text*)
+    ./RTE/Device/ARMCM55/system_ARMCM55.o (.text*)
+    ./RTE/Device/ARMCM55/startup_ARMCM55.o (.text*)
+    *(EXCLUDE_FILE(./Excep_prog.o) .NewVT*)
     
     . = ALIGN(4);
   } > ER_ROM
@@ -200,11 +200,11 @@ SECTIONS
     Image$$ITCM_Code$$Base = .;
     
     *(EXCLUDE_FILE(
-    logs/main.o 
-    logs/mpu_prog.o 
-    logs/Excep_prog.o
-    logs/system.o
-    logs/startup.o) .text*)
+    ./main.o 
+    ./mpu_prog.o 
+    ./Excep_prog.o
+    ./RTE/Device/ARMCM55/system_ARMCM55.o
+    ./RTE/Device/ARMCM55/startup_ARMCM55.o) .text*)
 
     KEEP(*(.init))
     KEEP(*(.fini))
@@ -241,11 +241,11 @@ SECTIONS
     __data_start__ = .;
     Image$$RW_RAM$$Base = .;
     
-    logs/Excep_prog.o (.data*)
-    logs/main.o (.data*)
-    logs/mpu_prog.o (.data*)
-    logs/system.o (.data*)
-    logs/startup.o (.data*)
+    ./Excep_prog.o (.data*)
+    ./main.o (.data*)
+    ./mpu_prog.o (.data*)
+    ./RTE/Device/ARMCM55/system_ARMCM55.o (.data*)
+    ./RTE/Device/ARMCM55/startup_ARMCM55.o (.data*)
 
     . = ALIGN(4);
     /* preinit data */
@@ -278,11 +278,11 @@ SECTIONS
     . = ALIGN(4);
     __bss_start__ = .;
     
-    logs/Excep_prog.o (.bss*)
-    logs/main.o (.bss*)
-    logs/mpu_prog.o (.bss*)
-    logs/system.o (.bss*)
-    logs/startup.o (.bss*)
+    ./Excep_prog.o (.bss*)
+    ./main.o (.bss*)
+    ./mpu_prog.o (.bss*)
+    ./RTE/Device/ARMCM55/system_ARMCM55.o (.bss*)
+    ./RTE/Device/ARMCM55/startup_ARMCM55.o (.bss*)
 
     Image$$RW_RAM$$Limit = .;
     __bss_end__ = .;
@@ -306,11 +306,11 @@ SECTIONS
     Image$$DTCM$$Base = .;  
      
     *(EXCLUDE_FILE(
-    logs/Excep_prog.o 
-    logs/main.o 
-    logs/mpu_prog.o  
-    logs/system.o
-    logs/startup.o) .data*)
+    ./Excep_prog.o 
+    ./main.o 
+    ./mpu_prog.o  
+    ./RTE/Device/ARMCM55/system_ARMCM55.o
+    ./RTE/Device/ARMCM55/startup_ARMCM55.o) .data*)
     *(.dtcm*)
     
     __dtcm_data_end__ = .;
@@ -322,11 +322,11 @@ SECTIONS
     __dtcm_bss_start__ = .;
     
     *(EXCLUDE_FILE(
-    logs/Excep_prog.o 
-    logs/main.o 
-    logs/mpu_prog.o 
-    logs/system.o
-    logs/startup.o) .bss*)
+    ./Excep_prog.o 
+    ./main.o 
+    ./mpu_prog.o 
+    ./RTE/Device/ARMCM55/system_ARMCM55.o
+    ./RTE/Device/ARMCM55/startup_ARMCM55.o) .bss*)
     
     Image$$DTCM$$Limit = .;
     . = ALIGN(4);

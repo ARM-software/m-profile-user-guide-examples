@@ -2,13 +2,13 @@
 
 This example demonstrates the simple achievement of interrupt deprivileging. Unprivileged thread program can be placed at independent domains and be limited access to memory and peripherals. To enable services of peripherals where some of the peripherals communicate via interrupts, it is important to provide partitions as a mean to handle interrupts along with isolation levels. In order to keep the isolation levels complete, interrupts are isolated using concept of deprivileging interrupt to create a sandbox. To understand more details refer this [article](https://developer.arm.com/documentation/ka001384/latest).
 
+This example project is created, built and run using:
 
-This example is built using:
 - Arm Development Studio 2022.2
 - Arm Compiler for Embedded 6
 - Fast Models Fixed Virtual Platforms (FVP) 11.18
 - CMSIS 5.9.0 (available in [GitHub repository](https://github.com/ARM-software/CMSIS_5))
-- GCC Toolchain version:10.3
+- GCC Toolchain version: 10.3
 
 ## Purpose and scope
 
@@ -92,12 +92,27 @@ Example Project: interrupt-deprivileging End
     
 ## Extension - build and run example with GCC 
 
-In addition to build with Arm compiler for embedded, the projects can also be built with GCC compiler. 
+In addition to build with Arm compiler for embedded, the projects can also be built with GCC compiler through Arm Development Studio. Steps are shown below.
 
-   Import the project firstly, right-click the project, select Properties -> C/C++ Build -> Tool Chain Editor. We can switch to the GCC compiler at Current toolchain option. Then, accroding to the build_gcc.sh at scripts folder, we need to re-configure the build setting. Finally, Select Project → Build Project.
+1. Import the project firstly, right-click the project, select **Properties -> C/C++ Build -> Tool Chain Editor**, switch to the GCC compiler (version 10.3.1) at Current toolchain option. 
 
-   To run the example at FVP, we can follow the steps of 'Running the example' section. But it is important to import the paddron.ds at scripts folder to Debugger interface, which makes sure the data is loaded right. 
+2. At Properties menu, choose the **settings**, and make sure the following settings have been configured.
+   ```
+   // GCC C Compiler 10.3
+   Target:  -march=armv8.1-m.main+mve+fp.dp -mfloat-abi=hard
+   Optimization: -O1
 
+   // GCC Assembler 10.3
+   Target:  -march=armv8.1-m.main+mve+fp.dp -mfloat-abi=hard
+
+   // GCC C Linker 10.3
+   Image: Linker script=import the scripts/gcc_arm.ld
+   Miscellaneous: other flags -march=armv8.1-m.main+mve+fp.dp -mfloat-abi=hard --specs=rdimon.specs 
+   ```
+
+3. Finally, select **Project → Build Project** and get the output folder `Debug`
+
+4. To run the example at FVP, open **interrupt-deprivileging.launch**, at **Debugger Interface**, click **Run target initialization debugger script** and import **scripts/paddron.ds**, which makes sure the data is loaded right. 
    ```
    // paddron.ds
    set elf load-segments-at-p_paddr on

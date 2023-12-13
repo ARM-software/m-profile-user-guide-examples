@@ -114,11 +114,11 @@ SECTIONS
     . = ALIGN(4);
     Image$$ER_ROM$$Base = .;
     KEEP(*(.vectors))
-    logs/PrivilegedFuncs.o (.text*)
-    logs/main.o (.text*)
-    logs/mpu_prog.o (.text*)
-    logs/system.o (.text*)
-    logs/startup.o (.text*)  
+    ./PrivilegedFuncs.o (.text*)
+    ./main.o (.text*)
+    ./mpu_prog.o (.text*)
+    ./RTE/Device/ARMv81MML_DSP_DP_MVE_FP/system_ARMv81MML.o (.text*)
+    ./RTE/Device/ARMv81MML_DSP_DP_MVE_FP/startup_ARMv81MML.o (.text*)  
     . = ALIGN(4);
   } > ER_ROM
 
@@ -145,11 +145,11 @@ SECTIONS
     . = ALIGN(4);
     Image$$UNPRIV_ROM$$Base = .;
     *(EXCLUDE_FILE(
-    logs/PrivilegedFuncs.o 
-    logs/main.o 
-    logs/mpu_prog.o 
-    logs/system.o
-    logs/startup.o
+    ./PrivilegedFuncs.o
+    ./main.o
+    ./mpu_prog.o
+    ./RTE/Device/ARMv81MML_DSP_DP_MVE_FP/system_ARMv81MML.o
+    ./RTE/Device/ARMv81MML_DSP_DP_MVE_FP/startup_ARMv81MML.o
     ) .text*)
     KEEP(*(.init))
     KEEP(*(.fini))
@@ -198,11 +198,12 @@ SECTIONS
     Image$$RW_RAM$$Base = .;
     *(vtable)
     
-    logs/PrivilegedFuncs.o (.data*)
-    logs/main.o (.data*)
-    logs/mpu_prog.o (.data*)
-    logs/system.o (.data*)
-    logs/startup.o (.data*)
+    ./PrivilegedFuncs.o (.data*)
+    ./main.o (.data*)
+    ./mpu_prog.o (.data*)
+    ./RTE/Device/ARMv81MML_DSP_DP_MVE_FP/system_ARMv81MML.o (.data*)
+    ./RTE/Device/ARMv81MML_DSP_DP_MVE_FP/startup_ARMv81MML.o (.data*)  
+
 
     . = ALIGN(4);
     /* preinit data */
@@ -235,11 +236,11 @@ SECTIONS
     . = ALIGN(4);
     __bss_start__ = .;
     
-    logs/PrivilegedFuncs.o (.bss*)
-    logs/main.o (.bss*)
-    logs/mpu_prog.o (.bss*)
-    logs/system.o (.bss*)
-    logs/startup.o (.bss*)
+    ./PrivilegedFuncs.o (.bss*)
+    ./main.o (.bss*)
+    ./mpu_prog.o (.bss*)
+    ./RTE/Device/ARMv81MML_DSP_DP_MVE_FP/system_ARMv81MML.o (.bss*)
+    ./RTE/Device/ARMv81MML_DSP_DP_MVE_FP/startup_ARMv81MML.o (.bss*)  
 
     *(COMMON)
     Image$$RW_RAM$$Limit = .;
@@ -264,11 +265,11 @@ SECTIONS
     . = ALIGN(4);
     Image$$UNPRIV_RAM$$Base = .;
     *(EXCLUDE_FILE(
-    logs/PrivilegedFuncs.o 
-    logs/main.o 
-    logs/mpu_prog.o 
-    logs/system.o
-    logs/startup.o
+    ./PrivilegedFuncs.o
+    ./main.o
+    ./mpu_prog.o
+    ./RTE/Device/ARMv81MML_DSP_DP_MVE_FP/system_ARMv81MML.o
+    ./RTE/Device/ARMv81MML_DSP_DP_MVE_FP/startup_ARMv81MML.o
     ) .data*)
     . = ALIGN(4);
   } > UNPRIV_RAM
@@ -277,12 +278,13 @@ SECTIONS
   {
     . = ALIGN(4);
     *(EXCLUDE_FILE(
-    logs/PrivilegedFuncs.o 
-    logs/main.o 
-    logs/mpu_prog.o 
-    logs/system.o
-    logs/startup.o
-    :q) .bss*)
+    ./PrivilegedFuncs.o
+    ./main.o
+    ./mpu_prog.o
+    ./RTE/Device/ARMv81MML_DSP_DP_MVE_FP/system_ARMv81MML.o
+    ./RTE/Device/ARMv81MML_DSP_DP_MVE_FP/startup_ARMv81MML.o
+    ) .bss*)
+    
     Image$$UNPRIV_RAM$$Limit = .;
     . = ALIGN(4);
   } > UNPRIV_RAM

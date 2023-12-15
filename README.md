@@ -43,7 +43,8 @@ Example software projects for other architecture extension categories will be ad
 ## Additional Notes
 
 - The example projects are developed to demonstrate the architectural features. These example projects should not be used as a test to validate all aspects of a feature.
-- The example projects are expected to work with Arm Compiler 6 and GCC tool chain.The toolchain version details are captured in each example project's Readme.md file. Though the example may work using other versions of a toolchain, it is not verified.
+- The example projects can be built with Arm Compiler 6 and GCC tool chain. Refer individual example project Readme file for necessary settings.
+- The tool chain version details are captured in each example project's Readme.md file. Though the example may work using other versions of a tool chain, it is not verified.
 
 ## License
 Example projects are licensed under the MIT2.0 license. Please see the [LICENSE](LICENSE)

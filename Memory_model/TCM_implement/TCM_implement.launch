@@ -3,56 +3,56 @@
     <stringAttribute key="*" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;page&gt;&#10;&#9;&lt;memoryView displayWidthTag=&quot;BYTE_4&quot; numberOfColumns=&quot;16&quot; formatTag=&quot;Hexadecimal&quot;/&gt;&#10;&lt;/page&gt;&#10;"/>
     <booleanAttribute key="ADAPTIVE_CLOCK" value="false"/>
     <mapAttribute key="AverageDurationTracker">
-        <mapEntry key="*Fetching Data Model" value="202558"/>
-        <mapEntry key="*list global low level symbols" value="706523"/>
+        <mapEntry key="*Fetching Data Model" value="228779"/>
+        <mapEntry key="*list global low level symbols" value="2303905"/>
         <mapEntry key="*loading memory from target" value="1430242"/>
         <mapEntry key="*loading values from target" value="2745217"/>
         <mapEntry key="*trace" value="80798576"/>
-        <mapEntry key="*updating registers" value="13450985"/>
+        <mapEntry key="*updating registers" value="36805092"/>
         <mapEntry key="*updating variables" value="416500"/>
-        <mapEntry key="AddEventObserver" value="1714189"/>
-        <mapEntry key="Evaluate" value="1049193"/>
+        <mapEntry key="AddEventObserver" value="2338394"/>
+        <mapEntry key="Evaluate" value="1201898"/>
         <mapEntry key="ListRegimeWarningsCommand" value="182582"/>
         <mapEntry key="Retrieving globals list" value="14034495"/>
         <mapEntry key="areCachesAvailable" value="463864"/>
-        <mapEntry key="break" value="1346462"/>
+        <mapEntry key="break" value="5834256"/>
         <mapEntry key="checking tracepoints" value="444773"/>
-        <mapEntry key="compute execution mode" value="847199"/>
+        <mapEntry key="compute execution mode" value="1702549"/>
         <mapEntry key="console" value="874714"/>
-        <mapEntry key="continue" value="12315777"/>
+        <mapEntry key="continue" value="7898838"/>
         <mapEntry key="disable" value="655050"/>
         <mapEntry key="disassemble" value="40451158"/>
         <mapEntry key="enable" value="1186400"/>
         <mapEntry key="evaluate address" value="1172256"/>
         <mapEntry key="finish" value="8592925"/>
         <mapEntry key="get byte order" value="323132"/>
-        <mapEntry key="get capabilities" value="153427"/>
+        <mapEntry key="get capabilities" value="183863"/>
         <mapEntry key="get cwd" value="384843"/>
-        <mapEntry key="get execution addresss" value="293574"/>
-        <mapEntry key="get source lines" value="221335"/>
+        <mapEntry key="get execution addresss" value="347937"/>
+        <mapEntry key="get source lines" value="407317"/>
         <mapEntry key="getValidEncodings" value="501591"/>
-        <mapEntry key="initialize command help" value="52640100"/>
+        <mapEntry key="initialize command help" value="72266750"/>
         <mapEntry key="interrupt" value="1527201804"/>
-        <mapEntry key="list breakpoint options" value="109681"/>
-        <mapEntry key="list breakpoints" value="482423"/>
-        <mapEntry key="list instruction sets" value="157476"/>
-        <mapEntry key="list signals" value="4852606"/>
+        <mapEntry key="list breakpoint options" value="174020"/>
+        <mapEntry key="list breakpoints" value="653611"/>
+        <mapEntry key="list instruction sets" value="199838"/>
+        <mapEntry key="list signals" value="2676653"/>
         <mapEntry key="list translations" value="336271"/>
-        <mapEntry key="list watchpoint options" value="136607"/>
-        <mapEntry key="list watchpoints" value="229260"/>
-        <mapEntry key="loadfile" value="28169548"/>
+        <mapEntry key="list watchpoint options" value="184853"/>
+        <mapEntry key="list watchpoints" value="307230"/>
+        <mapEntry key="loadfile" value="69114924"/>
         <mapEntry key="read memory map" value="35784050"/>
         <mapEntry key="remove" value="2120721"/>
-        <mapEntry key="set CWD" value="1357775"/>
-        <mapEntry key="set breakpoint properties" value="1769520"/>
-        <mapEntry key="set debug-from" value="988484"/>
-        <mapEntry key="start" value="25124031"/>
+        <mapEntry key="set CWD" value="1469587"/>
+        <mapEntry key="set breakpoint properties" value="7548152"/>
+        <mapEntry key="set debug-from" value="1304792"/>
+        <mapEntry key="start" value="36371665"/>
         <mapEntry key="step" value="58982294"/>
         <mapEntry key="stepi" value="51748731"/>
         <mapEntry key="synchronizing trace ranges" value="90097"/>
         <mapEntry key="toggleBreakpoint" value="5181514"/>
         <mapEntry key="updating MMU tables" value="120137"/>
-        <mapEntry key="waitForTargetToStop" value="28192371"/>
+        <mapEntry key="waitForTargetToStop" value="22707185"/>
         <mapEntry key="write expression" value="1543555"/>
     </mapAttribute>
     <stringAttribute key="CLOCK_SPEED" value="Auto"/>
@@ -64,9 +64,9 @@
     <stringAttribute key="FILES.DEBUG_RESIDENT_ANDROID.RESOURCES.0.VALUE" value=""/>
     <intAttribute key="FILES.DEBUG_RESIDENT_ANDROID.RESOURCES.COUNT" value="1"/>
     <listAttribute key="FILES.DEBUG_RESIDENT_APP"/>
-    <stringAttribute key="FILES.DEBUG_RESIDENT_APP.RESOURCES.0.TYPE" value="TARGET_WORKING_DIR"/>
+    <stringAttribute key="FILES.DEBUG_RESIDENT_APP.RESOURCES.0.TYPE" value="APPLICATION_ON_TARGET"/>
     <stringAttribute key="FILES.DEBUG_RESIDENT_APP.RESOURCES.0.VALUE" value=""/>
-    <stringAttribute key="FILES.DEBUG_RESIDENT_APP.RESOURCES.1.TYPE" value="APPLICATION_ON_TARGET"/>
+    <stringAttribute key="FILES.DEBUG_RESIDENT_APP.RESOURCES.1.TYPE" value="TARGET_WORKING_DIR"/>
     <stringAttribute key="FILES.DEBUG_RESIDENT_APP.RESOURCES.1.VALUE" value=""/>
     <intAttribute key="FILES.DEBUG_RESIDENT_APP.RESOURCES.COUNT" value="2"/>
     <listAttribute key="FILES.DOWNLOAD_AND_DEBUG"/>
@@ -76,11 +76,11 @@
     <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.0.VALUE" value=""/>
     <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.1.OPTION.ALSO_LOAD_SYMBOLS" value="true"/>
     <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.1.OPTION.ON_DEMAND_LOAD" value="true"/>
-    <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.1.TYPE" value="TARGET_WORKING_DIR"/>
+    <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.1.TYPE" value="TARGET_DOWNLOAD_DIR"/>
     <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.1.VALUE" value=""/>
     <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.2.OPTION.ALSO_LOAD_SYMBOLS" value="true"/>
     <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.2.OPTION.ON_DEMAND_LOAD" value="true"/>
-    <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.2.TYPE" value="TARGET_DOWNLOAD_DIR"/>
+    <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.2.TYPE" value="TARGET_WORKING_DIR"/>
     <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.2.VALUE" value=""/>
     <intAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.COUNT" value="3"/>
     <listAttribute key="FILES.DOWNLOAD_DEBUG"/>
@@ -90,11 +90,11 @@
     <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.0.VALUE" value=""/>
     <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.1.OPTION.ALSO_LOAD_SYMBOLS" value="true"/>
     <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.1.OPTION.ON_DEMAND_LOAD" value="true"/>
-    <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.1.TYPE" value="TARGET_WORKING_DIR"/>
+    <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.1.TYPE" value="TARGET_DOWNLOAD_DIR"/>
     <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.1.VALUE" value=""/>
     <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.2.OPTION.ALSO_LOAD_SYMBOLS" value="true"/>
     <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.2.OPTION.ON_DEMAND_LOAD" value="true"/>
-    <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.2.TYPE" value="TARGET_DOWNLOAD_DIR"/>
+    <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.2.TYPE" value="TARGET_WORKING_DIR"/>
     <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.2.VALUE" value=""/>
     <intAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.COUNT" value="3"/>
     <intAttribute key="FILES.DOWNLOAD_DEBUG_ANDROID.RESOURCES.COUNT" value="0"/>

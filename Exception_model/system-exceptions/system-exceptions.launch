@@ -2,41 +2,41 @@
 <launchConfiguration type="com.arm.debugger.launcher2">
     <booleanAttribute key="ADAPTIVE_CLOCK" value="false"/>
     <mapAttribute key="AverageDurationTracker">
-        <mapEntry key="*Fetching Data Model" value="271424"/>
-        <mapEntry key="*list global low level symbols" value="969444"/>
+        <mapEntry key="*Fetching Data Model" value="2162506"/>
+        <mapEntry key="*list global low level symbols" value="2632384"/>
         <mapEntry key="*loading values from target" value="1403272"/>
-        <mapEntry key="*updating registers" value="18345730"/>
-        <mapEntry key="AddEventObserver" value="2368936"/>
-        <mapEntry key="Evaluate" value="855431"/>
+        <mapEntry key="*updating registers" value="77256841"/>
+        <mapEntry key="AddEventObserver" value="4897709"/>
+        <mapEntry key="Evaluate" value="3121032"/>
         <mapEntry key="ListRegimeWarningsCommand" value="191300"/>
         <mapEntry key="areCachesAvailable" value="374275"/>
-        <mapEntry key="break" value="2909691"/>
-        <mapEntry key="compute execution mode" value="844244"/>
-        <mapEntry key="continue" value="2840771"/>
+        <mapEntry key="break" value="13108624"/>
+        <mapEntry key="compute execution mode" value="1507068"/>
+        <mapEntry key="continue" value="4900767"/>
         <mapEntry key="disassemble" value="65585095"/>
         <mapEntry key="evaluate address" value="857250"/>
-        <mapEntry key="get capabilities" value="162042"/>
-        <mapEntry key="get execution addresss" value="263387"/>
-        <mapEntry key="get source lines" value="257715"/>
+        <mapEntry key="get capabilities" value="278610"/>
+        <mapEntry key="get execution addresss" value="838617"/>
+        <mapEntry key="get source lines" value="1450769"/>
         <mapEntry key="getValidEncodings" value="356175"/>
-        <mapEntry key="initialize command help" value="69933978"/>
-        <mapEntry key="interrupt" value="49055137"/>
-        <mapEntry key="list breakpoint options" value="181981"/>
-        <mapEntry key="list breakpoints" value="333176"/>
-        <mapEntry key="list instruction sets" value="770009"/>
-        <mapEntry key="list signals" value="4535340"/>
+        <mapEntry key="initialize command help" value="111582119"/>
+        <mapEntry key="interrupt" value="27061418"/>
+        <mapEntry key="list breakpoint options" value="254923"/>
+        <mapEntry key="list breakpoints" value="601269"/>
+        <mapEntry key="list instruction sets" value="1870327"/>
+        <mapEntry key="list signals" value="33077710"/>
         <mapEntry key="list translations" value="293399"/>
-        <mapEntry key="list watchpoint options" value="194120"/>
-        <mapEntry key="list watchpoints" value="280091"/>
-        <mapEntry key="loadfile" value="29685231"/>
-        <mapEntry key="set CWD" value="1455024"/>
-        <mapEntry key="set breakpoint properties" value="3951034"/>
-        <mapEntry key="set debug-from" value="816195"/>
-        <mapEntry key="start" value="26148095"/>
+        <mapEntry key="list watchpoint options" value="3376505"/>
+        <mapEntry key="list watchpoints" value="1120422"/>
+        <mapEntry key="loadfile" value="1017476482"/>
+        <mapEntry key="set CWD" value="6341906"/>
+        <mapEntry key="set breakpoint properties" value="9512770"/>
+        <mapEntry key="set debug-from" value="1794973"/>
+        <mapEntry key="start" value="159781273"/>
         <mapEntry key="step" value="35472768"/>
         <mapEntry key="toggleBreakpoint" value="2299500"/>
         <mapEntry key="updating MMU tables" value="10537"/>
-        <mapEntry key="waitForTargetToStop" value="21153975"/>
+        <mapEntry key="waitForTargetToStop" value="41140868"/>
     </mapAttribute>
     <stringAttribute key="CLOCK_SPEED" value="Auto"/>
     <intAttribute key="DEBUG_TAB..RESOURCES.COUNT" value="0"/>
@@ -125,9 +125,11 @@
     <stringAttribute key="breakpoints" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;breakpoints order=&quot;ALPHA&quot;&gt;&#10;&#9;&lt;breakpoint ignorecount=&quot;0&quot; threadenabled=&quot;no&quot; core_list=&quot;&quot; continue=&quot;no&quot; verboseBreakpoints=&quot;yes&quot; kind=&quot;SOURCEPOSITION&quot;&gt;&#10;&#9;&#9;&lt;master_location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; debugFile=&quot;D:/ArmDS_workspace/system-exceptions/main.c&quot; hostFile=&quot;D:\ArmDS_workspace\system-exceptions\main.c&quot; line=&quot;128&quot;/&gt;&#10;&#9;&#9;&lt;location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; debugFile=&quot;D:/ArmDS_workspace/system-exceptions/main.c&quot; hostFile=&quot;D:\ArmDS_workspace\system-exceptions\main.c&quot; line=&quot;128&quot;/&gt;&#10;&#9;&lt;/breakpoint&gt;&#10;&#9;&lt;breakpoint ignorecount=&quot;0&quot; threadenabled=&quot;no&quot; core_list=&quot;&quot; continue=&quot;no&quot; verboseBreakpoints=&quot;yes&quot; kind=&quot;SOURCEPOSITION&quot;&gt;&#10;&#9;&#9;&lt;master_location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; debugFile=&quot;D:/ArmDS_workspace/user-guide-example-projects/exception_model/interrupt-deprivileging/excep_prog.c&quot; hostFile=&quot;D:\ArmDS_workspace\user-guide-example-projects\exception_model\interrupt-deprivileging\excep_prog.c&quot; line=&quot;109&quot;/&gt;&#10;&#9;&#9;&lt;location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; debugFile=&quot;D:/ArmDS_workspace/user-guide-example-projects/exception_model/interrupt-deprivileging/excep_prog.c&quot; hostFile=&quot;D:\ArmDS_workspace\user-guide-example-projects\exception_model\interrupt-deprivileging\excep_prog.c&quot; line=&quot;109&quot;/&gt;&#10;&#9;&lt;/breakpoint&gt;&#10;&lt;/breakpoints&gt;&#10;"/>
     <listAttribute key="com.arm.debug.views.common.AddressTracker.debugger.view.DisassemblyView.addresses">
         <listEntry value="&lt;Next Instruction&gt;"/>
+        <listEntry value=""/>
     </listAttribute>
     <listAttribute key="com.arm.debug.views.common.AddressTracker.debugger.view.DisassemblyView.ranges">
         <listEntry value="100"/>
+        <listEntry value=""/>
     </listAttribute>
     <listAttribute key="com.arm.debug.views.common.AddressTracker.debugger.view.MemoryView.addresses">
         <listEntry value=""/>

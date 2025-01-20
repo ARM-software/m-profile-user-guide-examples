@@ -1,0 +1,9 @@
+Example Project: exception-across-security-state Start
+S: Hello World in Secure State 
+
+NS: Case1: start !     
+S: The number of the highest priority pending exception is 16 
+S: There is only one active exception. 
+S: The number of the highest priority active exception is 17 
+NS: There is only one active exception. 
+NS: The number of the highest priority active exception is 16 

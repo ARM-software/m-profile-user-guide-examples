@@ -1,5 +1,5 @@
 <!--
-SPDX-FileCopyrightText: Copyright 2022-2023 Arm Limited <open-source-office@arm.com>
+SPDX-FileCopyrightText: Copyright 2022-2023,2025 Arm Limited <open-source-office@arm.com>
 SPDX-License-Identifier: MIT
 -->
 
@@ -7,9 +7,9 @@ SPDX-License-Identifier: MIT
 
 ## Introduction
 
-The Armv8-M architecture defines many aspects of a Cortex-M processor’s behavior. Some major architecture extension categories include:
+The Armv8-M architecture defines many aspects of a Cortex-M processor's behavior. Some major architecture extension categories include:
 
-- Programmers’ model
+- Programmers' model
 - Exception model
 - Memory model
 - Security extension
@@ -32,6 +32,7 @@ The example software projects are organised as per their architecture extension 
 | --------------------- | -----------| --------| ------------| 
 | Programmers' Model | [Armv8-M Programmers Model User Guide](https://developer.arm.com/documentation/107656/latest/) | - | - |
 | Exception Model | [Armv8-M Exception model user guide](https://developer.arm.com/documentation/107706/latest/) | [Use case examples](https://developer.arm.com/documentation/107706/0100/Use-case-examples) | [Exception_model/](https://github.com/ARM-software/m-profile-user-guide-examples/tree/main/Exception_model) |
+| Security Extension | [Armv8-M Security Extensions User Guide](TBD) | [Use case examples](TBD) | [Security/](TBD) |
 | Memory Model  | [Armv8-M Memory model and MPU user guide](https://developer.arm.com/documentation/107565/latest/) | [Use case examples](https://developer.arm.com/documentation/107565/0101/Use-case-examples) | [Memory_model/](https://github.com/ARM-software/m-profile-user-guide-examples/tree/main/Memory_model) |
 
 
@@ -58,5 +59,5 @@ Example projects are licensed under the MIT2.0 license. Please see the [LICENSE]
 
 ----
 
-*Copyright 2022-2023, Arm Limited*
+*Copyright 2022-2023,2025 Arm Limited*
 

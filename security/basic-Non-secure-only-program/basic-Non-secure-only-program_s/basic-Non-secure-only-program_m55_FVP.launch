@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.arm.debugger.launcher2">
+    <booleanAttribute key="ADAPTIVE_CLOCK" value="false"/>
+    <mapAttribute key="AverageDurationTracker">
+        <mapEntry key="*Fetching Data Model" value="571196"/>
+        <mapEntry key="*list global low level symbols" value="4742725"/>
+        <mapEntry key="*loading memory from target" value="224762003"/>
+        <mapEntry key="*loading values from target" value="6410777"/>
+        <mapEntry key="*updating registers" value="30007691"/>
+        <mapEntry key="*updating variables" value="1346436"/>
+        <mapEntry key="AddEventObserver" value="2616073"/>
+        <mapEntry key="Evaluate" value="1005904"/>
+        <mapEntry key="ListRegimeWarningsCommand" value="252692"/>
+        <mapEntry key="Retrieving globals list" value="10061688"/>
+        <mapEntry key="areCachesAvailable" value="863790"/>
+        <mapEntry key="break" value="3326664"/>
+        <mapEntry key="compute execution mode" value="1903496"/>
+        <mapEntry key="continue" value="9975980"/>
+        <mapEntry key="core" value="2298854"/>
+        <mapEntry key="disassemble" value="102347516"/>
+        <mapEntry key="get byte order" value="225668"/>
+        <mapEntry key="get capabilities" value="146275"/>
+        <mapEntry key="get cwd" value="205130"/>
+        <mapEntry key="get execution addresss" value="503380"/>
+        <mapEntry key="get source lines" value="544846"/>
+        <mapEntry key="getValidEncodings" value="2207934"/>
+        <mapEntry key="initialize command help" value="58919315"/>
+        <mapEntry key="interrupt" value="2622400"/>
+        <mapEntry key="list breakpoint options" value="168226"/>
+        <mapEntry key="list breakpoints" value="1086863"/>
+        <mapEntry key="list instruction sets" value="502168"/>
+        <mapEntry key="list signals" value="11533425"/>
+        <mapEntry key="list translations" value="510542"/>
+        <mapEntry key="list watchpoint options" value="561999"/>
+        <mapEntry key="list watchpoints" value="569239"/>
+        <mapEntry key="loadfile" value="322446606"/>
+        <mapEntry key="next" value="50517469"/>
+        <mapEntry key="nexti" value="64690125"/>
+        <mapEntry key="remove" value="1947518"/>
+        <mapEntry key="run script" value="135911776"/>
+        <mapEntry key="set CWD" value="4232511"/>
+        <mapEntry key="set breakpoint properties" value="6955042"/>
+        <mapEntry key="set debug-from" value="1225520"/>
+        <mapEntry key="start" value="47838772"/>
+        <mapEntry key="step" value="33940872"/>
+        <mapEntry key="stepi" value="55891615"/>
+        <mapEntry key="synchronizing trace ranges" value="47550"/>
+        <mapEntry key="toggleBreakpoint" value="12174120"/>
+        <mapEntry key="updateBreakpointLocation" value="1665725"/>
+        <mapEntry key="updating MMU tables" value="35196"/>
+        <mapEntry key="waitForTargetToStop" value="16365179"/>
+    </mapAttribute>
+    <stringAttribute key="CLOCK_SPEED" value="Auto"/>
+    <intAttribute key="DEBUG_TAB..RESOURCES.COUNT" value="0"/>
+    <intAttribute key="FILES.CONNECT_TO_GDB_SERVER.RESOURCES.COUNT" value="0"/>
+    <intAttribute key="FILES.DEBUG_EXISTING_ANDROID.RESOURCES.COUNT" value="0"/>
+    <listAttribute key="FILES.DEBUG_RESIDENT_ANDROID"/>
+    <stringAttribute key="FILES.DEBUG_RESIDENT_ANDROID.RESOURCES.0.TYPE" value="TARGET_WORKING_DIR"/>
+    <stringAttribute key="FILES.DEBUG_RESIDENT_ANDROID.RESOURCES.0.VALUE" value=""/>
+    <intAttribute key="FILES.DEBUG_RESIDENT_ANDROID.RESOURCES.COUNT" value="1"/>
+    <listAttribute key="FILES.DEBUG_RESIDENT_APP"/>
+    <stringAttribute key="FILES.DEBUG_RESIDENT_APP.RESOURCES.0.TYPE" value="TARGET_WORKING_DIR"/>
+    <stringAttribute key="FILES.DEBUG_RESIDENT_APP.RESOURCES.0.VALUE" value=""/>
+    <stringAttribute key="FILES.DEBUG_RESIDENT_APP.RESOURCES.1.TYPE" value="APPLICATION_ON_TARGET"/>
+    <stringAttribute key="FILES.DEBUG_RESIDENT_APP.RESOURCES.1.VALUE" value=""/>
+    <intAttribute key="FILES.DEBUG_RESIDENT_APP.RESOURCES.COUNT" value="2"/>
+    <listAttribute key="FILES.DOWNLOAD_AND_DEBUG"/>
+    <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.0.OPTION.ALSO_LOAD_SYMBOLS" value="true"/>
+    <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.0.OPTION.ON_DEMAND_LOAD" value="true"/>
+    <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.0.TYPE" value="TARGET_WORKING_DIR"/>
+    <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.0.VALUE" value=""/>
+    <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.1.OPTION.ALSO_LOAD_SYMBOLS" value="true"/>
+    <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.1.OPTION.ON_DEMAND_LOAD" value="true"/>
+    <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.1.TYPE" value="APP_ON_HOST_TO_DOWNLOAD"/>
+    <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.1.VALUE" value=""/>
+    <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.2.OPTION.ALSO_LOAD_SYMBOLS" value="true"/>
+    <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.2.OPTION.ON_DEMAND_LOAD" value="true"/>
+    <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.2.TYPE" value="TARGET_DOWNLOAD_DIR"/>
+    <stringAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.2.VALUE" value=""/>
+    <intAttribute key="FILES.DOWNLOAD_AND_DEBUG.RESOURCES.COUNT" value="3"/>
+    <listAttribute key="FILES.DOWNLOAD_DEBUG"/>
+    <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.0.OPTION.ALSO_LOAD_SYMBOLS" value="true"/>
+    <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.0.OPTION.ON_DEMAND_LOAD" value="true"/>
+    <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.0.TYPE" value="TARGET_WORKING_DIR"/>
+    <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.0.VALUE" value=""/>
+    <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.1.OPTION.ALSO_LOAD_SYMBOLS" value="true"/>
+    <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.1.OPTION.ON_DEMAND_LOAD" value="true"/>
+    <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.1.TYPE" value="APP_ON_HOST_TO_DOWNLOAD"/>
+    <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.1.VALUE" value=""/>
+    <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.2.OPTION.ALSO_LOAD_SYMBOLS" value="true"/>
+    <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.2.OPTION.ON_DEMAND_LOAD" value="true"/>
+    <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.2.TYPE" value="TARGET_DOWNLOAD_DIR"/>
+    <stringAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.2.VALUE" value=""/>
+    <intAttribute key="FILES.DOWNLOAD_DEBUG.RESOURCES.COUNT" value="3"/>
+    <intAttribute key="FILES.DOWNLOAD_DEBUG_ANDROID.RESOURCES.COUNT" value="0"/>
+    <listAttribute key="FILES.ICE_DEBUG">
+        <listEntry value="ON_DEMAND_LOAD"/>
+        <listEntry value="ALSO_LOAD_SYMBOLS"/>
+    </listAttribute>
+    <stringAttribute key="FILES.ICE_DEBUG.RESOURCES.0.OPTION.ALSO_LOAD_SYMBOLS" value="true"/>
+    <stringAttribute key="FILES.ICE_DEBUG.RESOURCES.0.OPTION.ON_DEMAND_LOAD" value="true"/>
+    <stringAttribute key="FILES.ICE_DEBUG.RESOURCES.0.TYPE" value="APP_ON_HOST_TO_DOWNLOAD"/>
+    <stringAttribute key="FILES.ICE_DEBUG.RESOURCES.0.VALUE" value="${workspace_loc:/basic-Non-secure-only-program_s/Debug/basic-Non-secure-only-program_s.axf}"/>
+    <intAttribute key="FILES.ICE_DEBUG.RESOURCES.COUNT" value="1"/>
+    <listAttribute key="FILES.ICE_DEBUG_WITH_ETB_TRACE">
+        <listEntry value="ON_DEMAND_LOAD"/>
+        <listEntry value="ALSO_LOAD_SYMBOLS"/>
+    </listAttribute>
+    <stringAttribute key="FILES.ICE_DEBUG_WITH_ETB_TRACE.RESOURCES.0.OPTION.ALSO_LOAD_SYMBOLS" value="true"/>
+    <stringAttribute key="FILES.ICE_DEBUG_WITH_ETB_TRACE.RESOURCES.0.OPTION.ON_DEMAND_LOAD" value="true"/>
+    <stringAttribute key="FILES.ICE_DEBUG_WITH_ETB_TRACE.RESOURCES.0.TYPE" value="APP_ON_HOST_TO_DOWNLOAD"/>
+    <stringAttribute key="FILES.ICE_DEBUG_WITH_ETB_TRACE.RESOURCES.0.VALUE" value=""/>
+    <intAttribute key="FILES.ICE_DEBUG_WITH_ETB_TRACE.RESOURCES.COUNT" value="1"/>
+    <listAttribute key="FILES.ICE_DEBUG_WITH_TRACE">
+        <listEntry value="ON_DEMAND_LOAD"/>
+        <listEntry value="ALSO_LOAD_SYMBOLS"/>
+    </listAttribute>
+    <stringAttribute key="FILES.ICE_DEBUG_WITH_TRACE.RESOURCES.0.OPTION.ALSO_LOAD_SYMBOLS" value="true"/>
+    <stringAttribute key="FILES.ICE_DEBUG_WITH_TRACE.RESOURCES.0.OPTION.ON_DEMAND_LOAD" value="true"/>
+    <stringAttribute key="FILES.ICE_DEBUG_WITH_TRACE.RESOURCES.0.TYPE" value="APP_ON_HOST_TO_DOWNLOAD"/>
+    <stringAttribute key="FILES.ICE_DEBUG_WITH_TRACE.RESOURCES.0.VALUE" value=""/>
+    <intAttribute key="FILES.ICE_DEBUG_WITH_TRACE.RESOURCES.COUNT" value="1"/>
+    <stringAttribute key="FILES.SELECTED_DEBUG_OPEATION" value="ICE_DEBUG"/>
+    <stringAttribute key="HOST_WORKING_DIR" value="${workspace_loc}"/>
+    <booleanAttribute key="HOST_WORKING_DIR_USE_DEFAULT" value="true"/>
+    <booleanAttribute key="InstructionStepping" value="false"/>
+    <booleanAttribute key="KEY_COMMANDS_AFTER_CONNECT" value="true"/>
+    <stringAttribute key="KEY_COMMANDS_AFTER_CONNECT_TEXT" value="load &quot;${workspace_loc:/basic-Non-secure-only-program_ns/Debug/basic-Non-secure-only-program_ns.axf}&quot;  &#13;&#10;add-symbol-file &quot;${workspace_loc:/basic-Non-secure-only-program_ns/Debug/basic-Non-secure-only-program_ns.axf}&quot;"/>
+    <booleanAttribute key="KEY_COMMANDS_AS_CONNECT" value="false"/>
+    <booleanAttribute key="RSE_USE_HOSTNAME" value="true"/>
+    <booleanAttribute key="SWD" value="false"/>
+    <booleanAttribute key="SWJ" value="true"/>
+    <stringAttribute key="TCP_DISABLE_EXTENDED_MODE" value="true"/>
+    <booleanAttribute key="TCP_KILL_ON_EXIT" value="false"/>
+    <listAttribute key="TREE_NODE_PROPERTIES:debugger.view.VariableTreeView">
+        <listEntry value="NODE CACHE VERSION 1"/>
+        <listEntry value="LOCALS:Locals:VALUE:C:/work/tmp/security/no-secure-callback/no-secure-callback_s/Init.c::MPUConfig::VENEERLimit1"/>
+        <listEntry value="1"/>
+        <listEntry value="formatter"/>
+        <listEntry value="Hexadecimal"/>
+        <listEntry value="LOCALS:Locals:VALUE:C:/work/tmp/security/no-secure-callback/no-secure-callback_s/Init.c::MPUConfig::ROMAddr"/>
+        <listEntry value="1"/>
+        <listEntry value="formatter"/>
+        <listEntry value="Hexadecimal"/>
+        <listEntry value="LOCALS:Locals:VALUE:C:/work/tmp/security/no-secure-callback/no-secure-callback_s/Init.c::MPUConfig::ROMLimit"/>
+        <listEntry value="1"/>
+        <listEntry value="formatter"/>
+        <listEntry value="Hexadecimal"/>
+        <listEntry value="LOCALS:Locals:VALUE:C:/work/tmp/security/no-secure-callback/no-secure-callback_s/Init.c::MPUConfig::RAMAddr"/>
+        <listEntry value="1"/>
+        <listEntry value="formatter"/>
+        <listEntry value="Hexadecimal"/>
+        <listEntry value="LOCALS:Locals:VALUE:C:/work/tmp/security/no-secure-callback/no-secure-callback_s/Init.c::MPUConfig::RAMLimit"/>
+        <listEntry value="1"/>
+        <listEntry value="formatter"/>
+        <listEntry value="Hexadecimal"/>
+        <listEntry value="LOCALS:Locals:VALUE:C:/work/tmp/security/no-secure-callback/no-secure-callback_s/Init.c::MPUConfig::VENEERAddr"/>
+        <listEntry value="1"/>
+        <listEntry value="formatter"/>
+        <listEntry value="Hexadecimal"/>
+        <listEntry value="LOCALS:Locals:VALUE:C:/work/tmp/security/no-secure-callback/no-secure-callback_s/Init.c::MPUConfig::VENEERLimit"/>
+        <listEntry value="1"/>
+        <listEntry value="formatter"/>
+        <listEntry value="Hexadecimal"/>
+        <listEntry value="LOCALS:Locals:VALUE:C:/work/tmp/security/no-secure-callback/no-secure-callback_ns/Init.c::MPUConfig::ROMAddr"/>
+        <listEntry value="1"/>
+        <listEntry value="formatter"/>
+        <listEntry value="Hexadecimal"/>
+        <listEntry value="LOCALS:Locals:VALUE:C:/work/tmp/security/no-secure-callback/no-secure-callback_ns/Init.c::MPUConfig::ROMLimit"/>
+        <listEntry value="1"/>
+        <listEntry value="formatter"/>
+        <listEntry value="Hexadecimal"/>
+        <listEntry value="LOCALS:Locals:VALUE:C:/work/tmp/security/no-secure-callback/no-secure-callback_ns/Init.c::MPUConfig::RAMAddr"/>
+        <listEntry value="1"/>
+        <listEntry value="formatter"/>
+        <listEntry value="Hexadecimal"/>
+        <listEntry value="LOCALS:Locals:VALUE:C:/work/tmp/security/no-secure-callback/no-secure-callback_ns/Init.c::MPUConfig::RAMLimit"/>
+        <listEntry value="1"/>
+        <listEntry value="formatter"/>
+        <listEntry value="Hexadecimal"/>
+        <listEntry value="LOCALS:Locals:VALUE:C:/work/tmp/security/no-secure-callback/no-secure-callback_ns/main_ns.c::stackprocess::exc_return"/>
+        <listEntry value="1"/>
+        <listEntry value="formatter"/>
+        <listEntry value="Hexadecimal"/>
+        <listEntry value="LOCALS:Locals:VALUE:C:/work/tmp/security/no-secure-callback/no-secure-callback_ns/main_ns.c::stackprocess::r0"/>
+        <listEntry value="1"/>
+        <listEntry value="formatter"/>
+        <listEntry value="Hexadecimal"/>
+        <listEntry value="LOCALS:Locals:VALUE:C:/work/tmp/security/no-secure-callback/no-secure-callback_ns/main_ns.c::stackprocess::r2"/>
+        <listEntry value="1"/>
+        <listEntry value="formatter"/>
+        <listEntry value="Hexadecimal"/>
+        <listEntry value="LOCALS:Locals:VALUE:C:/work/tmp/security/no-secure-callback/no-secure-callback_ns/main_ns.c::stackprocess::r12"/>
+        <listEntry value="1"/>
+        <listEntry value="formatter"/>
+        <listEntry value="Hexadecimal"/>
+        <listEntry value="LOCALS:Locals:VALUE:C:/work/tmp/security/no-secure-callback/no-secure-callback_ns/main_ns.c::stackprocess::pc"/>
+        <listEntry value="1"/>
+        <listEntry value="formatter"/>
+        <listEntry value="Hexadecimal"/>
+    </listAttribute>
+    <booleanAttribute key="VFS_ENABLED" value="true"/>
+    <stringAttribute key="VFS_LOCAL_DIR" value="${workspace_loc}"/>
+    <stringAttribute key="VFS_REMOTE_MOUNT" value="/writeable"/>
+    <stringAttribute key="breakpoints" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;breakpoints order=&quot;ALPHA&quot;&gt;&#10;&#9;&lt;breakpoint ignorecount=&quot;0&quot; threadenabled=&quot;no&quot; core_list=&quot;&quot; continue=&quot;no&quot; verboseBreakpoints=&quot;yes&quot; kind=&quot;RAW_EXEC_ADDRESS&quot;&gt;&#10;&#9;&#9;&lt;master_location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; address=&quot;0x1000165C&quot; function=&quot;main&quot;/&gt;&#10;&#9;&#9;&lt;location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; address=&quot;0x1000165C&quot; function=&quot;main&quot;/&gt;&#10;&#9;&lt;/breakpoint&gt;&#10;&#9;&lt;breakpoint ignorecount=&quot;0&quot; threadenabled=&quot;no&quot; core_list=&quot;&quot; continue=&quot;no&quot; verboseBreakpoints=&quot;yes&quot; kind=&quot;RAW_EXEC_ADDRESS&quot;&gt;&#10;&#9;&#9;&lt;master_location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; address=&quot;0x10001682&quot; function=&quot;main&quot;/&gt;&#10;&#9;&#9;&lt;location index=&quot;0&quot; enabled=&quot;true&quot; version=&quot;2&quot; address=&quot;0x10001682&quot; function=&quot;main&quot;/&gt;&#10;&#9;&lt;/breakpoint&gt;&#10;&lt;/breakpoints&gt;&#10;"/>
+    <listAttribute key="com.arm.debug.views.common.AddressTracker.debugger.view.DisassemblyView.addresses">
+        <listEntry value="&lt;Next Instruction&gt;"/>
+        <listEntry value=""/>
+        <listEntry value="0x800069f0"/>
+        <listEntry value="main"/>
+        <listEntry value="__aeabi_memcpy"/>
+    </listAttribute>
+    <listAttribute key="com.arm.debug.views.common.AddressTracker.debugger.view.DisassemblyView.ranges">
+        <listEntry value="100"/>
+        <listEntry value=""/>
+        <listEntry value="100"/>
+        <listEntry value="100"/>
+        <listEntry value="100"/>
+    </listAttribute>
+    <listAttribute key="com.arm.debug.views.common.AddressTracker.debugger.view.MemoryView.addresses">
+        <listEntry value=""/>
+        <listEntry value="0x80006a00"/>
+        <listEntry value="0x800A9000"/>
+        <listEntry value="0x800AA0e0"/>
+        <listEntry value="0x800AA000"/>
+        <listEntry value="0x800A8000"/>
+        <listEntry value="0x800A8008"/>
+        <listEntry value="0x800AA700"/>
+        <listEntry value="0x800AA070"/>
+        <listEntry value="0x800A9070"/>
+        <listEntry value="0x800AABC0"/>
+        <listEntry value="0x800A800"/>
+        <listEntry value="0x800A8011"/>
+        <listEntry value="0x801ff000"/>
+        <listEntry value="0x801ff00"/>
+        <listEntry value="0x00800A90"/>
+    </listAttribute>
+    <listAttribute key="com.arm.debug.views.common.AddressTracker.debugger.view.MemoryView.ranges">
+        <listEntry value=""/>
+        <listEntry value="1024"/>
+        <listEntry value="1024"/>
+        <listEntry value="1024"/>
+        <listEntry value="1024"/>
+        <listEntry value="1024"/>
+        <listEntry value="1024"/>
+        <listEntry value="1024"/>
+        <listEntry value="1024"/>
+        <listEntry value="1024"/>
+        <listEntry value="1024"/>
+        <listEntry value="1024"/>
+        <listEntry value="1024"/>
+        <listEntry value="1024"/>
+        <listEntry value="1024"/>
+        <listEntry value="1024"/>
+    </listAttribute>
+    <stringAttribute key="config_db_activity_name" value="Cortex-M55_0"/>
+    <stringAttribute key="config_db_connection_keys" value="dtsl_config dtsl_tracecapture_option connect_existing_model dtsl_config_script model_params model_iris config_file model_connection_address setup TCP_KILL_ON_EXIT TCP_DISABLE_EXTENDED_MODE"/>
+    <stringAttribute key="config_db_connection_type" value="Bare Metal Debug"/>
+    <stringAttribute key="config_db_platform_name" value="Arm FVP (Installed with Arm DS) - MPS2_Cortex_M55"/>
+    <stringAttribute key="config_db_project_type" value="Bare Metal Debug"/>
+    <stringAttribute key="config_db_project_type_id" value="BARE_METAL"/>
+    <stringAttribute key="config_db_taxonomy_id" value="/platform/armfvp_installedwitharmds_/mps2_cortex_m55"/>
+    <stringAttribute key="config_file" value="CDB://../../Arm FVP/MPS2_Cortex_M55/iris_config.xml"/>
+    <booleanAttribute key="connectOnly" value="false"/>
+    <stringAttribute key="connect_existing_model" value="false"/>
+    <stringAttribute key="dapLogfileLocation" value=""/>
+    <stringAttribute key="dapLoggingEnabled" value="false"/>
+    <listAttribute key="debugger.view.DisassemblyView:current">
+        <listEntry value="&lt;Next Instruction&gt;"/>
+        <listEntry value="100"/>
+    </listAttribute>
+    <listAttribute key="debugger.view.DisassemblyView:current:2536969209000370176.viewid=2">
+        <listEntry value="&lt;Next Instruction&gt;"/>
+        <listEntry value="100"/>
+    </listAttribute>
+    <listAttribute key="debugger.view.DisassemblyView:current:3241873112774690444.viewid=2">
+        <listEntry value="&lt;Next Instruction&gt;"/>
+        <listEntry value="100"/>
+    </listAttribute>
+    <listAttribute key="debugger.view.DisassemblyView:current:6648041926306123591.viewid=2">
+        <listEntry value="&lt;Next Instruction&gt;"/>
+        <listEntry value="100"/>
+    </listAttribute>
+    <stringAttribute key="debugger.view.MMUView:DebugOutlineColumnState" value="OutlineConfig1&#9;5&#9;0&#9;true&#9;false&#9;16&#9;-1&#9;true&#9;3&#9;true&#9;true&#9;90&#9;-1&#9;true&#9;5&#9;true&#9;true&#9;100&#9;-1&#9;true&#9;4&#9;true&#9;true&#9;42&#9;-1&#9;true&#9;6&#9;true&#9;true&#9;69&#9;-1&#9;true"/>
+    <stringAttribute key="debugger.view.MemoryView" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;page&gt;&#10;&#9;&lt;memoryView/&gt;&#10;&lt;/page&gt;&#10;"/>
+    <listAttribute key="debugger.view.MemoryView:current">
+        <listEntry value=""/>
+        <listEntry value=""/>
+    </listAttribute>
+    <stringAttribute key="debugger.view.NewRegisterView:DebugOutlineColumnState" value="OutlineConfig1&#9;8&#9;0&#9;true&#9;true&#9;87&#9;-1&#9;true&#9;1&#9;false&#9;true&#9;127&#9;-1&#9;true&#9;2&#9;true&#9;true&#9;122&#9;-1&#9;true&#9;3&#9;false&#9;true&#9;54&#9;-1&#9;true&#9;4&#9;false&#9;true&#9;65&#9;-1&#9;true&#9;5&#9;true&#9;true&#9;38&#9;-1&#9;true&#9;6&#9;false&#9;true&#9;84&#9;-1&#9;true&#9;7&#9;true&#9;true&#9;52&#9;-1&#9;true"/>
+    <stringAttribute key="debugger.view.NewRegisterView:_selectedRegisterSet" value="All registers"/>
+    <mapAttribute key="debugger.view.NewRegisterView_registerSets"/>
+    <listAttribute key="debugger.view.TraceView:TRACE_EXPORT_FILTERS"/>
+    <stringAttribute key="debugger.view.VariableTreeView:DebugOutlineColumnState" value="OutlineConfig1&#9;8&#9;0&#9;true&#9;true&#9;151&#9;-1&#9;true&#9;1&#9;false&#9;true&#9;127&#9;-1&#9;true&#9;2&#9;true&#9;false&#9;256&#9;-1&#9;true&#9;3&#9;true&#9;true&#9;42&#9;-1&#9;true&#9;4&#9;true&#9;true&#9;49&#9;-1&#9;true&#9;5&#9;true&#9;true&#9;38&#9;-1&#9;true&#9;6&#9;true&#9;true&#9;61&#9;-1&#9;true&#9;7&#9;true&#9;true&#9;52&#9;-1&#9;true"/>
+    <listAttribute key="debugger.view.VariableTreeView:USER_ADDED_FILE_STATICS"/>
+    <listAttribute key="debugger.view.VariableTreeView:USER_ADDED_GLOBALS"/>
+    <booleanAttribute key="debugger.view.register.DrawAsHex" value="false"/>
+    <booleanAttribute key="debugger.view.variable.DrawAsHex" value="false"/>
+    <stringAttribute key="dtsl_config" value="DtslScript"/>
+    <stringAttribute key="dtsl_config_script" value="CDB://../../Arm FVP/MPS2_Cortex_M55/dtsl_config_script.py"/>
+    <stringAttribute key="dtsl_options_file" value="default"/>
+    <stringAttribute key="dtsl_tracecapture_option" value="options.trace.traceCapture"/>
+    <stringAttribute key="launch_configuration_version" value="2022.a"/>
+    <booleanAttribute key="linuxOS" value="false"/>
+    <stringAttribute key="model_connection_address" value="127.0.0.1:7100"/>
+    <stringAttribute key="model_iris" value="1"/>
+    <stringAttribute key="model_params" value="-C fvp_mps2.DISABLE_GATING=1 -C NSC_CFG_0=1 -C cpu0.INITNSVTOR=0x00200000"/>
+    <booleanAttribute key="runAfterConnect" value="false"/>
+    <listAttribute key="setup">
+        <listEntry value="CDB://Scripts/rtsm_launcher.py"/>
+        <listEntry value="&quot;FVP_MPS2_Cortex-M55&quot;"/>
+    </listAttribute>
+    <booleanAttribute key="single_platform" value="false"/>
+    <stringAttribute key="stopAtExpression" value="*$ENTRYPOINT"/>
+    <stringAttribute key="watchpoints" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;watchpoints&gt;&#10;&lt;/watchpoints&gt;&#10;"/>
+</launchConfiguration>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="com.arm.eclipse.build.config.v6.exe.debug.base.var.arm_compiler_6-6.215148369">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.arm.eclipse.build.config.v6.exe.debug.base.var.arm_compiler_6-6.215148369" moduleId="org.eclipse.cdt.core.settings" name="Debug">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.arm.eclipse.builder.armcc.error" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="axf" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="clean" description="" id="com.arm.eclipse.build.config.v6.exe.debug.base.var.arm_compiler_6-6.215148369" name="Debug" parent="com.arm.eclipse.build.config.v6.exe.debug.base.var.arm_compiler_6-6">
+					<folderInfo id="com.arm.eclipse.build.config.v6.exe.debug.base.var.arm_compiler_6-6.215148369." name="/" resourcePath="">
+						<toolChain id="com.arm.toolchain.v6.exe.debug.base.var.arm_compiler_6-6.728883194" name="Arm Compiler for Embedded 6" superClass="com.arm.toolchain.v6.exe.debug.base.var.arm_compiler_6-6">
+							<option defaultValue="com.arm.tool.c.compiler.v6.base.options.debug.level.std" id="com.arm.toolchain.v6.base.options.debug.level.1810477684" name="Debug Level" superClass="com.arm.toolchain.v6.base.options.debug.level" useByScannerDiscovery="false" valueType="enumerated"/>
+							<option id="com.arm.toolchain.v6.base.options.target.cpu_fpu.1852704140" superClass="com.arm.toolchain.v6.base.options.target.cpu_fpu" useByScannerDiscovery="false" value="Generic.ARMv8.1-M.Main.FP16.FP32.FP64" valueType="string"/>
+							<option id="com.arm.toolchain.v6.base.options.floatabi.209144558" name="Float ABI" superClass="com.arm.toolchain.v6.base.options.floatabi" useByScannerDiscovery="false" value="com.arm.tool.c.compiler.v6.base.option.floatabi.hard" valueType="enumerated"/>
+							<option id="com.arm.toolchain.v6.base.options.endian.1702756813" name="Byte order" superClass="com.arm.toolchain.v6.base.options.endian" useByScannerDiscovery="false" value="com.arm.tool.c.compiler.v6.base.option.endian.little" valueType="enumerated"/>
+							<option id="com.arm.toolchain.v6.base.options.inst.16195101" name="Instruction set" superClass="com.arm.toolchain.v6.base.options.inst" useByScannerDiscovery="false" value="com.arm.tool.c.compiler.v6.base.option.inst.thumb" valueType="enumerated"/>
+							<targetPlatform id="com.arm.eclipse.build.config.v6.exe.debug.base.var.arm_compiler_6-6.215148369..1159247315" name=""/>
+							<builder buildPath="${workspace_loc:/security_func_call__params_passing_ns}/Debug" id="com.arm.toolchain.v6.builder.81750672" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" superClass="com.arm.toolchain.v6.builder"/>
+							<tool id="com.arm.tool.c.compiler.v6.base.var.arm_compiler_6-6.1816368245" name="Arm C Compiler for Embedded 6" superClass="com.arm.tool.c.compiler.v6.base.var.arm_compiler_6-6">
+								<option defaultValue="com.arm.tool.c.compiler.v6.base.option.optlevel.min" id="com.arm.tool.c.compiler.v6.base.option.optlevel.36702697" name="Optimization level" superClass="com.arm.tool.c.compiler.v6.base.option.optlevel" useByScannerDiscovery="true" value="com.arm.tool.c.compiler.v6.base.option.optlevel.restrict" valueType="enumerated"/>
+								<option defaultValue="com.arm.tool.c.compiler.v6.base.options.debug.level.std" id="com.arm.tool.c.compiler.v6.base.options.debug.level.631489442" name="Debug Level" superClass="com.arm.tool.c.compiler.v6.base.options.debug.level" useByScannerDiscovery="true" valueType="enumerated"/>
+								<option id="com.arm.tool.c.compiler.v6.base.option.arch.780143306" name="Architecture (-march)" superClass="com.arm.tool.c.compiler.v6.base.option.arch" useByScannerDiscovery="true" value="armv8.1-m.main+fp.dp" valueType="string"/>
+								<option id="com.arm.tool.c.compiler.v6.base.option.target.1683490827" name="Target (--target)" superClass="com.arm.tool.c.compiler.v6.base.option.target" useByScannerDiscovery="true" value="arm-arm-none-eabi" valueType="string"/>
+								<option id="com.arm.tool.c.compiler.v6.base.option.floatabi.881884878" name="Float ABI (-mfloat-abi)" superClass="com.arm.tool.c.compiler.v6.base.option.floatabi" useByScannerDiscovery="true" value="com.arm.tool.c.compiler.v6.base.option.floatabi.hard" valueType="enumerated"/>
+								<option id="com.arm.tool.c.compiler.v6.base.option.endian.944352699" name="Byte order" superClass="com.arm.tool.c.compiler.v6.base.option.endian" useByScannerDiscovery="true" value="com.arm.tool.c.compiler.v6.base.option.endian.little" valueType="enumerated"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.arm.tool.c.compiler.v6.base.option.implicit.defmac.1165964311" name="Implicit Define macros" superClass="com.arm.tool.c.compiler.v6.base.option.implicit.defmac" useByScannerDiscovery="true" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="_RTE_"/>
+									<listOptionValue builtIn="false" value="ARMv81MML_DSP_DP_MVE_FP"/>
+								</option>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.arm.tool.c.compiler.v6.base.option.implicit.incpath.191506123" name="Implicit Include paths" superClass="com.arm.tool.c.compiler.v6.base.option.implicit.incpath" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${cmsis_pack_root}/ARM/CMSIS/5.9.0/CMSIS/Core/Include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${cmsis_pack_root}/ARM/CMSIS/5.9.0/Device/ARM/ARMv81MML/Include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}}/RTE&quot;"/>
+								</option>
+								<option id="com.arm.tool.c.compiler.v6.base.option.lang.837341993" name="Source language mode" superClass="com.arm.tool.c.compiler.v6.base.option.lang" useByScannerDiscovery="true" value="com.arm.tool.c.compiler.v6.base.option.lang.c99" valueType="enumerated"/>
+								<option id="com.arm.tool.c.compiler.v6.base.option.inst.1896115767" name="Instruction set" superClass="com.arm.tool.c.compiler.v6.base.option.inst" useByScannerDiscovery="true" value="com.arm.tool.c.compiler.v6.base.option.inst.thumb" valueType="enumerated"/>
+								<inputType id="com.arm.tool.c.compiler.v6.base.input.163050499" superClass="com.arm.tool.c.compiler.v6.base.input"/>
+							</tool>
+							<tool id="com.arm.tool.cpp.compiler.v6.base.var.arm_compiler_6-6.1903646119" name="Arm C++ Compiler for Embedded 6" superClass="com.arm.tool.cpp.compiler.v6.base.var.arm_compiler_6-6">
+								<option defaultValue="com.arm.tool.c.compiler.v6.base.option.optlevel.min" id="com.arm.tool.c.compiler.v6.base.option.optlevel.25996807" name="Optimization level" superClass="com.arm.tool.c.compiler.v6.base.option.optlevel" useByScannerDiscovery="true" valueType="enumerated"/>
+								<option defaultValue="com.arm.tool.c.compiler.v6.base.options.debug.level.std" id="com.arm.tool.c.compiler.v6.base.options.debug.level.1352376908" name="Debug Level" superClass="com.arm.tool.c.compiler.v6.base.options.debug.level" useByScannerDiscovery="true" valueType="enumerated"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.arm.tool.c.compiler.v6.base.option.implicit.defmac.1863743000" name="Implicit Define macros" superClass="com.arm.tool.c.compiler.v6.base.option.implicit.defmac" useByScannerDiscovery="true" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="_RTE_"/>
+									<listOptionValue builtIn="false" value="ARMv81MML_DSP_DP_MVE_FP"/>
+								</option>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.arm.tool.c.compiler.v6.base.option.implicit.incpath.933187969" name="Implicit Include paths" superClass="com.arm.tool.c.compiler.v6.base.option.implicit.incpath" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${cmsis_pack_root}/ARM/CMSIS/5.9.0/CMSIS/Core/Include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${cmsis_pack_root}/ARM/CMSIS/5.9.0/Device/ARM/ARMv81MML/Include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}}/RTE&quot;"/>
+								</option>
+								<option id="com.arm.tool.cpp.compiler.v6.base.option.lang.1239338409" name="Source language mode" superClass="com.arm.tool.cpp.compiler.v6.base.option.lang" useByScannerDiscovery="true" value="" valueType="enumerated"/>
+							</tool>
+							<tool id="com.arm.tool.assembler.v6.base.var.arm_compiler_6-6.1973552802" name="Arm Assembler 6" superClass="com.arm.tool.assembler.v6.base.var.arm_compiler_6-6">
+								<option defaultValue="com.arm.tool.assembler.v6.base.options.debug.level.std" id="com.arm.tool.assembler.v6.base.options.debug.level.812684088" name="Debug Level" superClass="com.arm.tool.assembler.v6.base.options.debug.level" useByScannerDiscovery="false" valueType="enumerated"/>
+								<option id="com.arm.tool.assembler.v6.base.option.arch.1585628336" name="Architecture (-march)" superClass="com.arm.tool.assembler.v6.base.option.arch" useByScannerDiscovery="true" value="armv8.1-m.main+fp.dp" valueType="string"/>
+								<option id="com.arm.tool.assembler.v6.base.option.target.805264347" name="Target (--target)" superClass="com.arm.tool.assembler.v6.base.option.target" useByScannerDiscovery="false" value="arm-arm-none-eabi" valueType="string"/>
+								<option id="com.arm.tool.assembler.v6.base.option.floatabi.1327854610" name="Float ABI (-mfloat-abi)" superClass="com.arm.tool.assembler.v6.base.option.floatabi" useByScannerDiscovery="true" value="com.arm.tool.c.compiler.v6.base.option.floatabi.hard" valueType="enumerated"/>
+								<option id="com.arm.tool.assembler.v6.base.option.endian.162198702" name="Byte order" superClass="com.arm.tool.assembler.v6.base.option.endian" useByScannerDiscovery="true" value="com.arm.tool.c.compiler.v6.base.option.endian.little" valueType="enumerated"/>
+								<option id="com.arm.tool.assembler.v6.base.option.force.preproc.338228293" name="Preprocess input files (-x assembler-with-cpp)" superClass="com.arm.tool.assembler.v6.base.option.force.preproc" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.arm.tool.assembler.v6.base.option.implicit.defmac.1894132778" name="Implicit Define macros" superClass="com.arm.tool.assembler.v6.base.option.implicit.defmac" useByScannerDiscovery="true" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="_RTE_"/>
+									<listOptionValue builtIn="false" value="ARMv81MML_DSP_DP_MVE_FP"/>
+								</option>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.arm.tool.assembler.v6.base.option.implicit.incpath.1148619680" name="Implicit Include paths" superClass="com.arm.tool.assembler.v6.base.option.implicit.incpath" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${cmsis_pack_root}/ARM/CMSIS/5.9.0/CMSIS/Core/Include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${cmsis_pack_root}/ARM/CMSIS/5.9.0/Device/ARM/ARMv81MML/Include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}}/RTE&quot;"/>
+								</option>
+								<option id="com.arm.tool.assembler.v6.base.option.masm.513272539" name="Assembler syntax (-masm)" superClass="com.arm.tool.assembler.v6.base.option.masm" useByScannerDiscovery="false" value="masm.val.auto" valueType="enumerated"/>
+								<option id="com.arm.tool.assembler.v6.base.option.inst.853956461" name="Instruction set" superClass="com.arm.tool.assembler.v6.base.option.inst" useByScannerDiscovery="true" value="com.arm.tool.c.compiler.v6.base.option.inst.thumb" valueType="enumerated"/>
+								<inputType id="com.arm.tool.assembler.v6.base.input.426469157" superClass="com.arm.tool.assembler.v6.base.input"/>
+							</tool>
+							<tool id="com.arm.tool.c.linker.v6.base.var.arm_compiler_6-6.49265609" name="Arm Linker 6" superClass="com.arm.tool.c.linker.v6.base.var.arm_compiler_6-6">
+								<option id="com.arm.tool.c.linker.option.entry.1625976277" name="Image entry point (--entry)" superClass="com.arm.tool.c.linker.option.entry" useByScannerDiscovery="false" value="Reset_Handler" valueType="string"/>
+								<option id="com.arm.tool.c.linker.option.scatter.53914673" name="Scatter file (--scatter)" superClass="com.arm.tool.c.linker.option.scatter" useByScannerDiscovery="false" value="${workspace_loc:/${ProjName}}/RTE/Device/ARMv81MML_DSP_DP_MVE_FP/ARMv81MML_ac6.sct" valueType="string"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.arm.tool.c.linker.userobjs.669020346" name="Other object files" superClass="com.arm.tool.c.linker.userobjs" useByScannerDiscovery="false" valueType="userObjs">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/security-func-call-params-passing_s/Debug/security-func-call-params-passing-CMSE-Lib.o}&quot;"/>
+								</option>
+							</tool>
+							<tool id="com.arm.tool.librarian.v6.base.var.arm_compiler_6-6.304469934" name="Arm Librarian 6" superClass="com.arm.tool.librarian.v6.base.var.arm_compiler_6-6"/>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+		<cconfiguration id="com.arm.eclipse.build.config.v6.exe.release.base.var.arm_compiler_6-6.1247732948">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.arm.eclipse.build.config.v6.exe.release.base.var.arm_compiler_6-6.1247732948" moduleId="org.eclipse.cdt.core.settings" name="Release">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="com.arm.eclipse.builder.armcc.error" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="axf" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release" cleanCommand="clean" description="" id="com.arm.eclipse.build.config.v6.exe.release.base.var.arm_compiler_6-6.1247732948" name="Release" parent="com.arm.eclipse.build.config.v6.exe.release.base.var.arm_compiler_6-6">
+					<folderInfo id="com.arm.eclipse.build.config.v6.exe.release.base.var.arm_compiler_6-6.1247732948." name="/" resourcePath="">
+						<toolChain id="com.arm.toolchain.v6.exe.release.base.var.arm_compiler_6-6.1052492443" name="Arm Compiler for Embedded 6" superClass="com.arm.toolchain.v6.exe.release.base.var.arm_compiler_6-6">
+							<option defaultValue="com.arm.tool.c.compiler.v6.base.options.debug.level.none" id="com.arm.toolchain.v6.base.options.debug.level.2111844484" name="Debug Level" superClass="com.arm.toolchain.v6.base.options.debug.level" valueType="enumerated"/>
+							<option id="com.arm.toolchain.v6.base.options.target.cpu_fpu.41454691" superClass="com.arm.toolchain.v6.base.options.target.cpu_fpu" value="Generic.ARMv8.1-M.Main.MVEF.FP16.FP32.FP64" valueType="string"/>
+							<option id="com.arm.toolchain.v6.base.options.floatabi.640816291" name="Float ABI" superClass="com.arm.toolchain.v6.base.options.floatabi" value="com.arm.tool.c.compiler.v6.base.option.floatabi.hard" valueType="enumerated"/>
+							<option id="com.arm.toolchain.v6.base.options.endian.940599768" name="Byte order" superClass="com.arm.toolchain.v6.base.options.endian" value="com.arm.tool.c.compiler.v6.base.option.endian.little" valueType="enumerated"/>
+							<targetPlatform id="com.arm.eclipse.build.config.v6.exe.release.base.var.arm_compiler_6-6.1247732948..1198441782" name=""/>
+							<builder buildPath="${workspace_loc:/security_func_call__params_passing_ns}/Release" id="com.arm.toolchain.v6.builder.86285967" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" superClass="com.arm.toolchain.v6.builder"/>
+							<tool id="com.arm.tool.c.compiler.v6.base.var.arm_compiler_6-6.1988383737" name="Arm C Compiler for Embedded 6" superClass="com.arm.tool.c.compiler.v6.base.var.arm_compiler_6-6">
+								<option defaultValue="com.arm.tool.c.compiler.v6.base.option.optlevel.high" id="com.arm.tool.c.compiler.v6.base.option.optlevel.1989508471" name="Optimization level" superClass="com.arm.tool.c.compiler.v6.base.option.optlevel" useByScannerDiscovery="true" valueType="enumerated"/>
+								<option defaultValue="com.arm.tool.c.compiler.v6.base.options.debug.level.none" id="com.arm.tool.c.compiler.v6.base.options.debug.level.1341620025" name="Debug Level" superClass="com.arm.tool.c.compiler.v6.base.options.debug.level" useByScannerDiscovery="true" valueType="enumerated"/>
+								<option id="com.arm.tool.c.compiler.v6.base.option.arch.2069100847" name="Architecture (-march)" superClass="com.arm.tool.c.compiler.v6.base.option.arch" useByScannerDiscovery="true" value="armv8.1-m.main+mve.fp+fp.dp" valueType="string"/>
+								<option id="com.arm.tool.c.compiler.v6.base.option.target.1650218920" name="Target (--target)" superClass="com.arm.tool.c.compiler.v6.base.option.target" useByScannerDiscovery="true" value="arm-arm-none-eabi" valueType="string"/>
+								<option id="com.arm.tool.c.compiler.v6.base.option.floatabi.386923584" name="Float ABI (-mfloat-abi)" superClass="com.arm.tool.c.compiler.v6.base.option.floatabi" useByScannerDiscovery="true" value="com.arm.tool.c.compiler.v6.base.option.floatabi.hard" valueType="enumerated"/>
+								<option id="com.arm.tool.c.compiler.v6.base.option.endian.1738393588" name="Byte order" superClass="com.arm.tool.c.compiler.v6.base.option.endian" useByScannerDiscovery="true" value="com.arm.tool.c.compiler.v6.base.option.endian.little" valueType="enumerated"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.arm.tool.c.compiler.v6.base.option.implicit.defmac.974994778" name="Implicit Define macros" superClass="com.arm.tool.c.compiler.v6.base.option.implicit.defmac" useByScannerDiscovery="true" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="_RTE_"/>
+									<listOptionValue builtIn="false" value="ARMv81MML_DSP_DP_MVE_FP"/>
+								</option>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.arm.tool.c.compiler.v6.base.option.implicit.incpath.2124349050" name="Implicit Include paths" superClass="com.arm.tool.c.compiler.v6.base.option.implicit.incpath" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${cmsis_pack_root}/ARM/CMSIS/5.9.0/CMSIS/Core/Include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${cmsis_pack_root}/ARM/CMSIS/5.9.0/Device/ARM/ARMv81MML/Include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}}/RTE&quot;"/>
+								</option>
+								<option id="com.arm.tool.c.compiler.v6.base.option.lang.896559098" name="Source language mode" superClass="com.arm.tool.c.compiler.v6.base.option.lang" useByScannerDiscovery="true" value="com.arm.tool.c.compiler.v6.base.option.lang.c99" valueType="enumerated"/>
+								<inputType id="com.arm.tool.c.compiler.v6.base.input.1550904848" superClass="com.arm.tool.c.compiler.v6.base.input"/>
+							</tool>
+							<tool id="com.arm.tool.cpp.compiler.v6.base.var.arm_compiler_6-6.1600814541" name="Arm C++ Compiler for Embedded 6" superClass="com.arm.tool.cpp.compiler.v6.base.var.arm_compiler_6-6">
+								<option defaultValue="com.arm.tool.c.compiler.v6.base.option.optlevel.high" id="com.arm.tool.c.compiler.v6.base.option.optlevel.663998933" name="Optimization level" superClass="com.arm.tool.c.compiler.v6.base.option.optlevel" useByScannerDiscovery="true" valueType="enumerated"/>
+								<option defaultValue="com.arm.tool.c.compiler.v6.base.options.debug.level.none" id="com.arm.tool.c.compiler.v6.base.options.debug.level.1125606153" name="Debug Level" superClass="com.arm.tool.c.compiler.v6.base.options.debug.level" useByScannerDiscovery="true" valueType="enumerated"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.arm.tool.c.compiler.v6.base.option.implicit.defmac.1725215481" name="Implicit Define macros" superClass="com.arm.tool.c.compiler.v6.base.option.implicit.defmac" useByScannerDiscovery="true" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="_RTE_"/>
+									<listOptionValue builtIn="false" value="ARMv81MML_DSP_DP_MVE_FP"/>
+								</option>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.arm.tool.c.compiler.v6.base.option.implicit.incpath.565246150" name="Implicit Include paths" superClass="com.arm.tool.c.compiler.v6.base.option.implicit.incpath" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${cmsis_pack_root}/ARM/CMSIS/5.9.0/CMSIS/Core/Include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${cmsis_pack_root}/ARM/CMSIS/5.9.0/Device/ARM/ARMv81MML/Include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}}/RTE&quot;"/>
+								</option>
+								<option id="com.arm.tool.cpp.compiler.v6.base.option.lang.1352964808" name="Source language mode" superClass="com.arm.tool.cpp.compiler.v6.base.option.lang" useByScannerDiscovery="true" value="" valueType="enumerated"/>
+							</tool>
+							<tool id="com.arm.tool.assembler.v6.base.var.arm_compiler_6-6.351493367" name="Arm Assembler 6" superClass="com.arm.tool.assembler.v6.base.var.arm_compiler_6-6">
+								<option defaultValue="com.arm.tool.assembler.v6.base.options.debug.level.none" id="com.arm.tool.assembler.v6.base.options.debug.level.1834187472" name="Debug Level" superClass="com.arm.tool.assembler.v6.base.options.debug.level" useByScannerDiscovery="false" valueType="enumerated"/>
+								<option id="com.arm.tool.assembler.v6.base.option.arch.591401354" name="Architecture (-march)" superClass="com.arm.tool.assembler.v6.base.option.arch" useByScannerDiscovery="true" value="armv8.1-m.main+mve.fp+fp.dp" valueType="string"/>
+								<option id="com.arm.tool.assembler.v6.base.option.target.456196573" name="Target (--target)" superClass="com.arm.tool.assembler.v6.base.option.target" useByScannerDiscovery="false" value="arm-arm-none-eabi" valueType="string"/>
+								<option id="com.arm.tool.assembler.v6.base.option.floatabi.1017852476" name="Float ABI (-mfloat-abi)" superClass="com.arm.tool.assembler.v6.base.option.floatabi" useByScannerDiscovery="true" value="com.arm.tool.c.compiler.v6.base.option.floatabi.hard" valueType="enumerated"/>
+								<option id="com.arm.tool.assembler.v6.base.option.endian.623361295" name="Byte order" superClass="com.arm.tool.assembler.v6.base.option.endian" useByScannerDiscovery="true" value="com.arm.tool.c.compiler.v6.base.option.endian.little" valueType="enumerated"/>
+								<option id="com.arm.tool.assembler.v6.base.option.force.preproc.1720390803" name="Preprocess input files (-x assembler-with-cpp)" superClass="com.arm.tool.assembler.v6.base.option.force.preproc" value="true" valueType="boolean"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.arm.tool.assembler.v6.base.option.implicit.defmac.1288768013" name="Implicit Define macros" superClass="com.arm.tool.assembler.v6.base.option.implicit.defmac" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="_RTE_"/>
+									<listOptionValue builtIn="false" value="ARMv81MML_DSP_DP_MVE_FP"/>
+								</option>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.arm.tool.assembler.v6.base.option.implicit.incpath.650365413" name="Implicit Include paths" superClass="com.arm.tool.assembler.v6.base.option.implicit.incpath" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${cmsis_pack_root}/ARM/CMSIS/5.9.0/CMSIS/Core/Include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${cmsis_pack_root}/ARM/CMSIS/5.9.0/Device/ARM/ARMv81MML/Include&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}}/RTE&quot;"/>
+								</option>
+								<option id="com.arm.tool.assembler.v6.base.option.masm.2139097586" name="Assembler syntax (-masm)" superClass="com.arm.tool.assembler.v6.base.option.masm" value="masm.val.auto" valueType="enumerated"/>
+								<inputType id="com.arm.tool.assembler.v6.base.input.1404471495" superClass="com.arm.tool.assembler.v6.base.input"/>
+							</tool>
+							<tool id="com.arm.tool.c.linker.v6.base.var.arm_compiler_6-6.1601886663" name="Arm Linker 6" superClass="com.arm.tool.c.linker.v6.base.var.arm_compiler_6-6">
+								<option id="com.arm.tool.c.linker.option.entry.35569993" name="Image entry point (--entry)" superClass="com.arm.tool.c.linker.option.entry" value="Reset_Handler" valueType="string"/>
+								<option id="com.arm.tool.c.linker.option.scatter.2122466744" name="Scatter file (--scatter)" superClass="com.arm.tool.c.linker.option.scatter" value="${workspace_loc:/${ProjName}}/RTE/Device/ARMv81MML_DSP_DP_MVE_FP/ARMv81MML_ac6.sct" valueType="string"/>
+							</tool>
+							<tool id="com.arm.tool.librarian.v6.base.var.arm_compiler_6-6.1700278566" name="Arm Librarian 6" superClass="com.arm.tool.librarian.v6.base.var.arm_compiler_6-6"/>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="security_func_call__params_passing_ns.com.arm.eclipse.build.project.v6.exe.base.var.arm_compiler_6-6.1435106897" name="Executable" projectType="com.arm.eclipse.build.project.v6.exe.base.var.arm_compiler_6-6"/>
+	</storageModule>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="com.arm.projectSettings" version="6.0.0"/>
+	<storageModule moduleId="refreshScope"/>
+	<storageModule moduleId="com.arm.cmsis.project">
+		<rteConfig name="security-func-call-params-passing_ns.rteconfig"/>
+		<toolChainAdapter id="com.arm.cmsis.pack.build.armcc5.Armcc5ToolChainAdapter" name="Adapter for ARM C/C++ 5.x and 6.x toolchains"/>
+		<device Dclock="10000000" Dcore="ARMV81MML" DcoreVersion="r0p0" Ddsp="DSP" Dendian="Little-endian" Dfamily="ARMv8.1-M Mainline" Dfpu="DP_FPU" Dmpu="MPU" Dmve="FP_MVE" Dname="ARMv81MML_DSP_DP_MVE_FP" Dsecure="Non-secure" Dtz="TZ" Dvendor="ARM:82" info="ARM , 256 KB RAM, 4 MB ROM" url="https://www.keil.com/dd2/arm/armv81mml_dsp_dp_mve_fp"/>
+		<files>
+			<file name="RTE/Device/ARMv81MML_DSP_DP_MVE_FP/ARMv81MML_ac6.sct" version="1.1.0"/>
+			<file name="RTE/Device/ARMv81MML_DSP_DP_MVE_FP/startup_ARMv81MML.c" version="2.1.0"/>
+			<file name="RTE/Device/ARMv81MML_DSP_DP_MVE_FP/system_ARMv81MML.c" version="1.2.1"/>
+		</files>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+</cproject>

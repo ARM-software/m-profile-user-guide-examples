@@ -1,0 +1,13 @@
+Example Project: security-func-call-params-passing Start
+S: Hello World in Secure State
+NS: Hello World in Non-secure State
+NS: call Secure function
+NS: get add result from Secure side: 1 + 2 + 3 + 5.800000 = 11.800000
+NS: call Secure function with more input parameters
+NS: get add result from Secure side: 1 + 2 + 3 + 4 + 5 = 15
+NS: call Secure function with Non-secure function pointer as input parameter
+NS: call Secure function with Non-secure data pointer as input parameter
+S: check Non-secure permission to read the data region
+S: process Non-secure data in Secure side
+NS: Non-secure callback function get Secure processing result = 15
+Example Project: security-func-call-params-passing End
